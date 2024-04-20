@@ -1,0 +1,222 @@
+\begin{thebibliography}{10}
+
+\bibitem{PlateImageSource}
+{Adafruit Industries}.
+\newblock Anodized black aluminum metal keyboard plate for gh60 cases, 2021.
+\newblock \url{https://www.flickr.com/photos/adafruit/51479696571}, Last
+  accessed on 13-03-2024.
+
+\bibitem{TFTLib}
+{Bodmer, Github}.
+\newblock Tft\_espi, 2024.
+\newblock \url{https://github.com/Bodmer/TFT_eSPI}, Last accessed on
+  15-03-2024.
+
+\bibitem{4pcbCalculator}
+{Brad Suppanz, 4pcb}.
+\newblock Pcb trace width calculator, 2018.
+\newblock \url{https://www.4pcb.com/trace-width-calculator.html}, Last accessed
+  on 10-04-2024.
+
+\bibitem{GitInterruptores}
+{@c0z3n, @daveho, @kartikg33; Github}.
+\newblock cherrymx-eagle, 2024.
+\newblock \url{https://github.com/c0z3n/cherrymx-eagle/tree/master}, Last
+  accessed on 5-04-2024.
+
+\bibitem{cdw-keyboards}
+{CDW}.
+\newblock Types of keyboards, 2022.
+\newblock
+  \url{https://www.cdw.com/content/cdw/en/articles/hardware/types-of-keyboards.html},
+  Last accessed on 6-03-2024.
+
+\bibitem{Keyboards-connection-types-wireless}
+{Chron, Andy Walton}.
+\newblock Types of wireless keyboards for computers.
+\newblock
+  \url{https://smallbusiness.chron.com/types-wireless-keyboards-computers-69487.html},
+  Last accessed on 6-03-2024.
+
+\bibitem{NimbleLib}
+{h2zero, Github}.
+\newblock imble-arduino, 2023.
+\newblock \url{https://github.com/h2zero/NimBLE-Arduino}, Last accessed on
+  15-03-2024.
+
+\bibitem{Layout-Editor}
+{ijprest, Github}.
+\newblock Keyboard layout editor, 2023.
+\newblock \url{https://www.keyboard-layout-editor.com/}, Last accessed on
+  13-03-2024.
+
+\bibitem{Keyboards-Mounting-Styles}
+{Keyboard University}.
+\newblock Keyboard mounting styles.
+\newblock
+  \url{https://www.keyboard.university/200-courses/keyboard-mounting-styles-4lpp7},
+  Last accessed on 6-03-2024.
+
+\bibitem{Keyboards-types}
+{Keyboard University}.
+\newblock Keyboard sizes \& layouts.
+\newblock
+  \url{https://www.keyboard.university/100-courses/keyboard-sizes-layouts-gdeby},
+  Last accessed on 6-03-2024.
+
+\bibitem{KeycapsImageSource}
+{Mercury, Wikipedia}.
+\newblock Double-shot keycaps.jpg, 2020.
+\newblock
+  \url{https://commons.wikimedia.org/wiki/File:Double-shot_keycaps.jpg}, Last
+  accessed on 13-03-2024.
+
+\bibitem{TP4056SchematicInternet}
+{MrNiceThings, Reddit}.
+\newblock Hugo - how did i make my esp8266 remote?, 2020.
+\newblock
+  \url{https://www.reddit.com/r/esp8266/comments/ehmfkx/hugo_how_did_i_make_my_esp8266_remote/},
+  Last accessed on 14-03-2024.
+
+\bibitem{SwitchesImageSource}
+{Multicherry, Wikipedia}.
+\newblock Cherry mx green switch, 2020.
+\newblock
+  \url{https://commons.wikimedia.org/wiki/File:Cherry_MX_Green_switch_%28composite_ii%29.jpg},
+  Last accessed on 13-03-2024.
+
+\bibitem{Diy-Keyboard-POPSC}
+{POPULAR SCIENCE}.
+\newblock A beginner’s guide to the world of custom mechanical keyboards,
+  2022.
+\newblock \url{https://www.popsci.com/diy/mechanical-keyboard-basics/}, Last
+  accessed on 6-03-2024.
+
+\bibitem{protoexpressCalculator}
+{Sierra Circuits}.
+\newblock Pcb conductor spacing and voltage calculator, 2024.
+\newblock
+  \url{https://www.protoexpress.com/tools/pcb-conductor-spacing-and-voltage-calculator/},
+  Last accessed on 10-04-2024.
+
+\bibitem{Snapeda}
+{SnapEDA}.
+\newblock Design electronics in a snap., 2024.
+\newblock \url{https://www.snapeda.com/discover/}, Last accessed on 1-04-2024.
+
+\bibitem{Snapeda1N5819W}
+{SnapMagic, SnapEDA}.
+\newblock 1n5819hw-7-f, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/1N5819HW-7-F/Diodes%20Inc./view-part/},
+  Last accessed on 5-04-2024.
+
+\bibitem{SnapedaMux}
+{SnapMagic, SnapEDA}.
+\newblock 74hc154d,653, 2024.
+\newblock \url{https://www.snapeda.com/parts/74HC154D,653/Nexperia/view-part/},
+  Last accessed on 1-04-2024.
+
+\bibitem{SnapedaCap}
+{SnapMagic, SnapEDA}.
+\newblock C1206c105k5ractu, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/C1206C105K5RACTU/KEMET/view-part/}, Last
+  accessed on 5-04-2024.
+
+\bibitem{SnapedaDW01A}
+{SnapMagic, SnapEDA}.
+\newblock Dw01a, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/DW01A/Fortune%20Semiconductor/view-part/},
+  Last accessed on 5-04-2024.
+
+\bibitem{SnapedaESp32S3}
+{SnapMagic, SnapEDA}.
+\newblock Esp32s3wroom1n16r2, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/ESP32S3WROOM1N16R2/Espressif%20Systems/view-part/?ref=search&t=ESp32S3},
+  Last accessed on 5-04-2024.
+
+\bibitem{SnapedaFS8205A}
+{SnapMagic, SnapEDA}.
+\newblock Fs8205a, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/FS8205A/Fortune%20Semiconductor/view-part/?ref=search&t=FS8205A},
+  Last accessed on 5-04-2024.
+
+\bibitem{SnapedaME6211C33}
+{SnapMagic, SnapEDA}.
+\newblock Lm3940imp-3.3/nopb, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/LM3940IMP-3.3%2FNOPB/Texas%20Instruments/view-part/},
+  Last accessed on 5-04-2024.
+
+\bibitem{SnapedaRes}
+{SnapMagic, SnapEDA}.
+\newblock Rc0805fr-07910rl, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/RC0805FR-07910RL/Yageo/view-part/}, Last
+  accessed on 5-04-2024.
+
+\bibitem{SnapedaTP4056}
+{SnapMagic, SnapEDA}.
+\newblock Tp4056, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/TP4056/NanJing%20Top%20Power%20ASIC%20Corp./view-part/},
+  Last accessed on 5-04-2024.
+
+\bibitem{SnapedaWS2812B}
+{SnapMagic, SnapEDA}.
+\newblock Ws2812b, 2024.
+\newblock
+  \url{https://www.snapeda.com/parts/WS2812B/Worldsemi/view-part/?ref=search&t=WS2812B%20},
+  Last accessed on 5-04-2024.
+
+\bibitem{TopCase2ImageSource}
+{snuci, wikimedia}.
+\newblock Cherry kfn3-8358 keyboard case top interior, 2016.
+\newblock
+  \url{https://deskthority.net/wiki/File:Cherry_KFN3-8358_keyboard_case_top_exterior.jpg},
+  Last accessed on 13-03-2024.
+
+\bibitem{TopCase1ImageSource}
+{snuci, wikimedia}.
+\newblock Cherry kfn3-8358 keyboard case top interior, 2016.
+\newblock
+  \url{https://deskthority.net/wiki/File:Cherry_KFN3-8358_keyboard_case_top_interior.jpg},
+  Last accessed on 13-03-2024.
+
+\bibitem{builder-swillkb}
+{Swill, Swillkb}.
+\newblock Plate \& case builder, 2023.
+\newblock \url{http://builder.swillkb.com/}, Last accessed on 13-03-2024.
+
+\bibitem{Keyboards-Prices}
+{Switch \& click}.
+\newblock How much does a custom keyboard cost?
+\newblock
+  \url{https://switchandclick.com/what-is-the-average-cost-for-a-custom-mechanical-keyboard/},
+  Last accessed on 6-03-2024.
+
+\bibitem{Keyboards-connection-types-wired}
+{The Silicon Underground, David L. Farquhar}.
+\newblock Types of keyboard connections, illustrated, 2022.
+\newblock
+  \url{https://dfarq.homeip.net/types-of-keyboard-connections-illustrated/},
+  Last accessed on 6-03-2024.
+
+\bibitem{TearDownImageSource}
+{Theresa McDonough, techwithtech}.
+\newblock Mechanical keyboard parts: Names \& functions?, 2023.
+\newblock \url{https://techwithtech.com/mechanical-keyboard-parts/}, Last
+  accessed on 13-03-2024.
+
+\bibitem{EjemploArrayTeclado}
+{w4ilun, Github}.
+\newblock pocket-keyboard, 2019.
+\newblock
+  \url{https://github.com/w4ilun/pocket-keyboard/blob/master/images/schem_keys.png},
+  Last accessed on 15-03-2024.
+
+\end{thebibliography}

@@ -1,0 +1,57 @@
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Planificación del proyecto con diagrama Gantt.}}{16}{figure.2.1}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Estructura física de un teclado \cite {TearDownImageSource}}}{17}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Keycaps \cite {KeycapsImageSource}}}{18}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Switches o Interruptores mecánicos \cite {SwitchesImageSource}}}{19}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Carcasa Superior \cite {TopCase2ImageSource}}}{20}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Carcasa Superior Reverso \cite {TopCase1ImageSource}}}{20}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Montaje en carcasa inferior \cite {Keyboards-Mounting-Styles}}}{21}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Montaje en carcasa superior \cite {Keyboards-Mounting-Styles}}}{21}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Montaje en carcasa \cite {Keyboards-Mounting-Styles}}}{22}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Montaje en carcasa sandwich \cite {Keyboards-Mounting-Styles}}}{22}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Montaje en forma de carcasa superior \cite {Keyboards-Mounting-Styles}}}{22}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Montaje en empaquetado \cite {Keyboards-Mounting-Styles}}}{23}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Montaje sin \glsdisp {Plate}{\MakeTextLowercase []{Plate}} \cite {Keyboards-Mounting-Styles}}}{23}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Plate \cite {PlateImageSource}}}{24}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Carcasa Inferior de Metal de teclado 60\%}}{25}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \gls {ISO} 105 sin modificar}}{29}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces \gls {ISO} 105 Modificado para el teclado ModernWood}}{29}{figure.3.16}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Esquemático del modulo TP4056 \cite {TP4056SchematicInternet}}}{33}{figure.3.17}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Ejemplo básico de matriz de teclado \cite {EjemploArrayTeclado}}}{35}{figure.3.18}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Imagen del conector XS-12}}{36}{figure.3.19}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Imagen del conector GX-16}}{36}{figure.3.20}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Imagen del conector \gls {USB} tipo A}}{37}{figure.3.21}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Imagen del \gls {LED} WS2812B}}{37}{figure.3.22}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Imagen de la ESP32S3 modificada}}{48}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Matriz final de teclas}}{49}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \gls {Multiplexor} con todos los pines conectados a sus salidas/entradas}}{50}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Microcontrolador principal ESP32S3 y tecla principal}}{51}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sistema de alimentación y protección del teclado}}{52}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sistema de \glsdisp {LED}{\MakeTextLowercase []{LED}}s del teclado}}{53}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Conector de programación y conector de la pantalla TFT}}{53}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Esquema completo del circuito del teclado.}}{54}{figure.4.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Imagen del plano generado por la página web ''Plate \& Case Builder'' \cite {builder-swillkb}}}{56}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Imagen del plano acotado del espacio entre las \glsdisp {Keycaps}{\MakeTextLowercase []{Keycaps}} y la madera.}}{57}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Imagen del plano de la \gls {PCB}}}{58}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Imagen del plano completo de la \gls {PCB}}}{58}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Imagen de la vista \gls {PCB} en Eagle.}}{59}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Imagen del plano importado en Eagle.}}{59}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Imagen de la \gls {PCB} con los componentes ubicados y los agujeros.}}{60}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Imagen de la \gls {PCB} con las pistas conectadas.}}{62}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Imagen del plano de tierra superior de la \gls {PCB}.}}{62}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Imagen del plano de tierra inferior de la \gls {PCB}.}}{63}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Imagen del icono de difusor de luz.}}{63}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Imagen del icono del indicador de panel de metacrilato.}}{64}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Imagen del icono del indicador de tuerca}}{64}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Imagen del icono del indicador tornillo a la carcasa.}}{64}{figure.5.14}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

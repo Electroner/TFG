@@ -4,7 +4,7 @@
 
 Como ya se decidió en la sección \ref{Herramientas} y como ya se ha usado para el diseño esquemático, esta nos permitirá trasladar los componentes a un modelo físico de la placa base. Pero antes de poder mover los componentes a la placa, deberíamos saber a qué lugar van y de que forma. Por lo que antes de ponernos con el diseño de la placa deberemos diseñar el esquema físico del mismo. Para este apartado usaremos la herramienta AutoCad que se especifica en la sección \ref{Herramientas}.
 
-Sera necesario el diseño de las siguientes partes, \gls{PCB}, Carcasa, Disposición de teclas, ubicación de los componentes, ubicación de los conectores.
+Será necesario el diseño de las siguientes partes, \gls{PCB}, Carcasa, Disposición de teclas, ubicación de los componentes, ubicación de los conectores.
 
 Estos diseños puede ser creados un mismo archivo de AutoCAD con las 3 vistas. Alzado, Perfil izquierdo y Planta. Esta última nos servirá para el diseño de la \gls{PCB} y de la disposición de teclas, así como poder crear el archivo 3D para la carcasa. Con el resto de vista nos serviremos para saber si el tamaño de los cortes y disposiciones de los elementos del teclado encajan entre sí y hay suficiente espacio para albergarlos en el interior de la carcasa.
 
@@ -32,9 +32,9 @@ El primer paso es crear las dimensiones de la \gls{PCB}. Que en este caso van a 
 
 En la figura \ref{fig:PlanoSeparacionMadera} podemos ver en rojo el borde de la \gls{PCB} y la línea más próxima en negro la madera. Se ha dejado medio milímetro de margen para las máquinas CNC y de fabricación de \gls{PCB}. Los marcadores de los interruptores generados por el software de la sección \ref{CreacionPlanoDistribucion} se ha dejado en verde.
 
-También para obtener el plano de la \gls{PCB} es necesario añadir los tornillos, ya que como se diseñó en la sección \ref{DiseñoPlatePCB} y se decidió que el montaje del teclado iba a ser sin \glsnocase{Plate} como en la figura \ref{fig:Montaje7}, la fuerza de las manos presionando las teclas va a ser transmitida directamente a la \gls{PCB}. Esta fuerza hará que se doble fácilmente por el material del que esta fabricada, que es  menos rígido que las \glsnocase{Plate} convencionales. Se van a necesitar varios tornillos distribuidos a lo largo de toda la \gls{PCB} para poder hacer un teclado robusto.
+También para obtener el plano de la \gls{PCB} es necesario añadir los tornillos, ya que como se diseñó en la sección \ref{DiseñoPlatePCB} y se decidió que el montaje del teclado iba a ser sin \glsnocase{Plate} como en la figura \ref{fig:Montaje7}, la fuerza de las manos presionando las teclas va a ser transmitida directamente a la \gls{PCB}. Esta fuerza hará que se doble fácilmente por el material del que está fabricada, que es menos rígido que las \glsnocase{Plate} convencionales. Se van a necesitar varios tornillos distribuidos a lo largo de toda la \gls{PCB} para poder hacer un teclado robusto.
 
-Una vez que se ha importado el plano generado de las posiciones de los interruptores se va a proceder a quitar algunos elementos innecesario de marcado y simplificar algunos elementos del plano generado. Una vez hecho esto y ajustado la dimensiones para que cumplan con la decisión tomada en la figura \ref{fig:PlanoSeparacionMadera}. Se va a proceder a colocar los agujeros de los tornillos.
+Una vez que se ha importado el plano generado de las posiciones de los interruptores se va a proceder a quitar algunos elementos innecesario de marcado y simplificar algunos elementos del plano generado. Una vez hecho esto y ajustado las dimensiones para que cumplan con la decisión tomada en la figura \ref{fig:PlanoSeparacionMadera}. Se va a proceder a colocar los agujeros de los tornillos.
 
 Los tornillos van a ser de 3 mm o los llamados M3. Estos son de un tamaño adecuado para que puedan ser ubicados entre las juntas de las teclas y en los bordes. Por lo que se dispondrán circunferencias a lo largo del plano en purpura indicando las posiciones de los agujeros que además serán los tornillos ciegos de las carcasa en un futuro. Una vez hecho esto nos quedamos con 25 tornillos y en la disposición final que podemos ver en el plano de la \gls{PCB} en la figura \ref{fig:PlanoPCB}.
 
@@ -71,7 +71,7 @@ Para poder colocar estos componentes en su lugar adecuado, tendremos que importa
 
 Una vez colocados todos los elementos nos quedará listo para empezar a conectar todo con los llamados líneas aéreas que son, simplemente, líneas amarillas que nos indican a donde tiene que ir la vía de conexión. Esto lo podemos ver en la figura \ref{fig:EaglePCBPartesColocadas}. 
 
-Además, en la misma figura \ref{fig:EaglePCBPartesColocadas} ya hemos añadido los agujeros a la placa en sus correspondientes lugares. Además de dimensionar la capa de \gls{PCB} que nos dará la dimensión de la misma. Los agujeros se han realizado con la herramienta de ''Drill'' que nos permite localizar un taladro en el lugar que lo pongamos del tamaño que le indiquemos. También hemos creado las lineas de la capa ''dimenesión'' que nos indica como debe ser la \gls{PCB} estas han sido colocadas siguiendo el borde rojo de la figura \ref{fig:PlanoPCBConTodo} en el plano de Eagle.
+Además, en la misma figura \ref{fig:EaglePCBPartesColocadas} ya hemos añadido los agujeros a la placa en sus correspondientes lugares. Además de dimensionar la capa de \gls{PCB} que nos dará la dimensión de la misma. Los agujeros se han realizado con la herramienta de ''Drill'' que nos permite localizar un taladro en el lugar que lo pongamos del tamaño que le indiquemos. También hemos creado las líneas de la capa ''dimensión'' que nos indica como debe ser la \gls{PCB} estas han sido colocadas siguiendo el borde rojo de la figura \ref{fig:PlanoPCBConTodo} en el plano de Eagle.
 
 \begin{figure}[H]
     \centering
@@ -101,19 +101,19 @@ En primer lugar, se debe prestar especial atención al dimensionamiento de los c
 
 Además, la posición de los elementos de potencia y otros componentes críticos debe ser cuidadosamente considerada. Una disposición incorrecta puede resultar en interferencias electromagnéticas (EMI) o en problemas de disipación de calor, lo que podría afectar negativamente al funcionamiento del teclado y su durabilidad.
 
-Para ello vamos a usar herramientas de calculo de pistas o vías para saber que características tienen que tener. Vamos a calcular que distancia minima y que tamaño tienen que tener las pistas. Para ello vamos usar dos paginas que tienen calculadoras especificas para realizar esta tarea.
+Para ello vamos a usar herramientas de cálculo de pistas o vías para saber qué características tienen que tener. Vamos a calcular que distancia mínima y que tamaño tienen que tener las pistas. Para ello vamos a usar dos páginas que tienen calculadoras específicas para realizar esta tarea.
 
-El primer valor va a ser el tamaño de la vía, para ello vamos a usar la pagina ''4pcb'' \cite{4pcbCalculator} y para la distancia entre pistas ''protoexpress'' \cite{protoexpressCalculator}. 
+El primer valor va a ser el tamaño de la vía, para ello vamos a usar la página ''4pcb'' \cite{4pcbCalculator} y para la distancia entre pistas ''protoexpress'' \cite{protoexpressCalculator}. 
 
 Empecemos con el tamaño de la vía, los parámetros que nos pide son los siguientes.
 \begin{itemize}
     \item \textbf{Intensidad}. Este valor para nosotros va a valer como máximo 0,5 Amperios, ya que es el máximo que el usb nos da.
     \item \textbf{Grosor}. Este valor es un estándar, así que para nosotros es de 2 $\frac{oz}{ft^2}$.
-    \item \textbf{Temperatura}, Incremento y ambiente. Nuestra temperatura ambiente sera de 25ºC y el incremento le pondremos de otros 25.
-    \item \textbf{Longitud de la pista}. La distancia. Aquí vamos a elegir la pista más larga en nuestro teclado que sera de lado a lado de unos 50 cm.
+    \item \textbf{Temperatura}, Incremento y ambiente. Nuestra temperatura ambiente será de 25ºC y el incremento le pondremos de otros 25.
+    \item \textbf{Longitud de la pista}. La distancia. Aquí vamos a elegir la pista más larga en nuestro teclado que será de lado a lado de unos 50 cm.
 \end{itemize}
 
-El resultado que nos arroja esta calculadora es de un grosor de 0.0861 mm. Como podemos ver el tamaño de la pista es sumamente pequeño por lo que los valores por defecto de Eagle nos van a valer perfectamente y además mejorara la resistencia y la caída de voltaje.
+El resultado que nos arroja esta calculadora es de un grosor de 0.0861 mm. Como podemos ver, el tamaño de la pista es sumamente pequeño, por lo que los valores por defecto de Eagle nos van a valer perfectamente y además mejorara la resistencia y la caída de voltaje.
 
 Para la distancia de la pista los parámetros que nos piden son:
 \begin{itemize}
@@ -122,10 +122,77 @@ Para la distancia de la pista los parámetros que nos piden son:
 
 Tras darle a calcular, el valor que obtenemos es de 0,0508 mm. Otra vez los valores por defecto del programa superan con creces este valor. Por lo que por ahora cumplimos con todos los requisitos.
 
-Cabe mencionar, que dado que la 
+Cabe mencionar, que dado que el microcontrolador ESP32S3 es el que posee la antena \gls{Bluetooth} integrada, no es necesario calcular nada relacionado con la antena. Ya que el fabricante del microcontrolador ya ha hecho este trabajo por nosotros.
 
 \subsubsection{Enrutamiento}
 %explicar que se ha hecho de forma automatica la seccion de las teclas y se ha revisado a mano. Y mencionar que la seccion de micro ha sido hecha a mano
+Para la sección de las teclas se ha usado la herramienta de enrutamiento automático de Eagle. Esta herramienta nos permite conectar todas las pistas de forma rápida y eficiente. Una vez que se ha realizado el enrutamiento automático, se ha revisado manualmente para asegurarse de que todas las conexiones son correctas y que no hay errores en el diseño.
+
+Para la sección del microcontrolador y los componentes críticos, se ha realizado el enrutamiento manualmente. Esto se debe a que estas secciones son más críticas y requieren una mayor atención para asegurarse de que todas las conexiones son correctas y que no hay curvas extrañas que puedan afectar al rendimiento del teclado.
+
+Una vez conectado todo nos quedaría la \gls{PCB} terminada. La podemos ver en la figura \ref{fig:EaglePCBConectada}. En esta figura podemos ver que todas las pistas están conectadas y que todos los componentes están en su lugar correspondiente. Además, se han añadido las pistas de alimentación y las pistas de conexión entre los diferentes componentes.
+
+%Mencionar el plano de tierra que hemos creado para mejorar el ruino de la placa. Y que siempre es recomendable tener un plano de tierra en la placa.
+Además de conectar todos los componentes, se ha añadido un plano de tierra en la \gls{PCB}. Este plano de tierra ayuda a mejorar la disipación del calor y a reducir las interferencias electromagnéticas (EMI) en la placa. También ayuda a mejorar la integridad de la señal y a reducir el ruido en la placa. Por lo que siempre es recomendable tener un plano de tierra en la placa. Se ha creado un plano para cada una de las capas de la \gls{PCB}. Como nosotros tenemos 2 capas, hemos creado un plano de tierra en la capa superior y otro en la capa inferior.
+Estos planos se pueden ver en la figura \ref{fig:EaglePCBPlanoTierra1} y en la figura \ref{fig:EaglePCBPlanoTierra2}, respectivamente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{imagenes/Capitulos/Cap05/EaglePCBConectada.png}
+    \caption{Imagen de la \gls{PCB} con las pistas conectadas.}
+    \label{fig:EaglePCBConectada}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{imagenes/Capitulos/Cap05/EaglePCBPlanoTierra1.png}
+    \caption{Imagen del plano de tierra superior de la \gls{PCB}.}
+    \label{fig:EaglePCBPlanoTierra1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{imagenes/Capitulos/Cap05/EaglePCBPlanoTierra2.png}
+    \caption{Imagen del plano de tierra inferior de la \gls{PCB}.}
+    \label{fig:EaglePCBPlanoTierra2}
+\end{figure}
 
 \subsubsection{Estética}
 %Quitar las marcas de las Vias entre otras, poner el texto a mano, indicadores, POsicionar todo correctamente. Mover las vias para que queden más estetias etc.
+Una vez que se ha realizado el enrutamiento y se han añadido los planos de tierra, se ha procedido a mejorar la estética de la \gls{PCB}. Para ello, se han eliminado las marcas de las vías y se han movido las vías para que queden más estéticas. También se ha añadido el texto a mano y se han posicionado todos los elementos de forma correcta. Además, se han añadido indicadores para facilitar la lectura de la \gls{PCB} y se han añadido los números de referencia de los componentes para facilitar la identificación de los mismos.
+
+A su vez, también se han creado unos iconos para poder identificar los tipos de agujeros a los que están asociados. En total hay 4 iconos. Estos son para identificar el difusor de luz, cuáles tienen un panel de metacrilato para poder proteger la sección de componentes electrónicos, otro para saber cuál es necesario emplear tuerca y el último para saber cuál es necesario atornillar a la carcasa. Respectivamente, estos son los iconos. \ref{fig:difusionIcono}, \ref{fig:MetacrilatoIcono}, \ref{fig:TuercaIcono} y \ref{fig:TornilloIcono}.
+
+Más adelante se usarán para saber de forma rápida que tipo de agujero es necesario en la carcasa. Y para facilitar el montaje del teclado.
+
+\begin{itemize}
+    \item \textbf{Difusor de luz}. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.15\textwidth]{imagenes/Capitulos/Cap05/Difusion.png}
+        \caption{Imagen del icono de difusor de luz.}
+        \label{fig:difusionIcono}
+    \end{figure}
+    \newpage
+    \item \textbf{Panel de metacrilato}. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.15\textwidth]{imagenes/Capitulos/Cap05/Glass.png}
+        \caption{Imagen del icono del indicador de panel de metacrilato.}
+        \label{fig:MetacrilatoIcono}
+    \end{figure}
+    \item \textbf{Tuerca}. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.15\textwidth]{imagenes/Capitulos/Cap05/Nut.png}
+        \caption{Imagen del icono del indicador de tuerca}
+        \label{fig:TuercaIcono}
+    \end{figure}
+    \item \textbf{Atornillar a la carcasa}. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.1\textwidth]{imagenes/Capitulos/Cap05/Screw.png}
+        \caption{Imagen del icono del indicador tornillo a la carcasa.}
+        \label{fig:TornilloIcono}
+    \end{figure}
+\end{itemize}
