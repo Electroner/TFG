@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  20 APR 2024 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  20 APR 2024 14:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1223,10 +1223,10 @@ File: imagenes/Capitulos/Cap05/PlanoDiseñoTeclas.png Graphic file (type png)
 <use imagenes/Capitulos/Cap05/PlanoDiseñoTeclas.png>
 Package pdftex.def Info: imagenes/Capitulos/Cap05/PlanoDiseñoTeclas.png  used on input line 22.
 (pdftex.def)             Requested size: 360.0pt x 109.8662pt.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
  [56 <./imagenes/Capitulos/Cap05/PlanoDiseñoTeclas.png>]
 <imagenes/Capitulos/Cap05/AcotadoPCBMadera.png, id=1324, 590.205pt x 372.64218pt>
 File: imagenes/Capitulos/Cap05/AcotadoPCBMadera.png Graphic file (type png)
@@ -1238,9 +1238,6 @@ File: imagenes/Capitulos/Cap05/PlanoPCB.png Graphic file (type png)
 <use imagenes/Capitulos/Cap05/PlanoPCB.png>
 Package pdftex.def Info: imagenes/Capitulos/Cap05/PlanoPCB.png  used on input line 54.
 (pdftex.def)             Requested size: 360.0pt x 106.34453pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 58.
 LaTeX Info: Redefining \% on input line 58.
 LaTeX Info: Redefining \. on input line 58.
@@ -1614,15 +1611,15 @@ Package rerunfilecheck Info: File `TFG.out' has not changed.
 (rerunfilecheck)             Checksum: 506765F95DFCB67237A25FD2A9FC4ED5;10202.
  ) 
 Here is how much of TeX's memory you used:
- 22260 strings out of 474485
- 384732 string characters out of 5755465
+ 22252 strings out of 474485
+ 384621 string characters out of 5755465
  1945542 words of memory out of 5000000
- 43810 multiletter control sequences out of 15000+600000
+ 43802 multiletter control sequences out of 15000+600000
  567024 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,17n,93p,2383b,816s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Clm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feybr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on TFG.pdf (105 pages, 6087920 bytes).
+Output written on TFG.pdf (105 pages, 6087573 bytes).
 PDF statistics:
  1856 PDF objects out of 2073 (max. 8388607)
  360 named destinations out of 1000 (max. 500000)

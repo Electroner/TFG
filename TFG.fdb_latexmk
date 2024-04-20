@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex TFG"] 1713617069.94044 "TFG.aux" "TFG.bbl" "TFG" 1713617385.07272 0
+["bibtex TFG"] 1713617669.06055 "TFG.aux" "TFG.bbl" "TFG" 1713617681.9356 0
   "./Bibliografia/Bibliografia.bib" 1713614036 7922 4c1d47536e9544959183016b8f28ca8f ""
   "B:/Programas/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "TFG.aux" 1713617383 57181 7b47ab61cab388d2e2bc6b2a3487fffe "pdflatex"
+  "TFG.aux" 1713617680 57181 3d8fa39e636d359b2f07339e75ac3bfb "pdflatex"
   (generated)
   "TFG.bbl"
   "TFG.blg"
   (rewritten before read)
-["pdflatex"] 1713617372.76966 "b:/Cosas/UGR/4/4.2/TFG/TFG/TFG.tex" "TFG.pdf" "TFG" 1713617385.07394 0
+["pdflatex"] 1713617669.5601 "b:/Cosas/UGR/4/4.2/TFG/TFG/TFG.tex" "TFG.pdf" "TFG" 1713617681.9368 0
   "B:/Programas/MiKTeX/fonts/tfm/jknappen/ec/tcrm1095.tfm" 993062508 1460 8005ce585ff351dff78998923504da5e ""
   "B:/Programas/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "B:/Programas/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -160,7 +160,7 @@
   "Capitulos/02_Especificacion.tex" 1713614036 7969 808e85c329f4ac84a070590fede6c66a ""
   "Capitulos/03_DiseñoyPrototipado.tex" 1713614036 54225 48bb9e2e4290aaa8c356d85cca1408f5 ""
   "Capitulos/04_Circuitos.tex" 1713614036 9177 309e45144177f7e7dbeda8ab5b86770e ""
-  "Capitulos/05_PCB.tex" 1713617371 17935 1f3d8cb0cee1bea688e1cf26097b4207 ""
+  "Capitulos/05_PCB.tex" 1713617561 17937 f2a3c004404e828f4081f60ef58f863f ""
   "Capitulos/06_Carcasa.tex" 1713614036 126 d7546d1f2f42966cc4c5f3c24fca2b23 ""
   "Capitulos/07_Programacion.tex" 1713614036 286 e5a2fcd212004ad8e6a4fc8164b68065 ""
   "Capitulos/08_Prototipos.tex" 1713614036 157 eb6e61e0d745df41464226a2e4920927 ""
@@ -168,14 +168,14 @@
   "Capitulos/10_PosiblesMejoras.tex" 1713614036 156 654c3f38ab29fbbf9907288c3ba1ea34 ""
   "Capitulos/11_Conclusiones.tex" 1713614036 22 a79e722b62e8948d7bf24fbd45b92ac6 ""
   "Glosario/Glosario.tex" 1713614036 16290 c403c4e6d36248b72e8d6da770d58633 ""
-  "TFG.aux" 1713617383 57181 7b47ab61cab388d2e2bc6b2a3487fffe "pdflatex"
-  "TFG.bbl" 1713617070 7176 0c1796c1cd5e3b6bea808eedf076f3ca "bibtex TFG"
+  "TFG.aux" 1713617680 57181 3d8fa39e636d359b2f07339e75ac3bfb "pdflatex"
+  "TFG.bbl" 1713617669 7176 0c1796c1cd5e3b6bea808eedf076f3ca "bibtex TFG"
   "TFG.gls" 0 -1 0 ""
-  "TFG.lof" 1713617384 5958 1dcdd404fa5f6d02aeaf441e8910b65c "pdflatex"
-  "TFG.out" 1713617383 10202 506765f95dfcb67237a25fd2a9fc4ed5 "pdflatex"
-  "TFG.tex" 1713614036 6699 1d68f2dd6cc9ef64a1dbe8e2e3ab55de ""
-  "TFG.toc" 1713617384 10542 65afe00e2c78bf3a9a51efc406cb792c "pdflatex"
-  "b:/Cosas/UGR/4/4.2/TFG/TFG/TFG.tex" 1713614036 6699 1d68f2dd6cc9ef64a1dbe8e2e3ab55de ""
+  "TFG.lof" 1713617680 5958 1dcdd404fa5f6d02aeaf441e8910b65c "pdflatex"
+  "TFG.out" 1713617680 10202 506765f95dfcb67237a25fd2a9fc4ed5 "pdflatex"
+  "TFG.tex" 1713617580 6699 1d68f2dd6cc9ef64a1dbe8e2e3ab55de ""
+  "TFG.toc" 1713617680 10542 65afe00e2c78bf3a9a51efc406cb792c "pdflatex"
+  "b:/Cosas/UGR/4/4.2/TFG/TFG/TFG.tex" 1713617580 6699 1d68f2dd6cc9ef64a1dbe8e2e3ab55de ""
   "imagenes/Capitulos/Cap02/DiagramaGantt.png" 1713614036 263806 f246ca9cf835dfcbd9438b8380103eab ""
   "imagenes/Capitulos/Cap03/BottomCase.png" 1713614036 121306 a41135f7433eef6fdd31159b34046369 ""
   "imagenes/Capitulos/Cap03/EjemploArrayTeclado.png" 1713614036 453689 d6af7e2352a2dfc6b13cfbb0292d55d4 ""
