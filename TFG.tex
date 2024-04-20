@@ -1,0 +1,254 @@
+\documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,twoside,11pt,titlepage]{book}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+% \usepackage[style=list, number=none]{glossary} %
+%\usepackage{titlesec}
+%\usepackage{pailatino}
+
+\decimalpoint
+\usepackage{dcolumn}
+\newcolumntype{.}{D{.}{\esperiod}{-1}}
+\makeatletter
+\addto\shorthandsspanish{\let\esperiod\es@period@code}
+\makeatother
+
+
+%\usepackage[chapter]{algorithm}
+\RequirePackage{verbatim}
+%\RequirePackage[Glenn]{fncychap}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{afterpage}
+\usepackage{eurosym}
+\usepackage{etoolbox}
+\usepackage{textcase}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{float}
+
+\usepackage[pdfborder={1 1 1}]{hyperref} %referencia
+
+% ********************************************************************
+% Re-usable information
+% ********************************************************************
+\newcommand{\myTitle}{ModernWood\xspace}
+\newcommand{\myDegree}{Grado en INGENIERIA INFORMATICA\xspace}
+\newcommand{\myName}{Carlos López Martínez\xspace}
+\newcommand{\myProf}{Jesús González Peñalver\xspace}
+\newcommand{\myOtherProf}{Jesús González Peñalver\xspace}
+%\newcommand{\mySupervisor}{Put name here\xspace}
+\newcommand{\myFaculty}{Escuela Técnica Superior de Ingenierías Informática y de
+Telecomunicación\xspace}
+\newcommand{\myFacultyShort}{E.T.S. de Ingenierías Informática y de
+Telecomunicación\xspace}
+\newcommand{\myDepartment}{Departamento de ...\xspace}
+\newcommand{\myUni}{\protect{Universidad de Granada}\xspace}
+\newcommand{\myLocation}{Granada\xspace}
+\newcommand{\myTime}{\today\xspace}
+\newcommand{\myVersion}{Version 0.1\xspace}
+
+
+\hypersetup{
+  pdfauthor = {\texorpdfstring{\myName}{Nombre Alternativo}},
+  pdftitle = {\texorpdfstring{\myTitle}{Título Alternativo}},
+  pdfsubject = {},
+  pdfkeywords = {palabra\_clave1, palabra\_clave2, palabra\_clave3, ...},
+  pdfcreator = {LaTeX con el paquete ....},
+  pdfproducer = {pdflatex}
+}
+
+
+%\hyphenation{}
+
+
+%\usepackage{doxygen/doxygen}
+%\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{colortbl,longtable}
+\usepackage[stable]{footmisc}
+%\usepackage{index}
+
+%\makeindex
+%\usepackage[style=long, cols=2,border=plain,toc=true,number=none]{glossary}
+
+% Definición de comandos que me son tiles:
+%\renewcommand{\indexname}{Índice alfabético}
+%\renewcommand{\glossaryname}{Glosario}
+
+\usepackage[nonumberlist]{glossaries}
+\loadglsentries{Glosario/Glosario}
+\makenoidxglossaries
+% Agrega más entradas según sea necesario
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\leftmark}
+\fancyhead[RE]{\rightmark}
+\fancyhead[RO,LE]{\textbf{\thepage}}
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}}
+
+\setlength{\headheight}{1.5\headheight}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+%Definimos los tipos teorema, ejemplo y definición podremos usar estos tipos
+%simplemente poniendo \begin{teorema} \end{teorema} ...
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{ejemplo}{Ejemplo}[chapter]
+\newtheorem{definicion}{Definición}[chapter]
+
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\definecolor{gray30}{gray}{.94}
+
+\lstset{ frame=Ltb,
+     framerule=0.5pt,
+     aboveskip=0.5cm,
+     framextopmargin=3pt,
+     framexbottommargin=3pt,
+     framexleftmargin=0.1cm,
+     framesep=0pt,
+     rulesep=.4pt,
+     backgroundcolor=\color{gray97},
+     rulesepcolor=\color{black},
+     %
+     stringstyle=\ttfamily,
+     showstringspaces = false,
+     basicstyle=\scriptsize\ttfamily,
+     commentstyle=\color{gray45},
+     keywordstyle=\bfseries,
+     %
+     numbers=left,
+     numbersep=6pt,
+     numberstyle=\tiny,
+     numberfirstline = false,
+     breaklines=true,
+   }
+ 
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+   {\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\lstdefinestyle{CodigoC}
+   {
+	basicstyle=\scriptsize,
+	frame=single,
+	language=C,
+	numbers=left
+   }
+\lstdefinestyle{CodigoC++}
+   {
+	basicstyle=\small,
+	frame=single,
+	backgroundcolor=\color{gray30},
+	language=C++,
+	numbers=left
+   }
+
+ 
+\lstdefinestyle{Consola}
+   {basicstyle=\scriptsize\bf\ttfamily,
+    backgroundcolor=\color{gray30},
+    frame=single,
+    numbers=none
+   }
+
+
+\newcommand{\bigrule}{\titlerule[0.5mm]}
+
+
+%Para conseguir que en las páginas en blanco no ponga cabecerass
+\makeatletter
+\def\clearpage{%
+  \ifvmode
+    \ifnum \@dbltopnum =\m@ne
+      \ifdim \pagetotal <\topskip
+        \hbox{}
+      \fi
+    \fi
+  \fi
+  \newpage
+  \thispagestyle{empty}
+  \write\m@ne{}
+  \vbox{}
+  \penalty -\@Mi
+}
+\makeatother
+
+\usepackage{pdfpages}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyhead[LO,RE]{\leftmark} % Título del capítulo
+\fancyhead[LE,RO]{\rightmark} % Título de la sección
+
+\renewcommand{\sectionmark}[1]{\markright{\thesection. \ #1}}  % Activa la configuración de la sección
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection. \ #1}}  % Activa la configuración de la subsección
+
+%Colores para los 
+\renewcommand*{\glstextformat}[1]{\textcolor{blue}{#1}}
+\hypersetup
+{
+    colorlinks=true,
+    linkcolor={black}, %para el indice
+    citecolor={blue},
+    urlcolor={black},
+    filecolor={black},
+    linktoc=all,
+}
+
+\newcommand{\glsnocase}[1]{%
+  \glsdisp{#1}{\MakeTextLowercase{#1}}%
+}
+
+\begin{document}
+\input{portada/portada}
+\input{prefacios/prefacio}
+%\frontmatter
+\mainmatter
+\tableofcontents
+%\listoffigures
+%\listoftables
+%
+
+\setlength{\parskip}{5pt}
+
+\input{Capitulos/01_Introduccion}
+\input{Capitulos/02_Especificacion}
+\input{Capitulos/03_DiseñoyPrototipado}
+\input{Capitulos/04_Circuitos}
+\input{Capitulos/05_PCB}
+\input{Capitulos/06_Carcasa}
+\input{Capitulos/07_Programacion}
+\input{Capitulos/08_Prototipos}
+\input{Capitulos/09_Validacion}
+\input{Capitulos/10_PosiblesMejoras}
+\input{Capitulos/11_Conclusiones}
+%
+%%\nocite{*}
+%\bibliographystyle{miunsrturl}
+%
+\appendix
+%\input{apendices/manual_usuario/manual_usuario}
+%\input{apendices/paper/paper}
+%\input{Glosario/Glosario}
+\printglossary
+\printnoidxglossaries
+\addcontentsline{toc}{chapter}{Glosario}
+\listoffigures
+\addcontentsline{toc}{chapter}{Indice de figuras}
+%\input{Bibliografia/Bibliografia}
+\bibliographystyle{plain}
+\bibliography{Bibliografia/Bibliografia}
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+\chapter*{}
+\thispagestyle{empty}
+
+\end{document}
