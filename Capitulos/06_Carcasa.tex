@@ -1,8 +1,14 @@
 \chapter{Carcasa}
 
-La carcasa es la parte visible del producto, es la primera impresión que se lleva el usuario y por tanto es una parte muy importante del diseño. En este capítulo se describirá el proceso de diseño y fabricación de la carcasa del producto. Se describirán las medidas físicas, la ergonomía y el proceso de fabricación. Como se diseño en el capitulo \ref{CapDiseño}, esta sera una unica pieza de madera que se fabricara con una maquina CNC.
+La carcasa es la parte visible del producto, es la primera impresión que se lleva el usuario y, por tanto, es una parte muy importante del diseño. En este capítulo se describirá el proceso de diseño y fabricación de la carcasa del producto. Se describirán las medidas físicas, la ergonomía y el proceso de fabricación. Como se diseñó en el capítulo \ref{CapDiseño}, esta será una única pieza de madera que se fabricara con una máquina \gls{CNC}.
+
+El plano que se utilizó para el diseño de la carcasa se creara con la herramienta AutoCAD para seguir con la decisión de la sección \ref{Herramientas}, se exportara a FreeCAD para crear el modelo 3D y se exportara a G-Code para la fabricación con la máquina \gls{CNC}.
 
 \section{Diseño físico}
+Para el diseño de la carcasa nos vamos a basar en el plano que ya tenemos de la \gls{PCB} ya que en la sección \ref{MedidasFisicas} se dispusieron los agujeros donde iban a ir los tornillos de la misma. Se va a diseñar una carcasa que sea tipo cajón, donde la \gls{PCB} se va a deslizar por la parte superior y se va a atornillar a la parte inferior. Se va a dejar un espacio para la batería de la \gls{PCB}. Para empezar con el diseño importaremos el plano de la \gls{PCB} a AutoCAD y se creará la carcasa alrededor de la \gls{PCB}. Los bordes de la carcasa se van a redondear para darle un aspecto más estético. Además, tendrán un grosor de 7 mm para darle resistencia y poder atornillar el conector XS-12.
+
+También se tendrá en cuenta el espacio acordado de margen de error en la figura \ref{fig:PlanoSeparacionMadera} para que la \gls{PCB} pueda deslizarse sin problemas teniendo en cuenta errores de precisión en la fabricación de la carcasa y la \gls{PCB}.
+
 \subsection{Medidas Físicas}
 \subsection{Ergonomía}
 \section{Fabricación}
