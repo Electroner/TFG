@@ -1,5 +1,117 @@
 \chapter{Validación}
 
-\section{Test Eléctricos}
-\subsection{Prueba en Windows}
-\subsection{Prueba en Linux}
+En todos los proyectos de desarrollo de software y hardware es necesario realizar pruebas para comprobar que el sistema funciona correctamente. Aquí se destacarán las pruebas realizadas en el sistema para comprobar su correcto funcionamiento.
+
+\section{Pruebas Eléctricas}
+Para realizar todos los test y pruebas se ha hecho una plantilla tipica para rellenar, donde se le atribuye un nombre a la prueba, una descripción de la misma, como se realiza y el resultado obtenido. Esta se puede ver en la tabla \ref{Table:PruebasElectricas}.
+
+\subsubsection{Prueba de Continuidad}
+
+La prueba de continuidad se llevó a cabo utilizando un multímetro digital. Se verificó la continuidad en los circuitos de las teclas, los \gls{LED} indicadores y los cables de conexión. No se detectaron interrupciones en la continuidad, lo que indica una correcta conexión de los componentes.
+
+\subsubsection{Prueba de Resistencia}
+
+Se utilizaron instrumentos de medición adecuados para medir la resistencia eléctrica en diferentes puntos del teclado. Los valores de resistencia obtenidos se compararon con los rangos especificados en el diseño. Todos los componentes mostraron valores de resistencia dentro de los límites aceptables.
+
+\subsubsection{Prueba de Corriente y Voltaje}
+
+Se midió la corriente y el voltaje en varios puntos del circuito utilizando un amperímetro y un voltímetro. Los valores de corriente y voltaje se compararon con las especificaciones del diseño. Se observó un comportamiento adecuado de los circuitos, con corrientes y voltajes dentro de los rangos esperados.
+
+\subsubsection{Prueba de Funcionamiento de los \gls{LED}}
+
+Se realizó una prueba específica para verificar el funcionamiento de los \gls{LED} indicadores del teclado. Se encendieron y apagaron los \gls{LED} para confirmar que emitían luz de manera adecuada y que no presentaban fallos de conexión o funcionamiento.
+
+\subsubsection{Prueba de Comunicación USB}
+
+Se verificó la comunicación entre el teclado y la computadora a través del puerto \gls{USB}. Se enviaron datos desde el teclado a la computadora para confirmar que la comunicación era estable y que no había pérdida de información.
+
+\subsubsection{Prueba de Interferencias Electromagnéticas}
+
+El teclado fue expuesto a fuentes de interferencias electromagnéticas para verificar su inmunidad a este tipo de interferencias. Se comprobó que el teclado seguía funcionando correctamente incluso en presencia de campos electromagnéticos externos no muy fuertes.
+
+En resumen, las pruebas eléctricas confirmaron la integridad y el correcto funcionamiento del teclado diseñado, asegurando su fiabilidad y rendimiento en diferentes condiciones de operación.
+
+\section{Pruebas en \gls{Windows}}
+
+Las pruebas en el sistema operativo \gls{Windows} se llevaron a cabo para verificar la compatibilidad y funcionalidad del teclado diseñado en este entorno. A continuación, se detallan las pruebas realizadas. Se ha seguido una plantilla típica para rellenar, se puede ver en la tabla \ref{Table:PruebaSistemaWindows}.
+
+\subsubsection{Prueba de Funcionamiento de las Teclas}
+
+Se probó cada tecla del teclado para asegurar que todas fueran reconocidas correctamente por el sistema operativo \gls{Windows}. Se verificó que la pulsación de cada tecla generara la salida esperada en la pantalla y que no se produjeran errores de reconocimiento.
+
+\subsubsection{Prueba de Comunicación USB}
+
+Se verificó la comunicación entre el teclado y la computadora a través del puerto \gls{USB} en el sistema operativo \gls{Windows}. Se confirmó que el teclado fuera detectado correctamente por el sistema y que la comunicación fuera estable y sin errores.
+
+\subsubsection{Prueba de Funcionamiento de los \gls{LED}}
+
+Se probó el funcionamiento de los \gls{LED} indicadores del teclado en el sistema operativo \gls{Windows}. Se verificó que los \gls{LED} se encendieran y apagaran correctamente según el estado de las funciones correspondientes.
+
+\section{Pruebas en \gls{Linux}}
+
+Las pruebas en el sistema operativo \gls{Linux} se realizaron para garantizar la compatibilidad y funcionalidad del teclado diseñado en este entorno. A continuación, se describen las pruebas realizadas. Se ha seguido una plantilla típica para rellenar, se puede ver en la tabla \ref{Table:PruebaSistemaLinux}.
+
+\subsubsection{Prueba de Reconocimiento del Teclado}
+
+Se verificó que el teclado fuera reconocido correctamente por el sistema operativo \gls{Linux} al conectarlo a la computadora. Se comprobó que el sistema asignara los controladores adecuados y que el teclado estuviera listo para su uso sin necesidad de configuraciones adicionales.
+
+\subsubsection{Prueba de Funcionamiento de las Teclas}
+
+Se probó el funcionamiento de cada tecla del teclado en el sistema operativo \gls{Linux}. Se verificó que todas las teclas generaran la salida esperada en la pantalla y que no se produjeran errores de reconocimiento o asignación de caracteres.
+
+\subsubsection{Prueba de Funcionamiento de los \gls{LED}}
+
+Se verificó el funcionamiento de los \gls{LED} indicadores del teclado en el sistema operativo \gls{Linux}. Se confirmó que los \gls{LED} se encendieran y apagaran correctamente según el estado de las funciones correspondientes.
+
+En resumen, las pruebas realizadas en ambos sistemas operativos confirmaron la compatibilidad y funcionalidad del teclado diseñado en diferentes entornos de software.
+
+\begin{table}[h]
+\small
+\begin{tabular}{|l|p{2cm}|p{2.5cm}|p{3cm}|}
+\hline
+Nombre & Descripción & Como se realiza & Resultado \\
+\hline
+Continuidad & Verifica la continuidad & Utilizando un multímetro digital & Sin interrupciones \\
+\hline
+Resistencia & Mide la resistencia eléctrica & Con instrumentos de medición adecuados & Valores dentro de los límites aceptables \\
+\hline
+Corriente y Voltaje & Mide la corriente y el voltaje & Utilizando un amperímetro y un voltímetro & Corriente y voltaje dentro de los rangos esperados \\
+\hline
+\gls{LED}S & Verifica el funcionamiento de los \gls{LED} & Encendiendo y apagando los \gls{LED} & Emisión de luz adecuada \\
+\hline
+\gls{USB} & Verifica la comunicación \gls{USB} & Enviando datos desde el teclado a la computadora & Comunicación estable sin pérdida de información \\
+\hline
+\gls{EMI} & Prueba la inmunidad a interferencias electromagnéticas & Exponiendo el teclado a fuentes de \gls{EMI} & Funcionamiento correcto incluso en presencia de campos electromagnéticos externos \\
+\hline
+\end{tabular}
+\caption{Tabla de pruebas eléctricas realizadas}
+\label{Table:PruebasElectricas}
+\end{table}
+
+\begin{table}[!htb]
+\small
+\begin{tabular}{|l|p{3cm}|p{3.5cm}|l|}
+\hline
+Nombre           & Descripción                                               & Como se realiza                                    & Resultado \\ \hline
+Reconocimiento   & Verifica el reconocimiento de las teclas en \gls{Windows}        & Se prueba cada tecla del teclado en \gls{Windows}        & OK         \\ \hline
+Envío de Teclas  & Verifica el envío de teclas desde el teclado en \gls{Windows}    & Se verifica la comunicación USB en \gls{Windows}         & OK         \\ \hline
+\gls{LED}S             & Verifica el funcionamiento de los \gls{LED} en \gls{Windows}           & Se prueba el encendido y apagado de los \gls{LED}        & OK         \\ \hline
+\end{tabular}
+\caption{Tabla de pruebas en \gls{Windows}}
+\label{Table:PruebaSistemaWindows}
+\end{table}
+
+\phantom{Espacio}
+\begin{table}[!htb]
+\small
+\begin{tabular}{|l|p{3cm}|p{3.5cm}|l|}
+\hline
+Nombre           & Descripción                                               & Como se realiza                                    & Resultado \\ \hline
+Reconocimiento   & Verifica el reconocimiento de las teclas en \gls{Linux}        & Se prueba cada tecla del teclado en \gls{Linux}        & OK         \\ \hline
+Envío de Teclas  & Verifica el envío de teclas desde el teclado en \gls{Linux}    & Se verifica la comunicación USB en \gls{Linux}         & OK         \\ \hline
+\gls{LED}S             & Verifica el funcionamiento de los \gls{LED} en \gls{Linux}           & Se prueba el encendido y apagado de los \gls{LED}        & OK         \\ \hline
+\end{tabular}
+\caption{Tabla de pruebas en \gls{Linux}}
+\label{Table:PruebaSistemaLinux}
+\end{table}
+    

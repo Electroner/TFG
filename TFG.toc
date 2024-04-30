@@ -127,21 +127,42 @@
 \contentsline {section}{\numberline {7.4}Boot}{71}{section.7.4}%
 \contentsline {chapter}{\numberline {8}Prototipos}{73}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Montaje}{73}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Versiones}{73}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}V1: Correcciones}{73}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}V2: Correcciones}{73}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}V3: Modificaciones}{73}{subsection.8.2.3}%
-\contentsline {chapter}{\numberline {9}Validación}{75}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Test Eléctricos}{75}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Prueba en Windows}{75}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Prueba en Linux}{75}{subsection.9.1.2}%
-\contentsline {chapter}{\numberline {10}Mejoras}{77}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Posibles mejoras}{77}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}Software}{77}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Hardware}{77}{subsection.10.1.2}%
-\contentsline {subsection}{\numberline {10.1.3}Materiales}{77}{subsection.10.1.3}%
-\contentsline {section}{\numberline {10.2}Consideraciones Personales}{77}{section.10.2}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{79}{chapter.11}%
-\contentsline {chapter}{Glosario}{86}{appendix*.78}%
-\contentsline {chapter}{Indice de figuras}{88}{appendix*.79}%
-\contentsline {chapter}{Bibliografía}{91}{appendix*.80}%
+\contentsline {subsubsection}{Soldadura de los componentes de la PCB}{73}{section*.77}%
+\contentsline {subsubsection}{atornillado de los estabilizadores}{74}{section*.78}%
+\contentsline {subsubsection}{Programación del microcontrolador}{74}{section*.79}%
+\contentsline {subsubsection}{Difusor \glsdisp {LED}{\MakeTextLowercase []{LED}}s}{75}{section*.80}%
+\contentsline {subsubsection}{Soldadura de cables para \gls {USB}}{75}{section*.81}%
+\contentsline {subsubsection}{Conector XS-12}{75}{section*.82}%
+\contentsline {subsubsection}{Tornillos}{75}{section*.83}%
+\contentsline {subsubsection}{\gls {Keycaps}}{76}{section*.84}%
+\contentsline {section}{\numberline {8.2}Versiones}{76}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}V1: Correcciones}{76}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}V2: Correcciones}{76}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}V3: Modificaciones}{77}{subsection.8.2.3}%
+\contentsline {chapter}{\numberline {9}Validación}{79}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Pruebas Eléctricas}{79}{section.9.1}%
+\contentsline {subsubsection}{Prueba de Continuidad}{79}{section*.85}%
+\contentsline {subsubsection}{Prueba de Resistencia}{79}{section*.86}%
+\contentsline {subsubsection}{Prueba de Corriente y Voltaje}{80}{section*.87}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{80}{section*.88}%
+\contentsline {subsubsection}{Prueba de Comunicación USB}{80}{section*.89}%
+\contentsline {subsubsection}{Prueba de Interferencias Electromagnéticas}{80}{section*.90}%
+\contentsline {section}{\numberline {9.2}Pruebas en \gls {Windows}}{80}{section.9.2}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de las Teclas}{81}{section*.91}%
+\contentsline {subsubsection}{Prueba de Comunicación USB}{81}{section*.92}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{81}{section*.93}%
+\contentsline {section}{\numberline {9.3}Pruebas en \gls {Linux}}{81}{section.9.3}%
+\contentsline {subsubsection}{Prueba de Reconocimiento del Teclado}{81}{section*.94}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de las Teclas}{81}{section*.95}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{82}{section*.96}%
+\contentsline {chapter}{\numberline {10}Mejoras}{85}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Posibles mejoras}{85}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Software}{85}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Hardware}{86}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Materiales}{86}{subsection.10.1.3}%
+\contentsline {section}{\numberline {10.2}Consideraciones Personales}{87}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{89}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Trabajo futuro}{90}{section.11.1}%
+\contentsline {chapter}{Glosario}{96}{appendix*.98}%
+\contentsline {chapter}{Indice de figuras}{98}{appendix*.99}%
+\contentsline {chapter}{Bibliografía}{102}{appendix*.100}%
