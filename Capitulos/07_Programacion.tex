@@ -1,6 +1,59 @@
 \chapter{Programación}
 
+El software de la placa ha sido desarrollado durante el transcurso de este proyecto. Se ha usado el lenguaje de programación C y el entorno de desarrollo PlatformIO. A continuación se detallarán los aspectos más importantes de la programación de la placa, diseños de las funciones y estructura del código. Estructura general de la máquina de estados y las funciones de cada uno de los estados.
+
+También se detallará la estructura de la memoria flash de la placa, donde se guardan los datos de configuración y los datos de la batería.
+
+Se explicará porque se han tomado ciertas decisiones de diseño del microcontrolador y como se han implementado.
+
 \section{Plataforma}
+Como se decidió en el capítulo de diseño \ref{CapDiseño} en la sección \ref{DiseñoPlatformIO}. Se ha usado PlatformIO como entorno de desarrollo. PlatformIO es un entorno de desarrollo que permite programar en varios lenguajes de programación y para varios microcontroladores. En este caso se ha usado para programar en C para el microcontrolador ESP32.
+
+En PlatformIO vamos a comenzar configurando el proyecto. Para que automáticamente se configure el proyecto con las librerías necesarias y el microcontrolador correcto. Para ello vamos a crear un nuevo proyecto en PlatformIO y seleccionamos el microcontrolador ESP32.
+
+Después vamos a crear el archivo platformio.ini en la raíz del proyecto. En este archivo vamos a configurar el microcontrolador y las librerías necesarias para el proyecto. En este caso vamos a usar las librerías de Adafruit NeoPixel, NimBLE-Arduino y TFT\_eSPI. Estas librerías se pueden instalar desde el gestor de librerías de PlatformIO. Para ello basta con añadir las librerías al archivo platformio.ini. En este caso se han añadido las librerías en el archivo platformio.ini como se muestra en el código \ref{code:ConfiguracionPlaftformIO}.
+
+\begin{itemize}
+\item Adafruit NeoPixel
+\item NimBLE-Arduino
+\item TFT\_eSPI
+\end{itemize}
+\label{LibreriasPlatformIO}
+
+Hay algunas recomendaciones en el uso de PlatformIO. Para la ESP32S3, en concreto para la placa de desarrollo ESP32-S3-DevKitC-1. Se recomienda usar un filtro de monitor serié para poder ver los mensajes que envía la placa sin información adicional y que no sea relevante. Para ello se puede usar el siguiente filtro:
+
+\begin{lstlisting}[style=console, language=bash, caption={Filtro recomendado de PlatformIO}, label={code:FiltroEspecial}]
+monitor_filters = esp32_exception_decoder
+\end{lstlisting}
+
+El archivo de configuración platformio.ini será el descrito en el código \ref{code:ConfiguracionPlaftformIO}, donde se configura el microcontrolador, las librerías y algunas opciones de compilación y entorno. Con este fragmento el proyecto se configurará automáticamente con las librerías necesarias y el microcontrolador correcto. Dejando el proyecto listo para programar.
+
+\begin{lstlisting}[style=console, language=bash, caption={Configuracion PlatformIO}, label={code:ConfiguracionPlaftformIO}]
+    [env:esp32-s3-devkitc-1]
+    platform = espressif32
+    board = esp32-s3-devkitc-1
+    framework = arduino
+    board_build.f_flash = 80000000L
+    board_build.flash_mode = qio
+    board_build.flash_size = 16MB
+    board_build.usb_cdc = 1
+    upload_speed = 921600
+    monitor_speed = 115200
+    board_name = ModernWood
+    board_upload.vid = 0x2001
+    board_upload.pid = 0x1111
+    lib_deps = 
+        adafruit/Adafruit NeoPixel@^1.11.0
+        h2zero/NimBLE-Arduino@^1.4.1
+        bodmer/TFT_eSPI@^2.5.30
+    build_flags =
+        -I modules/include
+        -I include
+    build_src_filter = +<*> +<../modules/src/*>
+    monitor_filters = esp32_exception_decoder
+    check_skip_packages = yes
+\end{lstlisting}
+
 \subsection{Librerías}
 \subsection{Compilación y entorno}
 

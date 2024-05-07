@@ -164,6 +164,37 @@ Telecomunicación\xspace}
 \newcommand{\bigrule}{\titlerule[0.5mm]}
 
 
+%CUSTOM CONSOLE STYLE
+\usepackage{xcolor}
+
+% Definir colores personalizados
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95} % Cambiado a un gris claro
+
+% Configuración de listings para código de consola
+\lstdefinestyle{console}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codegray},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegray},
+    basicstyle=\footnotesize\ttfamily,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=none,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    moredelim=[is][\textcolor{codepurple}]{|}{|},
+}
+
 %Para conseguir que en las páginas en blanco no ponga cabecerass
 \makeatletter
 \def\clearpage{%

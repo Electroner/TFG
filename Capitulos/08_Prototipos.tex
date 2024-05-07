@@ -2,6 +2,21 @@
 
 Durante el desarrollo del proyecto se han realizado varios prototipos para probar las diferentes funcionalidades del sistema. En este capítulo se describen los prototipos realizados y las pruebas realizadas. Se ha usado la placa de desarrollo ESP32S3-DevKitC-1 para realizar los prototipos en una protoboard junto con un multiplexor DIP en vez de SMD para facilitar la conexión de los cables. Durante el desarrollo de los prototipos se ha empleado solo un pequeño porcentaje de las teclas del producto final. Solo se han usado las teclas para controlar la pantalla y 3 teclas extra de funcionalidad, una letra, el shift y el espacio.
 
+
+\section{Versiones}
+Durante el desarrollo del proyecto se han realizado varias versiones de los prototipos. En este apartado se describen las diferentes versiones de los prototipos realizados.
+
+\subsection{V1: Correcciones}
+La primera de todas las versiones no contemplaba protocolo \glsnocase{Bluetooth} y tampoco poseía la pantalla \gls{OLED}. Se realizó para probar el funcionamiento de los interruptores y la \gls{PCB}. Se usó un microcontrolador Atmega32U4 y un multiplexor DIP para facilitar la soldadura.
+
+Principalmente, este prototipo fue para probar las dimensiones de la \gls{PCB} y la disposición de los interruptores. Además de la ergonomía del teclado. Esta primera versión se llama Tesseract \cite{Tesseract}.
+
+\subsection{V2: Correcciones}
+Esta versión fue una modificación del teclado Tesseract \cite{Tesseract} para cambiar la ergonomía, ya que era muy tosco y no era cómodo de usar. Se cambió la disposición del puerto \gls{USB}, ya que la primera versión usaba un \gls{USB} B y la nueva versión usa un \gls{USB} A.
+
+\subsection{V3: Modificaciones}
+Tras las ultimas dos versiones se decidió ampliar la funcionalidad creando el nuevo modelo ModernWood. Este incluiría una pantalla \gls{OLED} y un protocolo \gls{Bluetooth} para poder usar el teclado con dispositivos móviles. Se cambió el microcontrolador a un ESP32S3. Se cambió el material de la carcasa a madera y se añadió un difusor para los \gls{LED}s. Se añadió una batería de litio para poder usar el teclado sin cables y se cambió el conector \gls{USB} a un conector XS-12 para que fuera todavía más robusto.
+
 \section{Montaje}
 Esta sección describe el montaje del teclado en completo detalle. Se usará como explicación para el producto final y para saber el orden y la manera de proceder para el montaje del teclado. Ya que está diseñado para ser ensamblado en unos pasos concretos.
 
@@ -57,17 +72,3 @@ Una vez colocados los espaciadores de 5 mm se colocará el protector de metacril
 
 \subsubsection{\gls{Keycaps}}
 Para colocar los \gls{Keycaps} en los interruptores se ha de colocar la tecla sobre el interruptor y presionar hasta que se mantenga sobre el interruptor. Se ha de tener cuidado con la fuerza ejercida para no romper el interruptor ni la \gls{PCB}.
-
-\section{Versiones}
-Durante el desarrollo del proyecto se han realizado varias versiones de los prototipos. En este apartado se describen las diferentes versiones de los prototipos realizados.
-
-\subsection{V1: Correcciones}
-La primera de todas las versiones no contemplaba protocolo \glsnocase{Bluetooth} y tampoco poseía la pantalla \gls{OLED}. Se realizó para probar el funcionamiento de los interruptores y la \gls{PCB}. Se usó un microcontrolador Atmega32U4 y un multiplexor DIP para facilitar la soldadura.
-
-Principalmente, este prototipo fue para probar las dimensiones de la \gls{PCB} y la disposición de los interruptores. Además de la ergonomía del teclado. Esta primera versión se llama Tesseract \cite{Tesseract}.
-
-\subsection{V2: Correcciones}
-Esta versión fue una modificación del teclado Tesseract \cite{Tesseract} para cambiar la ergonomía, ya que era muy tosco y no era cómodo de usar. Se cambió la disposición del puerto \gls{USB}, ya que la primera versión usaba un \gls{USB} B y la nueva versión usa un \gls{USB} A.
-
-\subsection{V3: Modificaciones}
-Tras las ultimas dos versiones se decidió ampliar la funcionalidad creando el nuevo modelo ModernWood. Este incluiría una pantalla \gls{OLED} y un protocolo \gls{Bluetooth} para poder usar el teclado con dispositivos móviles. Se cambió el microcontrolador a un ESP32S3. Se cambió el material de la carcasa a madera y se añadió un difusor para los \gls{LED}s. Se añadió una batería de litio para poder usar el teclado sin cables y se cambió el conector \gls{USB} a un conector XS-12 para que fuera todavía más robusto.
