@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  7 MAY 2024 21:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  8 MAY 2024 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -537,7 +537,7 @@ File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count336
 \AM@templatesizebox=\box71
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 235.
+Package hyperref Info: Option `colorlinks' set `true' on input line 237.
  (B:\Programas\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count337
@@ -548,27 +548,27 @@ LaTeX Info: Redefining \% on input line 13.
 )
 \openout1 = `TFG.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 241.
-LaTeX Font Info:    ... okay on input line 241.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
 \c@lstlisting=\count338
-LaTeX Info: Redefining \. on input line 241.
-LaTeX Info: Redefining \% on input line 241.
+LaTeX Info: Redefining \. on input line 243.
+LaTeX Info: Redefining \% on input line 243.
  (B:\Programas\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count339
@@ -588,7 +588,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (B:\Programas\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 241.
+Package hyperref Info: Link coloring ON on input line 243.
  (TFG.out) (TFG.out)
 \@outlinefile=\write3
 \openout3 = `TFG.out'.
@@ -1637,38 +1637,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [91])
 No file TFG.gls.
 Using TeX to sort glossary entries---this may take a while
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
 [92] [93
 
 
 ]
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
  [94]
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
  [95]
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
  [96]
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
  [97]
-LaTeX Info: Redefining \. on input line 275.
-LaTeX Info: Redefining \% on input line 275.
-LaTeX Info: Redefining \. on input line 275.
-LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 277.
+LaTeX Info: Redefining \% on input line 277.
+LaTeX Info: Redefining \. on input line 277.
+LaTeX Info: Redefining \% on input line 277.
  [98] (TFG.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1877,10 +1877,10 @@ LaTeX Info: Redefining \% on input line 233.
 LaTeX Info: Redefining \. on input line 233.
 LaTeX Info: Redefining \% on input line 233.
 [103])
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
  [104] [105
 
 ] (TFG.aux
@@ -1903,7 +1903,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  94i,17n,102p,2383b,1321s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Clm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feybr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on TFG.pdf (121 pages, 6674135 bytes).
+Output written on TFG.pdf (121 pages, 6674136 bytes).
 PDF statistics:
  2173 PDF objects out of 2487 (max. 8388607)
  447 named destinations out of 1000 (max. 500000)
