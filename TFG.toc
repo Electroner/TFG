@@ -48,121 +48,165 @@
 \contentsline {subsection}{\numberline {3.4.1}Layout}{29}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Componentes Electrónicos}{30}{subsection.3.4.2}%
 \contentsline {subsubsection}{Microcontrolador}{30}{section*.31}%
-\contentsline {subsubsection}{Atmega32u4}{31}{section*.32}%
-\contentsline {subsubsection}{STM32F103C8T6}{31}{section*.33}%
-\contentsline {subsubsection}{Nrf52840}{32}{section*.34}%
-\contentsline {subsubsection}{ESP32S3}{32}{section*.35}%
-\contentsline {subsubsection}{Sistema de Batería}{33}{section*.36}%
-\contentsline {subsubsection}{Sistema de Pantalla}{34}{section*.37}%
-\contentsline {subsubsection}{\gls {TFT} 0.96"}{34}{section*.38}%
-\contentsline {subsubsection}{OLED 0.96"}{34}{section*.39}%
-\contentsline {subsubsection}{Sistema de \glsdisp {Polling}{\MakeTextLowercase []{Polling}}}{35}{section*.40}%
-\contentsline {subsubsection}{Conexión \gls {USB}}{36}{section*.41}%
-\contentsline {subsubsection}{Sistema de \gls {LED}S}{37}{section*.42}%
-\contentsline {subsection}{\numberline {3.4.3}Materiales}{38}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Partes del teclado}{38}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Elección de Software}{39}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Entorno de desarrollo}{39}{subsection.3.5.1}%
-\contentsline {subsubsection}{Arduino IDE}{39}{section*.43}%
-\contentsline {subsubsection}{PlatformIO}{39}{section*.44}%
-\contentsline {subsubsection}{Espressif ESP-IDF}{40}{section*.45}%
-\contentsline {subsubsection}{Elección final}{40}{section*.46}%
-\contentsline {subsection}{\numberline {3.5.2}Librerías}{41}{subsection.3.5.2}%
+\contentsline {subsubsection}{Atmega32u4}{32}{section*.32}%
+\contentsline {subsubsection}{STM32F103C8T6}{32}{section*.33}%
+\contentsline {subsubsection}{Nrf52840}{33}{section*.34}%
+\contentsline {subsubsection}{ESP32S3}{33}{section*.35}%
+\contentsline {subsubsection}{Sistema de Batería}{34}{section*.36}%
+\contentsline {subsubsection}{Sistema de Pantalla}{35}{section*.37}%
+\contentsline {subsubsection}{\gls {TFT} 0.96"}{35}{section*.38}%
+\contentsline {subsubsection}{OLED 0.96"}{35}{section*.39}%
+\contentsline {subsubsection}{Sistema de \glsdisp {Polling}{\MakeTextLowercase []{Polling}}}{36}{section*.40}%
+\contentsline {subsubsection}{Conexión \gls {USB}}{37}{section*.41}%
+\contentsline {subsubsection}{Sistema de \gls {LED}S}{38}{section*.42}%
+\contentsline {subsection}{\numberline {3.4.3}Materiales}{39}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Partes del teclado}{39}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Elección de Software}{40}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Entorno de desarrollo}{40}{subsection.3.5.1}%
+\contentsline {subsubsection}{Arduino IDE}{40}{section*.43}%
+\contentsline {subsubsection}{PlatformIO}{40}{section*.44}%
+\contentsline {subsubsection}{Espressif ESP-IDF}{41}{section*.45}%
+\contentsline {subsubsection}{Elección final}{41}{section*.46}%
+\contentsline {subsection}{\numberline {3.5.2}Librerías}{42}{subsection.3.5.2}%
 \contentsline {section}{\numberline {3.6}Presupuesto}{42}{section.3.6}%
-\contentsline {subsubsection}{Componentes Electrónicos}{42}{section*.47}%
-\contentsline {subsubsection}{Componentes de Montaje}{43}{section*.48}%
-\contentsline {subsubsection}{Servicios y Herramientas}{44}{section*.49}%
-\contentsline {subsubsection}{Total Presupuesto Unidad}{44}{section*.50}%
-\contentsline {chapter}{\numberline {4}Circuitos}{45}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Búsqueda de componentes}{45}{section.4.1}%
-\contentsline {subsubsection}{\gls {Multiplexor}}{45}{section*.51}%
-\contentsline {subsubsection}{Condensador}{45}{section*.52}%
-\contentsline {subsubsection}{Resistencia}{46}{section*.53}%
-\contentsline {subsubsection}{TP4056}{46}{section*.54}%
-\contentsline {subsubsection}{DW01A}{46}{section*.55}%
-\contentsline {subsubsection}{ME6211C33}{46}{section*.56}%
-\contentsline {subsubsection}{FS8205A}{46}{section*.57}%
-\contentsline {subsubsection}{ESp32S3}{46}{section*.58}%
-\contentsline {subsubsection}{\gls {LED}S}{46}{section*.59}%
-\contentsline {subsubsection}{Diodos}{47}{section*.60}%
-\contentsline {subsubsection}{Interruptores}{47}{section*.61}%
-\contentsline {subsection}{\numberline {4.1.1}Creación de componentes}{48}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Diseño Esquemático}{49}{section.4.2}%
-\contentsline {subsubsection}{Matriz del Teclado}{49}{section*.62}%
-\contentsline {subsubsection}{\gls {Multiplexor}}{50}{section*.63}%
-\contentsline {subsubsection}{Controlador Principal}{51}{section*.64}%
-\contentsline {subsubsection}{Bateria y alimentación}{52}{section*.65}%
-\contentsline {subsubsection}{\gls {LED}S}{53}{section*.66}%
-\contentsline {subsubsection}{Conectores para el teclado}{53}{section*.67}%
-\contentsline {chapter}{\numberline {5}PCB}{55}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Diseño físico}{55}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Diseño de la distribución}{56}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Medidas Físicas}{56}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Creación de la placa en Eagle}{58}{subsection.5.1.3}%
-\contentsline {subsubsection}{Consideraciones de potencia y diseño}{60}{section*.68}%
-\contentsline {subsubsection}{Enrutamiento}{61}{section*.69}%
-\contentsline {subsubsection}{Estética}{63}{section*.70}%
-\contentsline {chapter}{\numberline {6}Carcasa}{65}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Diseño físico}{65}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Medidas Físicas}{66}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Ergonomía}{67}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Fabricación}{68}{section.6.2}%
-\contentsline {subsubsection}{Preparación de materiales}{68}{section*.71}%
-\contentsline {subsubsection}{Programación de la máquina CNC}{68}{section*.72}%
-\contentsline {subsubsection}{Fresado de la carcasa}{68}{section*.73}%
-\contentsline {subsubsection}{Corte con ángulo y lijado}{68}{section*.74}%
-\contentsline {subsubsection}{Atornillado}{69}{section*.75}%
-\contentsline {subsubsection}{Acabado final}{69}{section*.76}%
-\contentsline {chapter}{\numberline {7}Programación}{71}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Plataforma}{71}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Librerías}{73}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Compilación y entorno}{73}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Interfaz}{73}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Menú}{73}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}Funcionalidad}{73}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Conectividad}{73}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Leds}{73}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Macros}{73}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Batería}{73}{subsection.7.3.4}%
-\contentsline {section}{\numberline {7.4}Boot}{73}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Prototipos}{75}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Versiones}{75}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}V1: Correcciones}{75}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}V2: Correcciones}{76}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}V3: Modificaciones}{76}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Montaje}{76}{section.8.2}%
-\contentsline {subsubsection}{Soldadura de los componentes de la PCB}{76}{section*.77}%
-\contentsline {subsubsection}{atornillado de los estabilizadores}{77}{section*.78}%
-\contentsline {subsubsection}{Programación del microcontrolador}{77}{section*.79}%
-\contentsline {subsubsection}{Difusor \glsdisp {LED}{\MakeTextLowercase []{LED}}s}{78}{section*.80}%
-\contentsline {subsubsection}{Soldadura de cables para \gls {USB}}{78}{section*.81}%
-\contentsline {subsubsection}{Conector XS-12}{78}{section*.82}%
-\contentsline {subsubsection}{Tornillos}{78}{section*.83}%
-\contentsline {subsubsection}{\gls {Keycaps}}{79}{section*.84}%
-\contentsline {chapter}{\numberline {9}Validación}{81}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Pruebas Eléctricas}{81}{section.9.1}%
-\contentsline {subsubsection}{Prueba de Continuidad}{81}{section*.85}%
-\contentsline {subsubsection}{Prueba de Resistencia}{81}{section*.86}%
-\contentsline {subsubsection}{Prueba de Corriente y Voltaje}{82}{section*.87}%
-\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{82}{section*.88}%
-\contentsline {subsubsection}{Prueba de Comunicación USB}{82}{section*.89}%
-\contentsline {subsubsection}{Prueba de Interferencias Electromagnéticas}{82}{section*.90}%
-\contentsline {section}{\numberline {9.2}Pruebas en \gls {Windows}}{82}{section.9.2}%
-\contentsline {subsubsection}{Prueba de Funcionamiento de las Teclas}{83}{section*.91}%
-\contentsline {subsubsection}{Prueba de Comunicación USB}{83}{section*.92}%
-\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{83}{section*.93}%
-\contentsline {section}{\numberline {9.3}Pruebas en \gls {Linux}}{83}{section.9.3}%
-\contentsline {subsubsection}{Prueba de Reconocimiento del Teclado}{83}{section*.94}%
-\contentsline {subsubsection}{Prueba de Funcionamiento de las Teclas}{83}{section*.95}%
-\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{84}{section*.96}%
-\contentsline {chapter}{\numberline {10}Mejoras}{87}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Posibles mejoras}{87}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}Software}{87}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Hardware}{88}{subsection.10.1.2}%
-\contentsline {subsection}{\numberline {10.1.3}Materiales}{88}{subsection.10.1.3}%
-\contentsline {section}{\numberline {10.2}Consideraciones Personales}{89}{section.10.2}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{91}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Trabajo futuro}{92}{section.11.1}%
-\contentsline {chapter}{Glosario}{98}{appendix*.98}%
-\contentsline {chapter}{Indice de figuras}{100}{appendix*.99}%
-\contentsline {chapter}{Bibliografía}{104}{appendix*.100}%
+\contentsline {subsubsection}{Componentes Electrónicos}{43}{section*.47}%
+\contentsline {subsubsection}{Componentes de Montaje}{44}{section*.48}%
+\contentsline {subsubsection}{Servicios y Herramientas}{45}{section*.49}%
+\contentsline {subsubsection}{Total Presupuesto Unidad}{45}{section*.50}%
+\contentsline {chapter}{\numberline {4}Circuitos}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Búsqueda de componentes}{47}{section.4.1}%
+\contentsline {subsubsection}{\gls {Multiplexor}}{47}{section*.51}%
+\contentsline {subsubsection}{Condensador}{47}{section*.52}%
+\contentsline {subsubsection}{Resistencia}{48}{section*.53}%
+\contentsline {subsubsection}{TP4056}{48}{section*.54}%
+\contentsline {subsubsection}{DW01A}{48}{section*.55}%
+\contentsline {subsubsection}{ME6211C33}{48}{section*.56}%
+\contentsline {subsubsection}{FS8205A}{48}{section*.57}%
+\contentsline {subsubsection}{ESp32S3}{48}{section*.58}%
+\contentsline {subsubsection}{\gls {LED}S}{48}{section*.59}%
+\contentsline {subsubsection}{Diodos}{49}{section*.60}%
+\contentsline {subsubsection}{Interruptores}{49}{section*.61}%
+\contentsline {subsection}{\numberline {4.1.1}Creación de componentes}{50}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Diseño Esquemático}{51}{section.4.2}%
+\contentsline {subsubsection}{Matriz del Teclado}{51}{section*.62}%
+\contentsline {subsubsection}{\gls {Multiplexor}}{52}{section*.63}%
+\contentsline {subsubsection}{Controlador Principal}{53}{section*.64}%
+\contentsline {subsubsection}{Bateria y alimentación}{54}{section*.65}%
+\contentsline {subsubsection}{\gls {LED}S}{55}{section*.66}%
+\contentsline {subsubsection}{Conectores para el teclado}{55}{section*.67}%
+\contentsline {chapter}{\numberline {5}PCB}{57}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diseño físico}{57}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Diseño de la distribución}{58}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Medidas Físicas}{58}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Creación de la placa en Eagle}{60}{subsection.5.1.3}%
+\contentsline {subsubsection}{Consideraciones de potencia y diseño}{62}{section*.68}%
+\contentsline {subsubsection}{Enrutamiento}{63}{section*.69}%
+\contentsline {subsubsection}{Estética}{65}{section*.70}%
+\contentsline {chapter}{\numberline {6}Carcasa}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Diseño físico}{67}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Medidas Físicas}{68}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Ergonomía}{69}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Fabricación}{70}{section.6.2}%
+\contentsline {subsubsection}{Preparación de materiales}{70}{section*.71}%
+\contentsline {subsubsection}{Programación de la máquina CNC}{70}{section*.72}%
+\contentsline {subsubsection}{Fresado de la carcasa}{70}{section*.73}%
+\contentsline {subsubsection}{Corte con ángulo y lijado}{70}{section*.74}%
+\contentsline {subsubsection}{Atornillado}{71}{section*.75}%
+\contentsline {subsubsection}{Acabado final}{71}{section*.76}%
+\contentsline {chapter}{\numberline {7}Programación}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Plataforma}{73}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Librerías}{75}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Compilación y entorno}{75}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Interfaz}{75}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Menú}{75}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Funcionalidad}{75}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Conectividad}{75}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Leds}{75}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Macros}{75}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Batería}{75}{subsection.7.3.4}%
+\contentsline {section}{\numberline {7.4}Boot}{75}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Prototipos}{77}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Versiones}{77}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}V1: Correcciones}{77}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}V2: Correcciones}{78}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}V3: Modificaciones}{78}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Montaje}{78}{section.8.2}%
+\contentsline {subsubsection}{Soldadura de los componentes de la PCB}{78}{section*.77}%
+\contentsline {subsubsection}{atornillado de los estabilizadores}{79}{section*.78}%
+\contentsline {subsubsection}{Programación del microcontrolador}{79}{section*.79}%
+\contentsline {subsubsection}{Difusor \glsdisp {LED}{\MakeTextLowercase []{LED}}s}{80}{section*.80}%
+\contentsline {subsubsection}{Soldadura de cables para \gls {USB}}{80}{section*.81}%
+\contentsline {subsubsection}{Conector XS-12}{80}{section*.82}%
+\contentsline {subsubsection}{Tornillos}{80}{section*.83}%
+\contentsline {subsubsection}{\gls {Keycaps}}{81}{section*.84}%
+\contentsline {chapter}{\numberline {9}Validación}{83}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Pruebas Eléctricas}{83}{section.9.1}%
+\contentsline {subsubsection}{Prueba de Continuidad}{83}{section*.85}%
+\contentsline {subsubsection}{Prueba de Resistencia}{83}{section*.86}%
+\contentsline {subsubsection}{Prueba de Corriente y Voltaje}{84}{section*.87}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{84}{section*.88}%
+\contentsline {subsubsection}{Prueba de Comunicación USB}{84}{section*.89}%
+\contentsline {subsubsection}{Prueba de Interferencias Electromagnéticas}{84}{section*.90}%
+\contentsline {section}{\numberline {9.2}Pruebas en \gls {Windows}}{84}{section.9.2}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de las Teclas}{85}{section*.91}%
+\contentsline {subsubsection}{Prueba de Comunicación USB}{85}{section*.92}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{85}{section*.93}%
+\contentsline {section}{\numberline {9.3}Pruebas en \gls {Linux}}{85}{section.9.3}%
+\contentsline {subsubsection}{Prueba de Reconocimiento del Teclado}{85}{section*.94}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de las Teclas}{85}{section*.95}%
+\contentsline {subsubsection}{Prueba de Funcionamiento de los \gls {LED}}{86}{section*.96}%
+\contentsline {chapter}{\numberline {10}Mejoras}{89}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Posibles mejoras}{89}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Software}{89}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Hardware}{90}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Materiales}{90}{subsection.10.1.3}%
+\contentsline {section}{\numberline {10.2}Consideraciones Personales}{91}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{93}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Trabajo futuro}{94}{section.11.1}%
+\contentsline {chapter}{\numberline {12}Viabilidad Comercial}{95}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Analisis del proyecto}{96}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Estudios de mercado}{96}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Características del mercado}{96}{subsection.12.2.1}%
+\contentsline {subsubsection}{Tipo de mercado a intervenir}{96}{section*.97}%
+\contentsline {subsubsection}{Ambito geográfico}{96}{section*.98}%
+\contentsline {subsubsection}{Evolución del mercado}{96}{section*.99}%
+\contentsline {subsubsection}{Fase del mercado}{96}{section*.100}%
+\contentsline {subsubsection}{Clientes}{96}{section*.101}%
+\contentsline {subsubsection}{Proveedores}{96}{section*.102}%
+\contentsline {subsubsection}{Previsiones futuras}{96}{section*.103}%
+\contentsline {subsection}{\numberline {12.2.2}Analisis FODA}{96}{subsection.12.2.2}%
+\contentsline {subsubsection}{Fortalezas}{96}{section*.104}%
+\contentsline {subsubsection}{Oportunidades}{96}{section*.105}%
+\contentsline {subsubsection}{Debilidades}{96}{section*.106}%
+\contentsline {subsubsection}{Amenazas}{96}{section*.107}%
+\contentsline {section}{\numberline {12.3}Costos, legal, marketing}{96}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Costos}{96}{subsection.12.3.1}%
+\contentsline {subsubsection}{Costos de producción}{96}{section*.108}%
+\contentsline {subsubsection}{Costos de comercialización}{96}{section*.109}%
+\contentsline {subsubsection}{Costos de administración}{96}{section*.110}%
+\contentsline {subsubsection}{Costos de financiamiento}{96}{section*.111}%
+\contentsline {subsubsection}{Costos de impuestos}{96}{section*.112}%
+\contentsline {subsection}{\numberline {12.3.2}Aspectos legales}{96}{subsection.12.3.2}%
+\contentsline {subsubsection}{Registro de la empresa}{96}{section*.113}%
+\contentsline {subsubsection}{Registro de la marca}{96}{section*.114}%
+\contentsline {subsubsection}{Registro de la patente}{96}{section*.115}%
+\contentsline {subsubsection}{Registro de derechos de autor}{96}{section*.116}%
+\contentsline {subsubsection}{Registro de licencias}{96}{section*.117}%
+\contentsline {subsection}{\numberline {12.3.3}Marketing}{96}{subsection.12.3.3}%
+\contentsline {subsubsection}{Estrategias de marketing}{96}{section*.118}%
+\contentsline {subsubsection}{Publicidad}{96}{section*.119}%
+\contentsline {subsubsection}{Promoción}{96}{section*.120}%
+\contentsline {subsubsection}{Distribución}{96}{section*.121}%
+\contentsline {subsubsection}{Ventas}{96}{section*.122}%
+\contentsline {subsubsection}{Alianzas estratégicas}{96}{section*.123}%
+\contentsline {chapter}{\numberline {13}Apéndice}{97}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Circuitos}{97}{section.13.1}%
+\contentsline {section}{\numberline {13.2}\gls {PCB}}{97}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Carcasa}{97}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Programación}{97}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Pruebas}{97}{section.13.5}%
+\contentsline {section}{\numberline {13.6}Ensamblaje}{97}{section.13.6}%
+\contentsline {section}{\numberline {13.7}Documentación}{97}{section.13.7}%
+\contentsline {chapter}{Glosario}{104}{appendix*.125}%
+\contentsline {chapter}{Indice de figuras}{106}{appendix*.126}%
+\contentsline {chapter}{Bibliografía}{110}{appendix*.127}%
