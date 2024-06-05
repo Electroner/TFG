@@ -546,7 +546,7 @@ En resumen, el Espressif ESP-IDF es un framework de desarrollo de software poten
 
 Dado todo lo anterior y que nuestro proyecto no va a requerir un código muy complejo y un control de muy bajo nivel sobre el microcontrolador, vamos a elegir \textbf{PlatformIO} que nos permitirá tener un proyecto grande compuesto de múltiples archivos y nos dará la suficiente libertad sin tener que invertir muchos recursos aprendiendo a usar ESP-IDF. Aun asi instalaremos ESP-IDF para compilar el código, ya que el compilador específico genera un mejor código.
 \newpage
-\subsection{Librerías}
+\subsection{Librerías} \label{DiseñoLibrerias}
 En el apartado Hardware se han listado varios componentes que van a necesitar comunicarse con el Microcontrolador ESP32S3, entre ellos tenemos los \gls{LED}S, la pantalla \gls{TFT} 0.96". Pero también sera necesario activar y poder usar el \glsnocase{Bluetooth} como elemento \gls{HID}. Por lo que haciendo el recuento tenemos que buscar estas 3 librerías que nos permitan hacer uso de estos dispositivos.
 \begin{itemize}
     \item \gls{LED}S\\

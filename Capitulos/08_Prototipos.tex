@@ -17,12 +17,18 @@ Esta versión fue una modificación del teclado Tesseract \cite{Tesseract} para 
 \subsection{V3: Modificaciones}
 Tras las ultimas dos versiones se decidió ampliar la funcionalidad creando el nuevo modelo ModernWood. Este incluiría una pantalla \gls{OLED} y un protocolo \gls{Bluetooth} para poder usar el teclado con dispositivos móviles. Se cambió el microcontrolador a un ESP32S3. Se cambió el material de la carcasa a madera y se añadió un difusor para los \gls{LED}s. Se añadió una batería de litio para poder usar el teclado sin cables y se cambió el conector \gls{USB} a un conector XS-12 para que fuera todavía más robusto.
 
+\section{Problemas y Errores} \label{Errores}
+En este apartado se describen los problemas y errores encontrados durante el desarrollo de los prototipos. Estos no han sido corregidos en las versiones de los prototipos, pero se han tenido en cuenta para el diseño del producto final.
+\subsection{Corriente inversa en el regulador de tensión} \label{CorrienteInversa}
+\subsection{Voltaje en la salida del regulador de tensión} \label{VoltajeRegulador}
+
+\newpage
 \section{Montaje}
 Esta sección describe el montaje del teclado en completo detalle. Se usará como explicación para el producto final y para saber el orden y la manera de proceder para el montaje del teclado. Ya que está diseñado para ser ensamblado en unos pasos concretos.
 
 \subsubsection{Soldadura de los componentes de la PCB}
 El primer paso es soldar los componentes de la PCB. Se debe soldar los componentes de menor tamaño primero y los de mayor tamaño después. Se debe tener cuidado con la polaridad de los componentes y con la temperatura de la soldadura para no dañar los componentes, esta debe de ser 250 °C para la pasta de soldadura y 300 °C para el soldador manual. Se debe soldar los componentes en el siguiente orden:
-\newpage
+
 \begin{enumerate}
     \item Resistencias
     \item Condensadores
