@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Planificación del proyecto con diagrama Gantt.}}{16}{figure.2.1}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Estructura física de un teclado \cite {TearDownImageSource}}}{17}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Keycaps \cite {KeycapsImageSource}}}{18}{figure.3.2}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \gls {Keycaps} \cite {KeycapsImageSource}}}{18}{figure.3.2}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Switches o Interruptores mecánicos \cite {SwitchesImageSource}}}{19}{figure.3.3}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Carcasa Superior \cite {TopCase2ImageSource}}}{20}{figure.3.4}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Carcasa Superior Reverso \cite {TopCase1ImageSource}}}{20}{figure.3.5}%
@@ -32,7 +32,7 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Microcontrolador principal ESP32S3 y tecla principal}}{53}{figure.4.4}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Sistema de alimentación y protección del teclado}}{54}{figure.4.5}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Sistema de \glsdisp {LED}{\MakeTextLowercase []{LED}}s del teclado}}{55}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Conector de programación y conector de la pantalla TFT}}{55}{figure.4.7}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Conector de programación y conector de la pantalla \gls {TFT}}}{55}{figure.4.7}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Esquema completo del circuito del teclado.}}{56}{figure.4.8}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Imagen del plano generado por la página web ''Plate \& Case Builder'' \cite {builder-swillkb}}}{58}{figure.5.1}%
@@ -55,7 +55,7 @@
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Imagen del modelo 3D de la carcasa del teclado.}}{69}{figure.6.3}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Imagen del modelo 3D Renderizado de la carcasa del teclado.}}{69}{figure.6.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Menú principal en la pantalla TFT LCD 0.96''}}{76}{figure.7.1}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Menú principal en la pantalla \gls {TFT} LCD 0.96''}}{77}{figure.7.1}%
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Diagrama de Flujo del bucle principal}}{81}{figure.7.2}%
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Diagrama de Flujo de la secuencia de cambio de modo de teclado}}{82}{figure.7.3}%
 \addvspace {10\p@ }

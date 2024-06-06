@@ -10,6 +10,10 @@ Estos diseños puede ser creados un mismo archivo de AutoCAD con las 3 vistas. A
 
 El orden del diseño va a ser el siguiente. Disposición de teclas, diseño de la \gls{PCB}, diseño de la carcasa. Una vez tenemos esto podemos crear la \gls{PCB} en el programa EAGLE. El resto de los planos serán de confirmación y para asegurarnos de que lo que estamos haciendo saldrá correctamente.
 
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!55!white, title=Nota]
+    Ver el apéndice \ref{ApendicePCB} para más información sobre el diseño los planos y las consideraciones tomadas. 
+\end{tcolorbox}
+
 \newpage
 \subsection{Diseño de la distribución} \label{CreacionPlanoDistribucion}
 
@@ -30,7 +34,7 @@ A partir del plano generado en la sección \ref{CreacionPlanoDistribucion} empez
 
 El primer paso es crear las dimensiones de la \gls{PCB}. Que en este caso van a ser el mínimo necesario para poder encajar todas las teclas y un borde de seguridad para que las \glsnocase{Keycaps} no toquen el borde de la madera.
 
-En la figura \ref{fig:PlanoSeparacionMadera} podemos ver en rojo el borde de la \gls{PCB} y la línea más próxima en negro la madera. Se ha dejado medio milímetro de margen para las máquinas CNC y de fabricación de \gls{PCB}. Los marcadores de los interruptores generados por el software de la sección \ref{CreacionPlanoDistribucion} se ha dejado en verde.
+En la figura \ref{fig:PlanoSeparacionMadera} podemos ver en rojo el borde de la \gls{PCB} y la línea más próxima en negro la madera. Se ha dejado medio milímetro de margen para las máquinas \gls{CNC} y de fabricación de \gls{PCB}. Los marcadores de los interruptores generados por el software de la sección \ref{CreacionPlanoDistribucion} se ha dejado en verde.
 
 También para obtener el plano de la \gls{PCB} es necesario añadir los tornillos, ya que como se diseñó en la sección \ref{DiseñoPlatePCB} y se decidió que el montaje del teclado iba a ser sin \glsnocase{Plate} como en la figura \ref{fig:Montaje7}, la fuerza de las manos presionando las teclas va a ser transmitida directamente a la \gls{PCB}. Esta fuerza hará que se doble fácilmente por el material del que está fabricada, que es menos rígido que las \glsnocase{Plate} convencionales. Se van a necesitar varios tornillos distribuidos a lo largo de toda la \gls{PCB} para poder hacer un teclado robusto.
 
@@ -107,7 +111,7 @@ El primer valor va a ser el tamaño de la vía, para ello vamos a usar la págin
 
 Empecemos con el tamaño de la vía, los parámetros que nos pide son los siguientes.
 \begin{itemize}
-    \item \textbf{Intensidad}. Este valor para nosotros va a valer como máximo 0,5 Amperios, ya que es el máximo que el usb nos da.
+    \item \textbf{Intensidad}. Este valor para nosotros va a valer como máximo 0,5 Amperios, ya que es el máximo que el \gls{USB} nos da.
     \item \textbf{Grosor}. Este valor es un estándar, así que para nosotros es de 2 $\frac{oz}{ft^2}$.
     \item \textbf{Temperatura}, Incremento y ambiente. Nuestra temperatura ambiente será de 25ºC y el incremento le pondremos de otros 25.
     \item \textbf{Longitud de la pista}. La distancia. Aquí vamos a elegir la pista más larga en nuestro teclado que será de lado a lado de unos 50 cm.

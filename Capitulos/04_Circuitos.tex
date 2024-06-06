@@ -71,6 +71,10 @@ Para ello vamos a ir a Eagle e importaremos la librería de ESP32S3. Iremos a ed
 \section{Diseño Esquemático}
 Para el diseño esquemático se han importado todos los componentes a Eagle y se han creados distintas partes del sistema para posteriormente interconectarlas todas en el diseño final.
 
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!55!white, title=Nota]
+    Ver el apéndice \ref{ApendiceDiseñoEsquematico} para más información sobre el diseño esquemático y las consideraciones tomadas. 
+\end{tcolorbox}
+
 \subsubsection{Matriz del Teclado}
 En esta parte se ha seguido el ejemplo básico que podemos ver en la figura \ref{fig:EjemploArrayTeclado} en el apartado de diseño. Donde se opta por una configuración de filas y columnas con su respectivo diodo para evitar \gls{Ghosting}. En la fase de diseño se decidió que iba a ser una matriz de 16*6 teclas únicas, una tecla especial individual y 13 teclas repetidas. La matriz finalmente queda como se muestra en la figura \ref{fig:MatrizTeclas}.
 
@@ -105,7 +109,7 @@ Esta parte del circuito es el chip principal (ESP32S3) junto con los botones nec
 
 \newpage
 \subsubsection{Bateria y alimentación}
-Como este teclado tiene que soportar alimentación por batería a 4.2V, por USB a 5.0V y a 3.3V para el ESP32S3 es necesario un circuito que se encargue de estos voltajes, de proteger la batería y proteger todos los circuitos. Se puede ver el circuito encargado de esto en la figura \ref{fig:CircuitoBateriaAlimentacion}. Todo el diseño se ha hecho siguiendo el apartado \ref{InvestigacionSistemaBateria} y la figura \ref{fig:SchemeTP4056}.
+Como este teclado tiene que soportar alimentación por batería a 4.2V, por \gls{USB} a 5.0V y a 3.3V para el ESP32S3 es necesario un circuito que se encargue de estos voltajes, de proteger la batería y proteger todos los circuitos. Se puede ver el circuito encargado de esto en la figura \ref{fig:CircuitoBateriaAlimentacion}. Todo el diseño se ha hecho siguiendo el apartado \ref{InvestigacionSistemaBateria} y la figura \ref{fig:SchemeTP4056}.
 
 \begin{figure}[H]
     \centering
@@ -135,7 +139,7 @@ En el apartado de diseño \ref{DiseñoPantalla} aparecen los conectores que nece
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{imagenes/Capitulos/Cap04/Conectores.png}
-    \caption{Conector de programación y conector de la pantalla TFT}
+    \caption{Conector de programación y conector de la pantalla \gls{TFT}}
     \label{fig:CircuitoConectores}
 \end{figure}
 

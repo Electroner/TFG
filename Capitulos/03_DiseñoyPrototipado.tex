@@ -20,7 +20,7 @@ Los \glsnocase{Keycaps} son las tapas individuales que cubren las teclas en un t
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{imagenes/Capitulos/Cap03/Keycaps.png}
-    \caption{Keycaps \cite{KeycapsImageSource}}
+    \caption{\gls{Keycaps} \cite{KeycapsImageSource}}
     \label{fig:Keycaps}
 \end{figure}
 
@@ -185,7 +185,7 @@ Aquí vamos a contemplar las diferentes opciones que tenemos a la hora de hacer 
 \item \gls{ISO} \\ La distribución será la \gls{ISO}, ya que mi idioma principal es el castellano.
 \item 100\% o 105 \\ El teclado quiero que tenga todas las teclas que puede tener un teclado convencional, incluyendo el teclado numérico y teclas de función. En este caso, al ser \gls{ISO} la cantidad de teclas para llegar al 100\% son 105.
 \item \gls{Bluetooth} \\ Conectividad inalámbrica.
-\item Conectividad por cable \\ Para poder usar el teclado en un modo de baja latencia.
+\item Conectividad por cable \\ Para poder usar el teclado en un modo de baja \glsnocase{Latencia}.
 \item Interruptores Mecánicos. \\ Para asegurar todo tipo de sensaciones a la hora de escribir. En mi caso Interruptores lineales.
 \end{itemize}
 
@@ -200,7 +200,7 @@ Vamos a empezar por las herramientas de diseño, la primera de todas la que hemo
     Existen varias opciones disponibles en el mercado para el diseño de \gls{PCB}. Algunas de las más populares son Altium Designer, KiCad, Eagle. Todos ellos son bastante parecidos en cuanto a las funcionalidades que se van a usar para el proyecto. Como se ha mencionado con las herramientas para los planos, también tenemos de pago y de software libre. Realmente aquí se ha escogido la herramienta por su conocimiento previo gracias a materias del grado como Diseño de Circuitos Impresos, donde se trabajó con Eagle. Por lo que el teclado está realizado con la herramienta Eagle.
     
     \item Editor de Texto/Programación \\
-    Aquí disponemos de muchas opciones, entre las más famosas tenemos VSCode, Vim, \gls{Arduino} Editor (Si se usa Arduino) o Sublime. Por conveniencia y uso a lo largo del tiempo, se va a usar VSCode, ya que se dispone del framework \gls{PlatformIO}, que es el que se va a usar a posteriori para programar nuestro controlador y diseñar el programa/firmware.
+    Aquí disponemos de muchas opciones, entre las más famosas tenemos VSCode, Vim, \gls{Arduino} Editor (Si se usa \gls{Arduino}) o Sublime. Por conveniencia y uso a lo largo del tiempo, se va a usar VSCode, ya que se dispone del framework \gls{PlatformIO}, que es el que se va a usar a posteriori para programar nuestro controlador y diseñar el programa/\glsnocase{Firmware}.
     
     \item Software 3D \\
     Aquí tenemos las opciones más sencillas de diseño 3D, FreeCAD y Fusion360. Como ambas permiten las mismas opciones, se ha elegido FreeCAD como software de edición 3D.
@@ -246,7 +246,7 @@ Cuanto más extendido sea el uso, más sencillo será lograr que funcione.
 A lo largo del periodo de investigación y diseño se han encontrado varias alternativas. Estas tienen que cumplir que tenga un hardware dedicado a la conectividad \gls{USB} llamado ''\gls{USB} OTG'' ya que se ideó así en la sección \ref{DiseñoConectividadCable}. Los principales y más destacables son:
 
 \begin{itemize}
-    \item \textbf{Atmega32u4}: Es un microcontrolador de la familia AVR de Atmel. Es ampliamente utilizado en proyectos de electrónica, especialmente en entornos Arduino. Ofrece una buena cantidad de recursos y es fácil de programar.
+    \item \textbf{Atmega32u4}: Es un microcontrolador de la familia AVR de Atmel. Es ampliamente utilizado en proyectos de electrónica, especialmente en entornos \gls{Arduino}. Ofrece una buena cantidad de recursos y es fácil de programar.
     
     \item \textbf{STM32F103C8T6}: Es un microcontrolador de la familia STM32 de STMicroelectronics. Ofrece un buen equilibrio entre potencia de procesamiento y recursos. Es popular en proyectos de electrónica debido a su amplia disponibilidad y comunidad activa de usuarios.
     
@@ -268,7 +268,7 @@ Cada uno de estos microcontroladores ofrece pros y contras al proyecto.
 \parbox[t]{\linewidth}{
 \vspace{0.1cm}
 - Ampliamente utilizado y documentado en proyectos de teclado y dispositivos de entrada. \medskip \\
-- Facilidad de programación con el ecosistema Arduino. \medskip \\
+- Facilidad de programación con el ecosistema \gls{Arduino}. \medskip \\
 - Integración de puertos \gls{USB} nativos, lo que facilita la comunicación. \medskip \\
 - Fácil de soldar \medskip \\
 - Librerías para \gls{PCB} \medskip \\
@@ -306,7 +306,7 @@ Cada uno de estos microcontroladores ofrece pros y contras al proyecto.
 \parbox[t]{\linewidth}{
 \vspace{0.1cm}
 - Requiere herramientas de desarrollo específicas y conocimientos más avanzados en programación. \medskip \\
-- Curva de aprendizaje más pronunciada debido a su complejidad en comparación con los microcontroladores basados en Arduino. \medskip \\
+- Curva de aprendizaje más pronunciada debido a su complejidad en comparación con los microcontroladores basados en \gls{Arduino}. \medskip \\
 - Posiblemente excesivamente difícil para aplicaciones simples de teclado. \medskip \\
 - Requiere hardware adicional y configuración personalizada para habilitar la conectividad \gls{Bluetooth}. \medskip \\
 - Requiere el uso de su framework específico  \medskip \\
@@ -502,26 +502,26 @@ Se han elegido los \gls{LED}S programables que se usan en las tiras comunes, ya 
 
 \subsection{Materiales}
 Desde un principio la elección clara era madera, ya que se quería conseguir una estética natural y tecnológica juntas. Las maderas serán a elección del usuario, para que pueda escoger tanto color, tipo de veta y sensación al tacto.
-Por lo tanto esta subsección se tratara de gustos personales. Entre las elecciones para este proyecto se han considerado \textbf{Jatoba, Sucupira y Mansonia}, además se añadirán detalles en metacrilato o acrílico para proteger los componentes que son visibles, ya que el teclado esta diseñado para ser un teclado sin plate.
+Por lo tanto esta subsección se tratara de gustos personales. Entre las elecciones para este proyecto se han considerado \textbf{Jatoba, Sucupira y Mansonia}, además se añadirán detalles en metacrilato o acrílico para proteger los componentes que son visibles, ya que el teclado esta diseñado para ser un teclado sin \glsnocase{Plate}.
 
 \subsection{Partes del teclado}
-Durante la fase de diseño \ref{DiseñoDistribucion} se han hecho elecciones de como va a ser el teclado, y de qué cosas dispondrá este. En esta subsección se hará un breve resumen. El teclado se compondrá de una carcasa en forma de cajón donde la \gls{PCB} irá atornillada y no tendrá plate. Los interruptores se colocarán soldados sobre la \gls{PCB} con las keycaps. De forma adicional se colocarán unas placas de acrílico sobre los componentes electrónicos para protegerlos y que aun así queden vistos. La tornillería se compondrá de elementos como separadores y de tornillos M3 negros.
+Durante la fase de diseño \ref{DiseñoDistribucion} se han hecho elecciones de como va a ser el teclado, y de qué cosas dispondrá este. En esta subsección se hará un breve resumen. El teclado se compondrá de una carcasa en forma de cajón donde la \gls{PCB} irá atornillada y no tendrá \glsnocase{Plate}. Los interruptores se colocarán soldados sobre la \gls{PCB} con las \glsnocase{Keycaps}. De forma adicional se colocarán unas placas de acrílico sobre los componentes electrónicos para protegerlos y que aun así queden vistos. La tornillería se compondrá de elementos como separadores y de tornillos M3 negros.
 
-La electrónica se compondrá de un ESP32S3 un \glsnocase{Multiplexor} para el mapeo de las teclas, una pantalla \gls{TFT} de 0.96", una batería, un circuito específico para la batería (TP4056) y todo el cableado USB.
+La electrónica se compondrá de un ESP32S3 un \glsnocase{Multiplexor} para el mapeo de las teclas, una pantalla \gls{TFT} de 0.96", una batería, un circuito específico para la batería (TP4056) y todo el cableado \gls{USB}.
 \newpage
 
 \section{Elección de Software}
-En esta sección se van a tratar las diferentes opciones para las elecciones que tenemos de herramientas para desarrollar el firmware para el ESP32S3 y qué librerías se van a usar para ello.
+En esta sección se van a tratar las diferentes opciones para las elecciones que tenemos de herramientas para desarrollar el \glsnocase{Firmware} para el ESP32S3 y qué librerías se van a usar para ello.
 
 \subsection{Entorno de desarrollo}
 Dado que vamos a trabajar con un ESP32S3 tenemos múltiples opciones, \textbf{Arduino IDE}, \textbf{PlatformIO} y \textbf{Espressif ESP-IDF}.
 
 Estas alternativas están ordenadas de menor a mayor complejidad y funcionalidad.
 \subsubsection{Arduino IDE}
-Arduino IDE se compone un programa que permite la edición de un archivo .ino que posteriormente se compila y se sube al microcontrolador. Dado que es muy sencillo este entorno, está muy muy limitado para proyectos con varios archivos, librerías personalizadas y código C. Esta queda directamente descartada, ya que nuestro proyecto estará si o si dividido en varios archivos y será mucho más sencillo en las otras.
+\gls{Arduino} IDE se compone un programa que permite la edición de un archivo .ino que posteriormente se compila y se sube al microcontrolador. Dado que es muy sencillo este entorno, está muy muy limitado para proyectos con varios archivos, librerías personalizadas y código C. Esta queda directamente descartada, ya que nuestro proyecto estará si o si dividido en varios archivos y será mucho más sencillo en las otras.
 
-\subsubsection{PlatformIO} \label{DiseñoPlatformIO}
-PlatformIO es un entorno de desarrollo que reúne las herramientas necesarias para el desarrollo de proyectos de hardware, especialmente en microcontroladores como Atmega, ESP32, STM32, entre otros. Ofrece una solución más avanzada y versátil en comparación con el Arduino IDE.
+\subsubsection{\gls{PlatformIO}} \label{DiseñoPlatformIO}
+\gls{PlatformIO} es un entorno de desarrollo que reúne las herramientas necesarias para el desarrollo de proyectos de hardware, especialmente en microcontroladores como Atmega, ESP32, STM32, entre otros. Ofrece una solución más avanzada y versátil en comparación con el \gls{Arduino} IDE.
 
 Permite la creación y gestión de proyectos complejos que involucran múltiples archivos, bibliotecas personalizadas y configuraciones específicas para diferentes placas y microcontroladores.
 
@@ -529,10 +529,10 @@ Facilita la inclusión y gestión de bibliotecas externas a través de su sistem
 
 Admite una amplia gama de microcontroladores y placas, lo que permite a los desarrolladores trabajar con diferentes dispositivos sin restricciones. Entre ellas el microcontrolador ESP32S3.
 
-Además, PlatformIO se integra con entornos de desarrollo integrado (IDE) como Visual Studio Code, Atom y Eclipse, lo que proporciona a los desarrolladores una experiencia de desarrollo más completa y personalizable.
+Además, \gls{PlatformIO} se integra con entornos de desarrollo integrado (IDE) como Visual Studio Code, Atom y Eclipse, lo que proporciona a los desarrolladores una experiencia de desarrollo más completa y personalizable.
 
 \subsubsection{Espressif ESP-IDF}
-El Espressif IoT Development Framework (ESP-IDF) es un conjunto de herramientas de desarrollo de software diseñado específicamente para trabajar con microcontroladores de la serie ESP32 de Espressif Systems. Este framework proporciona un entorno de desarrollo completo y robusto para la creación de aplicaciones y firmware personalizado para dispositivos basados en ESP32.
+El Espressif \gls{IoT} Development Framework (ESP-IDF) es un conjunto de herramientas de desarrollo de software diseñado específicamente para trabajar con microcontroladores de la serie ESP32 de Espressif Systems. Este framework proporciona un entorno de desarrollo completo y robusto para la creación de aplicaciones y \glsnocase{Firmware} personalizado para dispositivos basados en ESP32.
 
 El ESP-IDF está diseñado para aprovechar al máximo las capacidades y características del ESP32, incluyendo su procesador de doble núcleo, conectividad \gls{WiFi} y \glsnocase{Bluetooth}, y una amplia gama de periféricos integrados.
 
@@ -553,7 +553,7 @@ En el apartado Hardware se han listado varios componentes que van a necesitar co
     Para los \glsnocase{LED}s con una simple búsqueda podemos encontrar que Adafruit (El fabricante de la pantalla) ya pone a disposición una librería compatible con nuestro Framework. Esta librería es la \textbf{Adafruit NeoPixel}.
     \item Pantalla \gls{TFT} 0.96"\\
     Al igual que para los \glsnocase{LED}s disponemos de una librería que nos permite hacer todo tipo de cosas con la pantalla, mostrar gráficos, imágenes y texto de forma sencilla. Esta está realizada por un particular en este caso. La librería se llama \textbf{TFT\_eSPI} \cite{TFTLib}.
-    \item Bluetooth \gls{HID}\\
+    \item \gls{Bluetooth} \gls{HID}\\
     Aquí volvemos a encontrar que disponemos de una librería particular que nos resuelve el problema de mostrar nuestro teclado como un dispositivo \gls{HID} a otros dispositivos a través de \glsnocase{Bluetooth}, este también nos permite enviar caracteres al dispositivo conectado. Por lo que nos vendrá genial. La librería en este caso es la \textbf{NimBLE-Arduino} \cite{NimbleLib}.
 \end{itemize}
 
@@ -608,7 +608,7 @@ El total de la suma de los componentes para montaje supone:  \textbf{185,83 \eur
 \hline
 Tipo                                                              & Elemento                                                                                       & Cantidad                                                                           & Proveedores & Precio \\ \hline
 \begin{tabular}[c]{@{}l@{}}Partes\\ Cable\end{tabular}            & \begin{tabular}[c]{@{}l@{}}Paracord negro\\ de 9 núcleos\end{tabular}                          & 1 (1)                                                                              & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ Qiuhike\end{tabular}    & 3.16   \\ \hline
-\begin{tabular}[c]{@{}l@{}}Partes\\ Cable\end{tabular}            & \begin{tabular}[c]{@{}l@{}}Cabeza USB A\\ Chapada en Oro\end{tabular}                          & 1 (5)                                                                              & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ Lingxun\end{tabular}    & 4.54   \\ \hline
+\begin{tabular}[c]{@{}l@{}}Partes\\ Cable\end{tabular}            & \begin{tabular}[c]{@{}l@{}}Cabeza \gls{USB} A\\ Chapada en Oro\end{tabular}                          & 1 (5)                                                                              & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ Lingxun\end{tabular}    & 4.54   \\ \hline
 Tornillería                                                       & \begin{tabular}[c]{@{}l@{}}Espaciadores \\ hexagonales de latón\\ M3x3,M3x4, M3x5\end{tabular} & \begin{tabular}[c]{@{}l@{}}M3x3 25 (30)\\ M3x4 25 (30)\\ M3x5 25 (30)\end{tabular} & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ HUJI\end{tabular}       & 10.77  \\ \hline
 Tornillería                                                       & \begin{tabular}[c]{@{}l@{}}Tuerca hexagonal\\ para inserción muebles\end{tabular}              & 25 (30)                                                                            & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ Electrician\end{tabular}     & 3.05   \\ \hline
 Estética                                                          & \begin{tabular}[c]{@{}l@{}}Tubo de gel\\ de difusor led negro\end{tabular}                     & 1 (1)                                                                              & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ ANTVLED\end{tabular}    & 6.92   \\ \hline
@@ -644,10 +644,10 @@ Tipo         & Elemento                                                         
 Servicios    & \gls{Fresado} Carcasa                                                      & 1 (1)    & CNC GRANADA                                                                  & 51.43  \\ \hline
 Servicios    & Costes Ingeniero                                                     & 1 (1)    & CLM                                                                  & 22900.00   \\ \hline
 Herramientas & Soldador Estaño                                                      & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ Preferred Store\end{tabular} & 9.95   \\ \hline
-Herramientas & \begin{tabular}[c]{@{}l@{}}Soldador SMD\\ Aire caliente\end{tabular} & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Amazon\\ Faokze\end{tabular}              & 48.95  \\ \hline
+Herramientas & \begin{tabular}[c]{@{}l@{}}Soldador \gls{SMD}\\ Aire caliente\end{tabular} & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Amazon\\ Faokze\end{tabular}              & 48.95  \\ \hline
 Herramientas & Bobina Estaño                                                        & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Amazon\\ lumcov\end{tabular}              & 7.00    \\ \hline
 Herramientas & Flux Soldadura                                                       & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Amazon\\ Cerioll\end{tabular}             & 7.99   \\ \hline
-Herramientas & \begin{tabular}[c]{@{}l@{}}Estaño Pasta\\ Soldadura SMD\end{tabular} & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Amazon\\ Happy Finding\end{tabular}       & 11.99  \\ \hline
+Herramientas & \begin{tabular}[c]{@{}l@{}}Estaño Pasta\\ Soldadura \gls{SMD}\end{tabular} & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Amazon\\ Happy Finding\end{tabular}       & 11.99  \\ \hline
 Herramientas & Kit Destornilladores                                                 & 1 (1)    & \raggedleft \begin{tabular}[c]{@{}l@{}}Aliexpress\\ WoodPow\end{tabular}         & 11.99  \\ \hline
 \hline
 \multicolumn{4}{|l|}{Total} & 23049.30 \\
