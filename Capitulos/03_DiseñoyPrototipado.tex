@@ -216,7 +216,7 @@ Vamos a empezar por las herramientas de diseño, la primera de todas la que hemo
 En esta sección se van a tratar las diferentes opciones para los materiales. Los componentes electrónicos, las diferentes partes del teclado y el porqué de estas.
 
 \subsection{Layout} \label{DiseñoLayaout}
-Lo primero que se necesitó es conocer las dimensiones de la distribución. Así que buscando entre varias páginas encontré una herramienta que se llama ''Keyboard-Layout-Editor'' \cite{Layout-Editor} esta directamente te dejaba personalizar la distribución. La única modificación que sufrió la distribución \gls{ISO} fue que bajé las teclas especiales de la sección Print-Screen a al bloque de Pause/Delete. Esto fue pensado a futuro para poder colocar la electrónica en un sitio accesible. Esta modificación se puede ver en la figura \ref{fig:eISo_layout_modificado}, tenemos de referencia la distribución \gls{ISO} en la figura \ref{fig:ISO_layout} que sería la distribución original del teclado.
+Lo primero que se necesitó es conocer las dimensiones de la distribución. Así que buscando entre varias páginas encontré una herramienta que se llama ``Keyboard-Layout-Editor`` \cite{Layout-Editor} esta directamente te dejaba personalizar la distribución. La única modificación que sufrió la distribución \gls{ISO} fue que bajé las teclas especiales de la sección Print-Screen a al bloque de Pause/Delete. Esto fue pensado a futuro para poder colocar la electrónica en un sitio accesible. Esta modificación se puede ver en la figura \ref{fig:eISo_layout_modificado}, tenemos de referencia la distribución \gls{ISO} en la figura \ref{fig:ISO_layout} que sería la distribución original del teclado.
 
 \begin{figure}[H] % Colocar las figuras exactamente aquí
     \centering
@@ -232,7 +232,7 @@ Lo primero que se necesitó es conocer las dimensiones de la distribución. Así
     \label{fig:eISo_layout_modificado}
 \end{figure}
 
-Esta herramienta permite exportar el esquema del teclado en un .JSON que posteriormente será necesario para usarlo en la página de ''Plate \& Case Builder'' \cite{builder-swillkb}. Esta herramienta no da un archivo .DWG que es un formato de AutoCAD para planos. El plano que nos ofrece es la plancha del teclado. Aunque nuestro teclado no va a utilizar, esta nos servirá posteriormente para diseñar la \gls{PCB} y la carcasa, ya que nos dirá donde va cada interruptor de forma muy precisa.
+Esta herramienta permite exportar el esquema del teclado en un .JSON que posteriormente será necesario para usarlo en la página de ``Plate \& Case Builder`` \cite{builder-swillkb}. Esta herramienta no da un archivo .DWG que es un formato de AutoCAD para planos. El plano que nos ofrece es la plancha del teclado. Aunque nuestro teclado no va a utilizar, esta nos servirá posteriormente para diseñar la \gls{PCB} y la carcasa, ya que nos dirá donde va cada interruptor de forma muy precisa.
 
 \subsection{Componentes Electrónicos}
 A lo largo de toda la investigación he ido encontrando muchas alternativas para realizar el teclado, diferentes sistemas, diferentes microcontroladores y diferentes tipos de circuitos.
@@ -243,7 +243,7 @@ Este es el cerebro del teclado, este va a ser el encargado de la comunicación, 
 Por esto es la pieza sobre lo que gira todo el proyecto y la parte más importante, también hay que considerar la facilidad para programarlos y la cantidad de recursos que tiene, tanto de librerías como de documentación.
 Cuanto más extendido sea el uso, más sencillo será lograr que funcione.
 
-A lo largo del periodo de investigación y diseño se han encontrado varias alternativas. Estas tienen que cumplir que tenga un hardware dedicado a la conectividad \gls{USB} llamado ''\gls{USB} OTG'' ya que se ideó así en la sección \ref{DiseñoConectividadCable}. Los principales y más destacables son:
+A lo largo del periodo de investigación y diseño se han encontrado varias alternativas. Estas tienen que cumplir que tenga un hardware dedicado a la conectividad \gls{USB} llamado ``\gls{USB} OTG`` ya que se ideó así en la sección \ref{DiseñoConectividadCable}. Los principales y más destacables son:
 
 \begin{itemize}
     \item \textbf{Atmega32u4}: Es un microcontrolador de la familia AVR de Atmel. Es ampliamente utilizado en proyectos de electrónica, especialmente en entornos \gls{Arduino}. Ofrece una buena cantidad de recursos y es fácil de programar.
@@ -415,7 +415,7 @@ La idea es que este teclado dispusiera de una pantalla para mostrar información
 } \\
 \hline
 \end{tabular}
-\caption{Ventajas y desventajas de la pantalla TFT 0.96''}
+\caption{Ventajas y desventajas de la pantalla TFT 0.96``}
 \end{table}
 
 \subsubsection{OLED 0.96"}
@@ -441,7 +441,7 @@ La idea es que este teclado dispusiera de una pantalla para mostrar información
 } \\
 \hline
 \end{tabular}
-\caption{Ventajas y desventajas de la pantalla OLED 0.96''}
+\caption{Ventajas y desventajas de la pantalla OLED 0.96``}
 \end{table}
 
 Se ha acabado escogiendo la pantalla \textbf{\gls{TFT} 0.96"} solo por la cantidad de colores que puede mostrar. Esta usa 8 pines de nuestro microcontrolador.

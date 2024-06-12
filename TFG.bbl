@@ -30,6 +30,12 @@
 \newblock \url{https://github.com/Electroner/Teclado-Teseracto}, Last accessed
   on 29-04-2024.
 
+\bibitem{ModernWoodGitHub}
+{Carlos López Martínez}.
+\newblock Modernwood, 2024.
+\newblock \url{https://github.com/Electroner/ModernWood}, Last accessed on
+  20-06-2024.
+
 \bibitem{cdw-keyboards}
 {CDW}.
 \newblock Types of keyboards, 2022.
@@ -43,6 +49,13 @@
 \newblock
   \url{https://smallbusiness.chron.com/types-wireless-keyboards-computers-69487.html},
   Last accessed on 6-03-2024.
+
+\bibitem{ESP32S3Datasheet}
+{Espressif Systems}.
+\newblock Esp32-s3 datasheet, 2023.
+\newblock
+  \url{https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf},
+  Last accessed on 1-06-2024.
 
 \bibitem{SoldaduraSMD}
 {EURobotics.org}.

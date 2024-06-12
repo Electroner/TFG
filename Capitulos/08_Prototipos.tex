@@ -20,7 +20,18 @@ Tras las ultimas dos versiones se decidió ampliar la funcionalidad creando el n
 \section{Problemas y Errores} \label{Errores}
 En este apartado se describen los problemas y errores encontrados durante el desarrollo de los prototipos. Estos no han sido corregidos en las versiones de los prototipos, pero se han tenido en cuenta para el diseño del producto final.
 \subsection{Corriente inversa en el regulador de tensión} \label{CorrienteInversa}
+Es común que durante la operación normal del los componentes electrónicos, sobre todo los operados por personas, se produzcan errores en la conexión de los cables. Estos son errores que pueden ser fatales para los componentes electrónicos. Uno de estos errores es la conexión inversa de la alimentación. Para evitar que la corriente inversa dañe el regulador de tensión se ha añadido un diodo en la puerta del regulador de tensión.
+
+Para evitar este problema, se coloca un diodo en la entrada del regulador de tensión. La función principal del diodo es bloquear cualquier corriente inversa que intente fluir hacia la entrada del regulador. El diodo permite el paso de corriente en una única dirección (de la entrada del regulador a la salida), y bloquea el flujo en la dirección opuesta. De esta manera, se protege el regulador de tensión de posibles daños por corriente inversa.
+
+Además de su función de protección, el diodo también ayuda a estabilizar el funcionamiento del regulador de tensión en condiciones transitorias, como durante el encendido o apagado del circuito. Al evitar que la corriente inversa llegue al regulador, se minimizan las perturbaciones en la salida, asegurando una regulación de tensión más estable y fiable.
+
 \subsection{Voltaje en la salida del regulador de tensión} \label{VoltajeRegulador}
+Este problema, aunque parecido al anterior, la razón es totalmente diferente. En este caso, el problema ocurre cuando queremos alimentar el teclado mediante el programador \gls{TTL}. Ya que durante la programación del microcontrolador, el programador \gls{TTL} alimenta el teclado con 5 V o 3.3 V. Sin embargo, el regulador de tensión del teclado está diseñado para funcionar con una tensión de entrada de 3.3 V. Y además la alimentación del chip sería directa.
+
+Por lo que el voltaje lo tendríamos en la puerta de salida del regulador de tensión. Por lo que para evitar lo que se conoce como voltaje ``\gls{BackfeedCurrent}'' en los reguladores se ha añadido de nuevo un diodo en la puerta de salida del regulador de tensión. Que permita el paso de la corriente de la puerta de salida del regulador a la puerta de entrada del regulador. Saltando el regulador de tensión.
+
+Por esta razón, durante la programación de esta versión del teclado es necesario los conversores de nivel lógico para poder alimentar el teclado con 5 V y a su vez programarlo a 3.3 V y así evitar el problema del voltaje en la puerta de salida del regulador de tensión.
 
 \newpage
 \section{Montaje}

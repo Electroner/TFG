@@ -51,21 +51,15 @@ Como vuelve a ser algo genérico un diodo de paquete SOD-123 pues podemos buscar
 
 Para los interruptores vamos a prescindir de la pagina, si no que vamos a buscar de nuevo en internet porque hay una buena comunidad detrás de todo este tipo de dispositivos y sera mucho más fácil encontrar lo que necesitamos. En seguida encontramos un repositorio con la librería especifica que necesitamos para nuestros interruptores \cite{GitInterruptores}.
 
-\newpage
 \subsection{Creación de componentes}
 
 Como se ha mencionado antes en la subsección de componentes \ref{ESp32S3BusquedaComponente}, vamos a modificar el componente ESP32S3.
 
 La modificación hará que soldar este componente sea más sencillo ya que facilitara la soldadura \gls{SMD} haciendo que la parte inferior con los pines de soldadura que van pegados a la placa sean visibles desde el otro lado de esta.
 
-Para ello vamos a ir a Eagle e importaremos la librería de ESP32S3. Iremos a editar el \gls{Footprint} y donde están los terminales inferiores en mitad del dispositivo vamos a sustituirlos por un agujero de soldadura de las mismas dimensiones. De forma que quedara como podemos ver en la figura \ref{fig:ESP32S3HOLE}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{imagenes/Capitulos/Cap04/ESP32S3HOLE.png}
-    \caption{Imagen de la ESP32S3 modificada}
-    \label{fig:ESP32S3HOLE}
-\end{figure}
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!55!white, title=Nota]
+    Ver el apéndice \ref{ApendiceEsp32Hole} para más información sobre el diseño de este componente.
+\end{tcolorbox}
 
 \newpage
 \section{Diseño Esquemático}
