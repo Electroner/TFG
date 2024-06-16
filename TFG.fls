@@ -838,9 +838,6 @@ INPUT .\Capitulos\11_Conclusiones.tex
 INPUT .\Capitulos\11_Conclusiones.tex
 INPUT .\Capitulos\11_Conclusiones.tex
 INPUT Capitulos\11_Conclusiones.tex
-INPUT .\Capitulos\12_Comercial.tex
-INPUT .\Capitulos\12_Comercial.tex
-INPUT Capitulos\12_Comercial.tex
 INPUT .\Capitulos\13_Apendice.tex
 INPUT .\Capitulos\13_Apendice.tex
 INPUT .\Capitulos\13_Apendice.tex
@@ -860,6 +857,13 @@ INPUT .\imagenes\Capitulos\Cap05\AcotadoPCBMadera.png
 INPUT .\imagenes\Capitulos\Cap05\AcotadoPCBMadera.png
 INPUT .\imagenes\Capitulos\Cap05\AcotadoPCBMadera.png
 INPUT .\imagenes\Capitulos\Cap05\AcotadoPCBMadera.png
+INPUT .\imagenes\Capitulos\Cap13\ModernWoodLinked.png
+INPUT .\imagenes\Capitulos\Cap13\ModernWoodLinked.png
+INPUT .\imagenes\Capitulos\Cap13\ModernWoodLinked.png
+INPUT .\imagenes\Capitulos\Cap13\ModernWoodLinked.png
+INPUT .\imagenes\Capitulos\Cap13\ModernWoodLinked.png
+INPUT .\imagenes\Capitulos\Cap13\ModernWoodLinked.png
+INPUT .\imagenes\Capitulos\Cap13\ModernWoodLinked.png
 INPUT .\TFG.lof
 INPUT .\TFG.lof
 INPUT TFG.lof

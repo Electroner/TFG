@@ -34,12 +34,8 @@ Por lo que el voltaje lo tendríamos en la puerta de salida del regulador de ten
 Por esta razón, durante la programación de esta versión del teclado es necesario los conversores de nivel lógico para poder alimentar el teclado con 5 V y a su vez programarlo a 3.3 V y así evitar el problema del voltaje en la puerta de salida del regulador de tensión.
 
 \newpage
-\section{Montaje}
+\section{Montaje} \label{MontajeTeclado}
 Esta sección describe el montaje del teclado en completo detalle. Se usará como explicación para el producto final y para saber el orden y la manera de proceder para el montaje del teclado. Ya que está diseñado para ser ensamblado en unos pasos concretos.
-
-\begin{tcolorbox}[colback=blue!5!white, colframe=blue!55!white, title=Nota]
-    Si se desea saber más sobre el montaje del teclado se puede consultar el apéndice \ref{ApendiceEnsamblaje}. 
-\end{tcolorbox}
 
 \begin{tcolorbox}[colback=red!11!white, colframe=red!50!white, title=Errores]
     Ver apartado de errores en el apéndice \ref{ApendiceEnsamblajeErrores} donde se detallan los errores encontrados durante el montaje y los cambios realizados a las diferentes partes del proyecto para corregirlos.
@@ -65,7 +61,7 @@ La pasta de soldadura se aplica junto con flux en las pistas de la \gls{PCB} y s
 
 Se ha de tener en cuenta la fuerza de la pistola de calor, ya que sí se pone la fuerza de la misma muy alta podría llegar a calentar otros componentes adyacentes y desoldarlos o dañarlos. \cite{SoldaduraSMD}
 
-\subsubsection{atornillado de los estabilizadores}
+\subsubsection{Atornillado de los estabilizadores}
 Una vez soldados los componentes de la \gls{PCB} se ha de colocar los estabilizadores en la \gls{PCB}. Para ello se ha de colocar los estabilizadores en los agujeros de la \gls{PCB} y atornillarlos con los tornillos correspondientes. Se ha de tener cuidado con la fuerza ejercida para no romper la \gls{PCB} ni los estabilizadores.
 
 \subsubsection{Programación del microcontrolador}
@@ -80,14 +76,16 @@ Primero se ha de colocar el difusor sobre los \glsnocase{LED}s y se ha de atorni
 Tanto en la placa base como en el conector XS-12 tenemos que soldar un cable de conexion Gx16-4 a la parte interna del conector y la parte hembra del conector a los pines correspondientes D+,D-,GND y VCC. Para ello se ha de soldar el cable a la parte interna del conector y a los pines de la placa base. Se ha de tener cuidado con la polaridad de los cables.
 
 \subsubsection{Conector XS-12}
-Una vez que tenemos la carcasa barnizada y con las tuercas empotradas deberemos colocar el conector XS-12 en su lugar correspondiente. Para ello se ha de colocar el conector en la carcasa y atornillarlo con los tornillos M3 de cabeza plana.
+Con todos los pasos anteriores realizados tendriamos la \gls{PCB} lista para ser montada en la carcasa. Que de fabrica ya tiene las tuercas empotradas en sus agujeros correspondientes y el barnizado completo.
+
+Una vez que tenemos la carcasa barnizada y con las tuercas empotradas deberemos colocar el conector XS-12 en su lugar correspondiente. Para ello se ha de colocar el conector en la carcasa y atornillarlo con los tornillos M1.7 x 5 mm de cabeza plana.
 
 Después de atornillar el conector XS-12 y tener soldado los dos conectores Gx16 tendremos que conectarlos para dejarlos por debajo de la carcasa.
 
-\subsubsection{Tornillos}
-Una vez colocado el difusor y el conector XS-12 se puede colocar la \gls{PCB} en la carcasa, para ello a lo largo de toda la carcasa se encuentran unos agujeros para atornillar la placa.
+\subsubsection{Tornillos} \label{Tornillos}
+Una vez colocado el difusor y el conector XS-12 se puede colocar la \gls{PCB} en la carcasa, para ello a lo largo de toda la carcasa se encuentran unos agujeros roscado en las tuercas empotradas M3 para atornillar la placa.
 
-En la carcasa se deben colocar los espaciadores de 3 mm en los agujeros y atornillarlos con un destornillador. Se debe tener cuidado con la fuerza ejercida para no mover o arrancar las tuercas empotradas.
+En la carcasa se deben colocar los espaciadores de 3 mm en los agujeros con las  y atornillarlos con un destornillador. Se debe tener cuidado con la fuerza ejercida para no mover o arrancar las tuercas empotradas pegadas con epoxi.
 
 Una vez colocados se pondrá la \gls{PCB} sobre los espaciadores dejando la batería en la parte inferior. Se atornillará la \gls{PCB} a los espaciadores con los tornillos M3 de cabeza redondeada.
 
