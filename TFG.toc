@@ -72,7 +72,7 @@
 \contentsline {subsubsection}{Componentes Electrónicos}{43}{section*.47}%
 \contentsline {subsubsection}{Componentes de Montaje}{44}{section*.48}%
 \contentsline {subsubsection}{Servicios y Herramientas}{45}{section*.49}%
-\contentsline {subsubsection}{Total Presupuesto Unidad}{45}{section*.50}%
+\contentsline {subsubsection}{Total Presupuesto Unidad}{46}{section*.50}%
 \contentsline {chapter}{\numberline {4}Circuitos}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Búsqueda de componentes}{47}{section.4.1}%
 \contentsline {subsubsection}{\gls {Multiplexor}}{47}{section*.51}%

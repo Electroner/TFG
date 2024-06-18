@@ -26,30 +26,30 @@
 \contentsline {figure}{\numberline {3.21}{\ignorespaces Imagen del conector \gls {USB} tipo A}}{38}{figure.3.21}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces Imagen del \gls {LED} WS2812B}}{38}{figure.3.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Matriz final de teclas}}{50}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \gls {Multiplexor} con todos los pines conectados a sus salidas/entradas}}{51}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Microcontrolador principal ESP32S3 y tecla principal}}{52}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sistema de alimentación y protección del teclado}}{53}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sistema de \glsdisp {LED}{\MakeTextLowercase []{LED}}s del teclado}}{54}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Conector de programación y conector de la pantalla \gls {TFT}}}{54}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema completo del circuito del teclado.}}{55}{figure.4.7}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Matriz final de teclas \cite {Repo:ImagenCircuito}}}{50}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \gls {Multiplexor} con todos los pines conectados a sus salidas/entradas \cite {Repo:ImagenCircuito}}}{51}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Microcontrolador principal ESP32S3 y tecla principal \cite {Repo:ImagenCircuito}}}{52}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sistema de alimentación y protección del teclado \cite {Repo:ImagenCircuito}}}{53}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sistema de \glsdisp {LED}{\MakeTextLowercase []{LED}}s del teclado \cite {Repo:ImagenCircuito}}}{54}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Conector de programación y conector de la pantalla \gls {TFT} \cite {Repo:ImagenCircuito}}}{54}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema completo del circuito del teclado. \cite {Repo:ImagenCircuito}}}{55}{figure.4.7}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Imagen del plano generado por la página web ``Plate \& Case Builder`` \cite {builder-swillkb}}}{58}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Imagen del plano de la \gls {PCB}}}{59}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Imagen del plano completo de la \gls {PCB}}}{59}{figure.5.3}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Imagen del plano de la \gls {PCB} \cite {Repo:Planos}}}{59}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Imagen del plano completo de la \gls {PCB} \cite {Repo:Planos}}}{59}{figure.5.3}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Imagen de la vista \gls {PCB} en Eagle.}}{61}{figure.5.4}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Imagen del plano importado en Eagle.}}{61}{figure.5.5}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Imagen de la \gls {PCB} con los componentes ubicados y los agujeros.}}{62}{figure.5.6}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Imagen de la \gls {PCB} con las pistas conectadas.}}{65}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Imagen del plano de tierra superior de la \gls {PCB}.}}{65}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Imagen del plano de tierra inferior de la \gls {PCB}.}}{65}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Imagen del icono de difusor de luz.}}{66}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Imagen del icono del indicador de panel de metacrilato.}}{67}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Imagen del icono del indicador de tuerca}}{67}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Imagen del icono del indicador tornillo a la carcasa.}}{67}{figure.5.13}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Imagen del plano de tierra superior de la \gls {PCB} \cite {Repo:ImagenPCB}.}}{65}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Imagen del plano de tierra inferior de la \gls {PCB} \cite {Repo:ImagenPCB}.}}{65}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Imagen del icono de difusor de luz \cite {Repo:ImagenDifusor}.}}{66}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Imagen del icono del indicador de panel de metacrilato \cite {Repo:ImagenGlass}.}}{67}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Imagen del icono del indicador de tuerca \cite {Repo:ImagenNut}.}}{67}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Imagen del icono del indicador tornillo a la carcasa \cite {Repo:ImagenScrew}.}}{67}{figure.5.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Imagen del plano de la carcasa del teclado.}}{70}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Imagen del plano lateral (Vista perfil izquierda) de la carcasa del teclado.}}{70}{figure.6.2}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Imagen del plano lateral (Vista perfil izquierda) de la carcasa del teclado \cite {Repo:Planos}.}}{70}{figure.6.2}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Imagen del modelo 3D de la carcasa del teclado.}}{71}{figure.6.3}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Imagen del modelo 3D Renderizado de la carcasa del teclado.}}{71}{figure.6.4}%
 \addvspace {10\p@ }
