@@ -2,11 +2,11 @@
 
 \section{Diseño físico} \label{DiseñoFisico}
 
-Como ya se decidió en la sección \ref{Herramientas} y como ya se ha usado para el diseño esquemático, esta nos permitirá trasladar los componentes a un modelo físico de la placa base. Pero antes de poder mover los componentes a la placa, deberíamos saber a qué lugar van y de que forma. Por lo que antes de ponernos con el diseño de la placa deberemos diseñar el esquema físico del mismo. Para este apartado usaremos la herramienta AutoCad que se especifica en la sección \ref{Herramientas}.
+Como ya se decidió en la sección \ref{Herramientas} y como ya se ha usado para el diseño esquemático, esta nos permitirá trasladar los componentes a un modelo físico de la placa base. Pero antes de poder mover los componentes a la placa, deberíamos saber a qué lugar van y de que forma, por lo que antes de ponernos con el diseño de la placa deberemos diseñar el esquema físico del mismo. Para este apartado usaremos la herramienta AutoCad que se especifica en la sección \ref{Herramientas}.
 
-Será necesario el diseño de las siguientes partes, \gls{PCB}, Carcasa, Disposición de teclas, ubicación de los componentes, ubicación de los conectores.
+Será necesario el diseño de las siguientes partes, \gls{PCB}, Carcasa, Disposición de teclas, ubicación de los componentes y la ubicación de los conectores.
 
-Estos diseños puede ser creados un mismo archivo de AutoCAD con las 3 vistas. Alzado, Perfil izquierdo y Planta. Esta última nos servirá para el diseño de la \gls{PCB} y de la disposición de teclas, así como poder crear el archivo 3D para la carcasa. Con el resto de vista nos serviremos para saber si el tamaño de los cortes y disposiciones de los elementos del teclado encajan entre sí y hay suficiente espacio para albergarlos en el interior de la carcasa.
+Estos diseños puede ser creados por un mismo archivo de AutoCAD con las 3 vistas. Alzado, Perfil izquierdo y Planta. Esta última nos servirá para el diseño de la \gls{PCB} y de la disposición de teclas, así como poder crear el archivo 3D para la carcasa. Con el resto de vista nos serviremos para saber si el tamaño de los cortes y disposiciones de los elementos del teclado encajan entre sí y hay suficiente espacio para albergarlos en el interior de la carcasa.
 
 El orden del diseño va a ser el siguiente. Disposición de teclas, diseño de la \gls{PCB}, diseño de la carcasa. Una vez tenemos esto podemos crear la \gls{PCB} en el programa EAGLE. El resto de los planos serán de confirmación y para asegurarnos de que lo que estamos haciendo saldrá correctamente.
 
@@ -19,7 +19,7 @@ El orden del diseño va a ser el siguiente. Disposición de teclas, diseño de l
 
 En el capítulo de diseño \ref{CapDiseño} en la sección \ref{DiseñoLayaout} se encontró una página web ``Plate \& Case Builder`` \cite{builder-swillkb} que nos generaba un plano para AutoCad basándonos en la distribución de teclas creada en la página web ``Keyboard Layout Editor`` \cite{Layout-Editor}.
 
-Por lo que vamos a proceder a crear el plano primero para saber la distancia relativa entre las teclas y sus posiciones entre sí. Una vez introducido en ``\glsnocase{Plate} Layout`` el texto que nos genera la página del editor de distribución le damos a generar archivo CAD. Este nos genera el plano que podemos ver en la figura \ref{fig:PlanoDistribucionLayout}.
+Por lo tanto, vamos a proceder a crear el plano primero para saber la distancia relativa entre las teclas y sus posiciones entre sí. Una vez introducido en ``\glsnocase{Plate} Layout`` el texto que nos genera la página del editor de distribución le damos a generar archivo CAD. Este nos genera el plano que podemos ver en la figura \ref{fig:PlanoDistribucionLayout}.
 
 \begin{figure}[H]
     \centering
@@ -36,13 +36,13 @@ El primer paso es crear las dimensiones de la \gls{PCB}. Que en este caso van a 
 
 También para obtener el plano de la \gls{PCB} es necesario añadir los tornillos, ya que como se diseñó en la sección \ref{DiseñoPlatePCB} y se decidió que el montaje del teclado iba a ser sin \glsnocase{Plate} como en la figura \ref{fig:Montaje7}, la fuerza de las manos presionando las teclas va a ser transmitida directamente a la \gls{PCB}. Esta fuerza hará que se doble fácilmente por el material del que está fabricada, que es menos rígido que las \glsnocase{Plate} convencionales. Se van a necesitar varios tornillos distribuidos a lo largo de toda la \gls{PCB} para poder hacer un teclado robusto.
 
-Una vez que se ha importado el plano generado de las posiciones de los interruptores se va a proceder a quitar algunos elementos innecesario de marcado y simplificar algunos elementos del plano generado.
+Una vez que se ha importado el plano generado de las posiciones de los interruptores se va a proceder a quitar algunos elementos innecesarios de marcado y simplificar algunos elementos del plano generado.
 
 Los tornillos van a ser de 3 mm o los llamados M3. Estos son de un tamaño adecuado para que puedan ser ubicados entre las juntas de las teclas y en los bordes. Por lo que se dispondrán circunferencias a lo largo del plano en purpura indicando las posiciones de los agujeros que además serán los tornillos ciegos de las carcasa en un futuro. Una vez hecho esto nos quedamos con 25 tornillos y en la disposición final que podemos ver en el plano de la \gls{PCB} en la figura \ref{fig:PlanoPCB}.
 
-El teclado va a necesitar otro tipo de agujeros para sujetar un difusor de luz para los \glsnocase{LED}s. Por lo que Vamos a tener que idear la posición de los \glsnocase{LED}s y además añadir los agujeros específicos para sujetar el difusor. Ya que vamos a colocar los \glsnocase{LED}s vamos a aprovechar y también colocar los planos de los diferentes componentes. Vamos a añadir el \glsnocase{Multiplexor}, el ESP32-S3, y el conector XS-12 y la pantalla que se habían decidido colocar en la sección \ref{DiseñoHardware}. Los agujeros para los \glsnocase{LED}s estarán marcados en azul y los componentes en naranja.
+El teclado va a necesitar otro tipo de orificios para sujetar un difusor de luz para los \glsnocase{LED}s. Por lo que Vamos a tener que idear la posición de los \glsnocase{LED}s y además añadir los agujeros específicos para sujetar el difusor, ya que vamos a colocar los \glsnocase{LED}s vamos a aprovechar y también situar los planos de los diferentes componentes. Vamos a añadir el \glsnocase{Multiplexor}, el ESP32-S3, y el conector XS-12 y la pantalla que se había decidido colocar en la sección \ref{DiseñoHardware}. Los agujeros para los \glsnocase{LED}s estarán marcados en azul y los componentes en naranja.
 
-Una vez añadidos al plano todos los componentes importantes, la pantalla y haber marcado todos los agujeros que necesita la \gls{PCB} nos queda, por fin, el plano completo de la \gls{PCB} con todas las medidas correctas y en su lugar correspondiente. El plano se puede ver en la figura \ref{fig:PlanoPCBConTodo}.
+Una vez añadidos al plano todos los componentes importantes, la pantalla y haber marcado todos los orificios que necesita la \gls{PCB} nos queda, por fin, el plano completo de la \gls{PCB} con todas las medidas correctas y en su lugar correspondiente. El plano puede verse en la figura \ref{fig:PlanoPCBConTodo}.
 
 \begin{figure}[H]
     \centering
@@ -91,7 +91,7 @@ Además, en la misma figura \ref{fig:EaglePCBPartesColocadas} ya hemos añadido 
 \end{figure}
 \newpage
 \subsubsection{Consideraciones de potencia y diseño}
-Durante el diseño ha sido fundamental prestar atención a los voltajes de funcionamiento de las diferentes partes del teclado, ya que hay varios niveles de voltaje en todo el proyecto. Pero estas consideraciones también tiene que estar presentes ahora. Ya que durante el enrutamiento que vamos a realizar a continuación. Las pistas/carriles o vías que creemos tienen que cumplir unas características para el correcto funcionamiento del dispositivo.
+Durante el diseño ha sido fundamental prestar atención a los voltajes de funcionamiento de las diferentes partes del teclado, ya que hay varios niveles de voltaje en todo el proyecto. Pero estas consideraciones también tiene que estar presentes ahora, ya que durante el enrutamiento que vamos a realizar a continuación; ya que las pistas/carriles o vías que creemos tienen que cumplir unas características para el correcto funcionamiento del dispositivo.
 
 En primer lugar, se debe prestar especial atención al dimensionamiento de los carriles de alimentación y conexión entre los distintos componentes del teclado. Los carriles deben tener el tamaño adecuado para manejar la corriente requerida por los componentes sin causar caídas de tensión significativas que puedan afectar al rendimiento del teclado.
 
@@ -116,7 +116,7 @@ Para la distancia de la pista los parámetros que nos piden son:
     \item \textbf{Máximo voltaje de la pista}. Para nosotros el voltaje más alto que tenemos en todo el circuito es de 5V (Entrada del \gls{USB}).
 \end{itemize}
 
-Tras darle a calcular, el valor que obtenemos es de 0,0508 mm. Otra vez los valores por defecto del programa superan con creces este valor. Por lo que por ahora cumplimos con todos los requisitos.
+Tras darle a calcular, el valor que obtenemos es de 0,0508 mm. Otra vez los valores por defecto del programa superan con creces este valor, por lo que por ahora cumplimos con todos los requisitos.
 
 Cabe mencionar, que dado que el microcontrolador ESP32S3 es el que posee la antena \gls{Bluetooth} integrada, no es necesario calcular nada relacionado con la antena. Ya que el fabricante del microcontrolador ya ha hecho este trabajo por nosotros.
 
@@ -159,7 +159,7 @@ Una vez que se ha realizado el enrutamiento y se han añadido los planos de tier
 
 A su vez, también se han creado unos iconos para poder identificar los tipos de agujeros a los que están asociados. En total hay 4 iconos. Estos son para identificar el difusor de luz, cuáles tienen un panel de metacrilato para poder proteger la sección de componentes electrónicos, otro para saber cuál es necesario emplear tuerca y el último para saber cuál es necesario atornillar a la carcasa. Respectivamente, estos iconos podemos previsualizarlos en las figuras \ref{fig:difusionIcono}, \ref{fig:MetacrilatoIcono}, \ref{fig:TuercaIcono} y \ref{fig:TornilloIcono} respectivamente.
 
-Más adelante se usarán para saber de forma rápida que tipo de agujero es necesario en la carcasa. Y para facilitar el montaje del teclado.
+Más adelante se usarán para saber de forma rápida que tipo de agujero es necesario en la carcasa y para facilitar el montaje del teclado.
 
 \begin{itemize}
     \item \textbf{Difusor de luz}. 

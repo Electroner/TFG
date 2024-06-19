@@ -16,21 +16,21 @@ Para ello vamos a ir a Eagle e importaremos la librería de ESP32S3. Iremos a ed
 Todos los pasos han sido realizados siguiendo el tutorial descrito en la asignatura de Circuitos Impresos. Una descripción breve de los pasos a seguir es la siguiente.
 
 \begin{enumerate}
-    \item Abrir o Crear una Librería
+    \item \textbf{Abrir o Crear una Librería.}\\
     Abra EAGLE y cree una nueva librería con el nombre deseado (en nuestro caso, ``ESP32S3HOLE'').
-    \item Seleccionar y Nombrar el Device
+    \item \textbf{Seleccionar y Nombrar el Device.}\\
     Seleccione ``Device'' y asígnele un nombre (por ejemplo, ``ESP32S3HOLE'').
-    \item Crear el Símbolo del Componente
+    \item \textbf{Crear el Símbolo del Componente.}\\
     Dibuje el símbolo del componente y añada los pines necesarios, asignando nombres a cada pin según corresponda. Trace el diseño del símbolo de acuerdo con sus especificaciones. En nuestro caso podremos encontrar las dimensiones, pines y demás en la hoja de datos del componente ESP32S3 \cite{ESP32S3Datasheet}.
-    \item Usar un Package Existente
-    Para ello, abra la librería en edición, vaya a la librería en el menú principal, elija el componente, haga clic con el botón derecho y seleccione la opción ``Copiar a Librería''.
-    \item Editar el \glsnocase{Footprint}
+    \item \textbf{Usar un Package Existente.}\\
+    Para ello, abra la librería en edición, vaya a la librería en el menú principal, elija el componente, haga clic con el botón derecho y seleccione la opción ``Copiar a Librería''.\\
+    \item \textbf{Editar el \glsnocase{Footprint}.}\\
     Abra la librería en edición, seleccione el componente, haga clic con el botón derecho y seleccione la opción ``Edit Package''. A continuación, edite el \glsnocase{Footprint} según sus especificaciones.
     Este paso es el más importante, ya que aquí es donde se añadirá el agujero de soldadura. Para ello, seleccione los pines inferiores del componente y sustitúyalos por un agujero de soldadura de las mismas dimensiones. Asegúrese de que el agujero de soldadura esté correctamente alineado con los pines del componente.
     Ahora que el \glsnocase{Footprint} ha sido modificado, guarde los cambios y cierre la ventana de edición.
-    \item Unir Pines
+    \item \textbf{Unir Pines.}\\
     Para unir los pines del símbolo del componente con los pines del \glsnocase{Footprint}, seleccione el componente en la librería en edición, haga clic con el botón derecho y seleccione la opción ``Connect Package''.
-    \item Añadir Atributos
+    \item \textbf{Añadir Atributos.}\\
     Añada los atributos necesarios al componente, como el valor, la descripción, etc.
 \end{enumerate}
 
@@ -138,7 +138,7 @@ Estos struct se encuentran en el archivo de ModernWood/ModernWood/include/Modern
 \end{lstlisting}
 
 \subsubsection{Clase RGB} \label{ApendiceClaseRGB}
-Como se ha comentado en la sección de configuración de la \gls{EEPROM} \ref{ApendiceConfigEEPROM}, todas las variables que se guardan en la \gls{EEPROM} son de tipo \glsnocase{Int}. Para poder guardar los colores de los leds RGB se ha creado una clase RGB. Esta clase se encarga de guardar los colores en formato HSV y RGB y empaquetado en \glsnocase{Int}. Así como de calcular el color en función de los valores de HSV y del empaquetado. Esta clase se encuentra en el archivo de ModernWood/ModernWood//include/customRGB.h. Este archivo también es público en el repositorio del proyecto \cite{ModernWoodGitHub}. La definición de los 3 tipos de color se puede ver en el código \ref{code:RGBClass}.
+Como se ha comentado en la sección de configuración de la \gls{EEPROM} \ref{ApendiceConfigEEPROM}, todas las variables que se guardan en la \gls{EEPROM} son de tipo \glsnocase{Int}. Para poder guardar los colores de los leds RGB se ha creado una clase RGB. Esta clase se encarga de guardar los colores en formato HSV y RGB y empaquetado en \glsnocase{Int}. Así como calcular el color en función de los valores de HSV y del empaquetado. Esta clase se encuentra en el archivo de ModernWood/ModernWood//include/customRGB.h. Este archivo también es público en el repositorio del proyecto \cite{ModernWoodGitHub}. La definición de los 3 tipos de color se puede ver en el código \ref{code:RGBClass}.
 
 \begin{lstlisting}[style=console, language=bash, caption={Definicion de los 3 datos que maneja la clase RGB}, label={code:RGBClass}]
     int r, g, b; // RGB
@@ -438,9 +438,9 @@ Durante el desarrollo del proyecto, se han realizado diversas pruebas para verif
 
 Durante todo el desarrollo se ha ido programando y probando el código en la placa de desarrollo ESP32S3. Se han realizado pruebas de los distintos componentes. El principal módulo que se ha estado probando ha sido el módulo de la pantalla \gls{OLED} y el Multiplexor. La pantalla ha sido lo que más tiempo ha estado en desarrollo, ya que había que hacer que funcionase con todos los estados del teclado. Así mismo, esta tenía que ir cambiando de estado según el estado del teclado. Por lo que cualquier error en las coordenadas o en la escritura de la pantalla se notaba fácilmente y se podía corregir.
 
-Para poder realizar la tarea de actualizar la pantalla se han ido ideando una serie de variables a lo largo del código que no indicarían donde está el estado del teclado, así podríamos desde cualquier parte del código saber en qué estado se encuentra el teclado y poder actualizar la pantalla en consecuencia.
+Para poder realizar la tarea de actualizar la pantalla se han ido ideando una serie de variables a lo largo del código que nos indicaría cómo está el estado del teclado; así podríamos, desde cualquier parte del código, saber en qué estado se encuentra el teclado y poder actualizar la pantalla en consecuencia.
 
-Dado que el entorno que teníamos para las pruebas no constaba de un teclado normal. Se decidió crear unas funciones de \gls{DEBUG} que nos permitirían, mediante el serial de la placa de desarrollo, simular la pulsación de las teclas. De esta forma podríamos probar el funcionamiento de la pantalla sin necesidad de tener un teclado conectado. Así como el funcionamiento de la batería, el bluetooth, etc. Y poder ir cambiando las variables de estado del teclado.
+Dado que el entorno que teníamos para las pruebas no constaba de un teclado normal se decidió crear unas funciones de \gls{DEBUG} que nos permitirían, mediante el serial de la placa de desarrollo, simular la pulsación de las teclas. De esta forma podríamos probar el funcionamiento de la pantalla sin necesidad de tener un teclado conectado así como el funcionamiento de la batería, el bluetooth, etc. y poder ir cambiando las variables de estado del teclado.
 
 Como podemos ver en el código \ref{code:CodigoDebug} esta es la solución que se ha optado y también se puede encontrar en el GitHub del proyecto \cite{ModernWoodGitHub}. 
 
@@ -542,11 +542,11 @@ Como podemos ver en el código \ref{code:CodigoDebug} esta es la solución que s
 
 \section{Ensamblaje}\label{ApendiceEnsamblaje}
 
-El ensamblado del teclado ha sido una tarea compleja que ha requerido la integración de múltiples componentes, que aunque se hayan tenido en cuenta errores. Por desconocimiento o por falta de experiencia, se han cometido errores que han requerido la modificación de los componentes o la realización de ajustes en el diseño. En esta sección, se incluyen los detalles del ensamblaje del teclado, así como los errores cometidos y las soluciones adoptadas para corregirlos.
+El ensamblado del teclado ha sido una tarea compleja que ha requerido la integración de múltiples componentes, que aunque se hayan tenido en cuenta posibles errores. Por desconocimiento o por falta de experiencia, se han cometido errores que han requerido la modificación de los componentes o la realización de ajustes en el diseño. En esta sección, se incluyen los detalles del ensamblaje del teclado, así como los errores cometidos y las soluciones adoptadas para corregirlos.
 
 \subsection{Errores}\label{ApendiceEnsamblajeErrores}
 
-El único error cometido en el ensamblaje ha sido el del montaje en la carcasa. Los tornillos hembra/macho, que iban a ser atornillado a la carcasa de madera, eran demasiado grandes y su rosca demasiado grande. Por lo que se optó por pegar estos tornillos a la carcasa con epoxi en el agujero correspondiente al tornillo. Así se podría desmontar la placa de madera del teclado sin problemas. También estos mismos agujeros tuvieron que ser ampliados para poder meter la tuerca sin problemas. Estos agujeros pasaron de 5 mm a 6 mm.
+El único error cometido en el ensamblaje ha sido el del montaje en la carcasa. Los tornillos hembra/macho, que iban a ser atornillado a la carcasa de madera, eran demasiado grandes y su rosca demasiado grande. Por esta razón se optó por pegar estos tornillos a la carcasa con epoxi en el agujero correspondiente al tornillo. Así se podría desmontar la placa de madera del teclado sin problemas. También estos mismos agujeros tuvieron que ser ampliados para poder meter la tuerca sin dificultad. Estos agujeros pasaron de 5 mm a 6 mm.
 
 \subsection{Montaje Nuevo} \label{ApendiceEnsamblajeMontaje}
 

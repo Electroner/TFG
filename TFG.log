@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  18 JUN 2024 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  19 JUN 2024 19:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1682,10 +1682,10 @@ Cap\'{\i }tulo 8.
 Underfull \vbox (badness 4303) has occurred while \output is active []
 
  [87]
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
  [88]
 LaTeX Info: Redefining \. on input line 36.
 LaTeX Info: Redefining \% on input line 36.
@@ -1908,26 +1908,35 @@ Overfull \hbox (6.6704pt too wide) in paragraph at lines 7--8
 [105
 
 ]
-<imagenes/Capitulos/Cap13/ESP32S3HOLE.png, id=2168, 340.27126pt x 453.19313pt>
+Overfull \hbox (21.39632pt too wide) in paragraph at lines 21--23
+\OT1/cmr/m/n/10.95 Seleccione ``De-vi-ce'' y as^^S^^Pgne-le un nom-bre (por ejem-plo, ``ESP32S3HOLE''). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
+[106]
+<imagenes/Capitulos/Cap13/ESP32S3HOLE.png, id=2181, 340.27126pt x 453.19313pt>
 File: imagenes/Capitulos/Cap13/ESP32S3HOLE.png Graphic file (type png)
 <use imagenes/Capitulos/Cap13/ESP32S3HOLE.png>
 Package pdftex.def Info: imagenes/Capitulos/Cap13/ESP32S3HOLE.png  used on input line 41.
 (pdftex.def)             Requested size: 251.9989pt x 335.62735pt.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
- [106]
-<imagenes/Capitulos/Cap05/AcotadoPCBMadera.png, id=2189, 590.205pt x 372.64218pt>
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+ [107 <./imagenes/Capitulos/Cap13/ESP32S3HOLE.png>]
+<imagenes/Capitulos/Cap05/AcotadoPCBMadera.png, id=2194, 590.205pt x 372.64218pt>
 File: imagenes/Capitulos/Cap05/AcotadoPCBMadera.png Graphic file (type png)
 <use imagenes/Capitulos/Cap05/AcotadoPCBMadera.png>
 Package pdftex.def Info: imagenes/Capitulos/Cap05/AcotadoPCBMadera.png  used on input line 54.
 (pdftex.def)             Requested size: 288.0011pt x 181.84001pt.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
- [107 <./imagenes/Capitulos/Cap13/ESP32S3HOLE.png>]
 LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
 LaTeX Info: Redefining \. on input line 60.
@@ -1967,7 +1976,7 @@ LaTeX Info: Redefining \% on input line 295.
 LaTeX Info: Redefining \. on input line 295.
 LaTeX Info: Redefining \% on input line 295.
  [114]
-<imagenes/Capitulos/Cap13/ModernWoodLinked.png, id=2464, 120.45pt x 44.41594pt>
+<imagenes/Capitulos/Cap13/ModernWoodLinked.png, id=2465, 120.45pt x 44.41594pt>
 File: imagenes/Capitulos/Cap13/ModernWoodLinked.png Graphic file (type png)
 <use imagenes/Capitulos/Cap13/ModernWoodLinked.png>
 Package pdftex.def Info: imagenes/Capitulos/Cap13/ModernWoodLinked.png  used on input line 313.
@@ -2335,9 +2344,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  94i,17n,102p,2383b,2182s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Clm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feybr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on TFG.pdf (155 pages, 7255787 bytes).
+Output written on TFG.pdf (155 pages, 7255073 bytes).
 PDF statistics:
- 3289 PDF objects out of 3580 (max. 8388607)
+ 3290 PDF objects out of 3580 (max. 8388607)
  938 named destinations out of 1000 (max. 500000)
  1063 words of extra memory for PDF output out of 10000 (max. 10000000)
 

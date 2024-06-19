@@ -238,9 +238,9 @@ Esta herramienta permite exportar el esquema del teclado en un .JSON que posteri
 A lo largo de toda la investigación he ido encontrando muchas alternativas para realizar el teclado, diferentes sistemas, diferentes microcontroladores y diferentes tipos de circuitos.
 
 \subsubsection{Microcontrolador}
-Este es el cerebro del teclado, este va a ser el encargado de la comunicación, de registrar las teclas, de construir los paquetes de datos, de mostrar los datos correspondientes y de mantener toda la iluminación.
+Este es el cerebro del teclado, va a ser el encargado de la comunicación, de registrar las teclas, de construir los paquetes de datos, de mostrar los datos correspondientes y de mantener toda la iluminación.
 
-Por esto es la pieza sobre lo que gira todo el proyecto y la parte más importante, también hay que considerar la facilidad para programarlos y la cantidad de recursos que tiene, tanto de librerías como de documentación.
+Por tanto es la pieza sobre lo que gira todo el proyecto y la parte más importante, también hay que considerar la facilidad para programarlos y la cantidad de recursos que tiene, tanto de librerías como de documentación.
 Cuanto más extendido sea el uso, más sencillo será lograr que funcione.
 
 A lo largo del periodo de investigación y diseño se han encontrado varias alternativas. Estas tienen que cumplir que tenga un hardware dedicado a la conectividad \gls{USB} llamado ``\gls{USB} OTG`` ya que se ideó así en la sección \ref{DiseñoConectividadCable}. Los principales y más destacables son:
@@ -385,7 +385,7 @@ Ahora el problema subyacente es cargar la batería y al mismo tiempo poder usar 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{imagenes/Capitulos/Cap03/TP4056Schematic.png}
-    \caption{Esquemático del modulo TP4056 \cite{TP4056SchematicInternet}}
+    \caption{Esquemático del módulo TP4056 \cite{TP4056SchematicInternet}}
     \label{fig:SchemeTP4056}
 \end{figure}
 
@@ -447,7 +447,7 @@ La idea es que este teclado dispusiera de una pantalla para mostrar información
 Se ha acabado escogiendo la pantalla \textbf{\gls{TFT} 0.96"} solo por la cantidad de colores que puede mostrar. Esta usa 8 pines de nuestro microcontrolador.
 
 \subsubsection{Sistema de \glsnocase{Polling}}
-Dado que los microcontroladores no tienen la cantidad de pines necesarios para conectar la matriz de pines de 16x6 en total son necesario 22 pines exclusivamente para todas las teclas. Recordando materias de electrónica, recordé la existencia de un dispositivo que permite multiplexar señales eléctricas. Dado que tenemos que ir recorriendo las secciones verticales una a una e ir leyendo las horizontales para saber qué tecla se ha pulsado, podemos multiplexar esas 16 líneas en tan solo 4 gracias al dispositivo \glsnocase{Multiplexor}. Para hacernos una idea de como es la matriz de teclado podemos ver la figura \ref{fig:EjemploArrayTeclado}.
+Dado que los microcontroladores no tienen la cantidad de pines necesarios para conectar la matriz de pines de 16x6 en total son necesario 22 pines exclusivamente para todas las teclas. Revisando materias de electrónica, recordé la existencia de un dispositivo que permite multiplexar señales eléctricas. Dado que tenemos que ir recorriendo las secciones verticales una a una e ir leyendo las horizontales para saber qué tecla se ha pulsado, podemos multiplexar esas 16 líneas en tan solo 4 gracias al dispositivo \glsnocase{Multiplexor}. Para hacernos una idea de como es la matriz de teclado podemos ver la figura \ref{fig:EjemploArrayTeclado}.
 
 El objetivo es encontrar un \glsnocase{Multiplexor} que quepa y que nos ofrezca la función de 4 a 16, que valga a 3.3V y que pueda ser soldado con facilidad. Tan solo con una búsqueda aparece el \textbf{CD74HC154M96} dado que directamente cumple todos los requisitos pedidos nos vamos a quedar con este.
 
@@ -473,7 +473,7 @@ Eso sí, necesitaremos mirar qué pines están conectados al módulo de \gls{USB
     \label{fig:XS12}
 \end{figure}
 
-Este conector irá atornillando a la carcasa y luego se fabricara un cable de este conector a \gls{USB} tipo A. usando un cable reforzado de 4 hilos internos y dos conectores más. Un conector de seguridad GX16 de 4 pines para darle robustez y un acabado más estético y un cabezal \gls{USB} A chapado en oro y todo sellado con tubo \glsnocase{Termoretractil}. El conector GX16 podemos verlo en la figura \ref{fig:GX16} y asi hacernos una idea de cómo será el conector \gls{USB} y el tipo A en la figura \ref{fig:USBA}.
+Este conector irá atornillando a la carcasa y luego se fabricara un cable de este conector a \gls{USB} tipo A. Usando un cable reforzado de 4 hilos internos y dos conectores más. Un conector de seguridad GX16 de 4 pines para darle robustez y un acabado más estético y un cabezal \gls{USB} A chapado en oro y todo sellado con tubo \glsnocase{Termoretractil}. El conector GX16 podemos verlo en la figura \ref{fig:GX16} y asi hacernos una idea de cómo será el conector \gls{USB} y el tipo A en la figura \ref{fig:USBA}.
 
 \begin{figure}[H]
     \centering
@@ -587,7 +587,7 @@ Chip Principal                                                    & \begin{tabul
 Leds                                                              & \begin{tabular}[c]{@{}l@{}}WS2812B \\ (C114586)\end{tabular}             & 10 (25)  & lcsc.com    & 2.18   \\ \hline
 Diodos                                                            & \begin{tabular}[c]{@{}l@{}}1N5819W \\ (SOD123FL)\end{tabular}            & 96 (250) & lcsc.com    & 2.08   \\ \hline
 \gls{PCB}                                                               & \begin{tabular}[c]{@{}l@{}}Placa Base \gls{DIY} \end{tabular}            & 1 (5) & jlcpcb.com  & 42.76  \\ \hline
-Envíos                                                            & \begin{tabular}[c]{@{}l@{}}Envio Piezas \end{tabular}                    & 1 (1) & lcsc.com    & 7.56   \\ \hline
+Gasto Envíos                                                            & \begin{tabular}[c]{@{}l@{}}Envio Piezas \end{tabular}                    & 1 (1) & lcsc.com    & 7.56   \\ \hline
 \hline
 \multicolumn{4}{|l|}{Total} & 67.76 \\
 \hline

@@ -1,10 +1,10 @@
 \chapter{Programación}
 
-El software de la placa ha sido desarrollado durante el transcurso de este proyecto. Se ha usado el lenguaje de programación C y el entorno de desarrollo \gls{PlatformIO} en Visual Studio Code. A continuación se detallarán los aspectos más importantes de la programación de la placa, diseños de las funciones y estructura del código. Estructura general de la máquina de estados y las funciones de cada uno de los estados.
+El software de la placa ha sido desarrollado durante el transcurso de este proyecto. Se ha usado el lenguaje de programación C y el entorno de desarrollo \gls{PlatformIO} en Visual Studio Code. A continuación se detallarán los aspectos más importantes de la programación de la placa, diseños de las funciones y estructura del código, estructura general de la máquina de estados y las funciones de cada uno de los estados.
 
 También se detallará la estructura de la memoria flash de la placa, donde se guardan los datos de configuración y los datos de la batería.
 
-Se explicará porque se han tomado ciertas decisiones de diseño del microcontrolador y como se han implementado.
+Se explicará por qué se han tomado ciertas decisiones de diseño del microcontrolador y cómo se han implementado.
 
 \begin{tcolorbox}[colback=blue!5!white, colframe=blue!55!white, title=Nota]
     Durante la mayor parte del desarrollo se ha utilizado una placa comercial para ir programando, ya que no se tenía acceso al producto final. Ver el apéndice \ref{ApendicePruebas} para saber cómo se han realizado las pruebas del software.  
@@ -26,13 +26,13 @@ Después vamos a crear el archivo platformio.ini en la raíz del proyecto. En es
 \end{itemize}
 \label{LibreriasPlatformIO}
 
-Hay algunas recomendaciones en el uso de \gls{PlatformIO}. Para la ESP32S3, en concreto para la placa de desarrollo ESP32-S3-DevKitC-1. Se recomienda usar un filtro de monitor serié para poder ver los mensajes que envía la placa sin información adicional y que no sea relevante. Para ello se puede usar el siguiente filtro:
+Hay algunas recomendaciones en el uso de \gls{PlatformIO}. Para la ESP32S3, en concreto para la placa de desarrollo ESP32-S3-DevKitC-1. Se recomienda usar un filtro de monitor serie para poder ver los mensajes que envía la placa sin información adicional y que no sea relevante. Para ello se puede usar el siguiente filtro:
 
 \begin{lstlisting}[style=console, language=bash, caption={Filtro recomendado de \gls{PlatformIO}}, label={code:FiltroEspecial}]
 monitor_filters = esp32_exception_decoder
 \end{lstlisting}
 \newpage
-El archivo de configuración platformio.ini será el descrito en el código \ref{code:ConfiguracionPlaftformIO}, donde se configura el microcontrolador, las librerías y algunas opciones de compilación y entorno. Con este fragmento el proyecto se configurará automáticamente con las librerías necesarias y el microcontrolador correcto. Dejando el proyecto listo para programar. Las librerías necesarias son las descritas en la sección \ref{DiseñoLibrerias}.
+El archivo de configuración platformio.ini será el descrito en el código \ref{code:ConfiguracionPlaftformIO}, donde se configura el microcontrolador, las librerías y algunas opciones de compilación y entorno. Con este fragmento el proyecto se configurará automáticamente con las librerías necesarias y el microcontrolador correcto, dejando el proyecto listo para programar. Las librerías necesarias son las descritas en la sección \ref{DiseñoLibrerias}.
 
 \begin{lstlisting}[style=console, language=bash, caption={Configuracion \gls{PlatformIO}}, label={code:ConfiguracionPlaftformIO}]
     [env:esp32-s3-devkitc-1]
@@ -66,7 +66,7 @@ El archivo de configuración platformio.ini será el descrito en el código \ref
 
 \subsection{Compilación y entorno}
 
-Para compilar el proyecto se puede usar el comando \textit{pio run} en la terminal de \gls{PlatformIO}. Este comando compilará el proyecto y generará el archivo binario que se puede subir a la placa. Para subir el archivo binario a la placa se puede usar el comando \textit{pio run -t upload}. Este comando subirá el archivo binario a la placa y lo ejecutará. Para ver la salida de la placa se puede usar el comando \textit{pio device monitor}. Este comando abrirá una terminal serié donde se podrá ver la salida de la placa.
+Para compilar el proyecto se puede usar el comando \textit{pio run} en la terminal de \gls{PlatformIO}. Este comando compilará el proyecto y generará el archivo binario que se puede subir a la placa. Para subir el archivo binario a la placa se puede usar el comando \textit{pio run -t upload}. Este comando subirá el archivo binario a la placa y lo ejecutará. Para ver la salida de la placa se puede usar el comando \textit{pio device monitor}. Este comando abrirá una terminal serie donde se podrá ver la salida de la placa.
 
 También se pueden usar los botones que nos aparecen en Visual Studio Code para compilar, subir y ver la salida de la placa. Estos botones se encuentran en la parte inferior izquierda de la pantalla de Visual Studio Code. \gls{PlatformIO} por defecto detecta automáticamente el puerto serie donde está conectada la placa y la velocidad de comunicación. Si se quiere cambiar la velocidad de comunicación se puede hacer en el archivo platformio.ini en la sección de configuración del proyecto que se muestra en el código \ref{code:ConfiguracionPlaftformIO}.
 
@@ -138,7 +138,7 @@ Lo que nos permite desde el bucle principal saber en qué estado nos encontramos
 El primer apartado es el ahorro de energía. En esta sección de código se comprueba si el flag de tiempo de ahorro de energía ha sido activado por interrupción hardware de un reloj. Si el flag está activado, se activa el modo de ahorro de energía y se desactiva la pantalla y los \glsnocase{LED}s. Si el flag está desactivado y el flag de que estamos durmiendo está activado, se despierta la pantalla y los \glsnocase{LED}s.
 
 \subsubsection{Batería}
-Aquí comprobamos si desde el gestor de interrupciones de la batería ha actualizado el valor de la misma. Si es valor ha variado, se actualiza el valor de la batería en la pantalla y se actualiza el icono de la batería.
+Aquí comprobamos si desde el gestor de interrupciones de la batería ha actualizado el valor de la misma. Si el valor ha variado, se actualiza el valor de la batería en la pantalla y se actualiza el icono de la batería.
 
 \subsubsection{\gls{LED}s}
 En esta sección se comprueba si los \glsnocase{LED}s están activados en la configuración y si el modo de los \glsnocase{LED}s es el modo de \glsnocase{LED}s programados por el usuario. Si es así se ejecuta el modo de \glsnocase{LED}s programados por el usuario. Si no se ejecuta el modo de \glsnocase{LED}s por defecto.
@@ -147,12 +147,12 @@ En esta sección se comprueba si los \glsnocase{LED}s están activados en la con
 En esta sección se comprueba si la conexión ha cambiado. Si ha cambiado, se actualiza el icono de la conexión y se actualiza el modo de conexión.
 
 \subsubsection{Pantalla}
-En esta sección se comprueba si la pantalla está activada. En el caso de estar activada, se comprueba que se ha cambiado el estado de la pantalla. En el caso afirmativo se actualiza la pantalla con la información necesaria. Además, de mostrar siempre la pantalla con el brillo seleccionado.
+En esta sección se comprueba si la pantalla está activada. En el caso de estar activada, se comprueba que se ha cambiado el estado de la pantalla. En el caso afirmativo se actualiza la pantalla con la información necesaria, además, de mostrar siempre la pantalla con el brillo seleccionado.
 
 \subsubsection{Teclado}
 Se comprueba primero que no estamos en el modo de teclas especiales o modo especial, ya que tendríamos que ejecutar la función especificada especial.
 Si no estamos en el modo especial se procede a funcionar en modo normal del teclado, mientras se comprueba que el flag de la interrupción de la tecla Fn no este activado. Si está activado, se cambia el modo de teclado a configuración y se activa el flag de configuración.
-En el modo configuración nos encontramos con los mismos, se comprueba que el flag de la interrupción de la tecla Fn no este activado. Si está activado se cambia el modo de teclado a normal y se desactiva el flag de configuración.
+En el modo configuración nos encontramos con lo mismo, se comprueba que el flag de la interrupción de la tecla Fn no este activado. Si está activado se cambia el modo de teclado a normal y se desactiva el flag de configuración.
 
 En el modo de configuración, cada vez que se pulsa una tecla se actualiza el valor de la tecla pulsada y se activa el flag de tecla pulsada, activando la función de actualizar la pantalla.
 
@@ -182,7 +182,7 @@ Para los \glsnocase{LED}s se han creado varios modos de funcionamiento. Se ha cr
 
 \subsection{Macros}
 
-Para los macros o funciones especiales, se tendrá que activar el modo desde el menú "Extra y ayuda". Ya que estas funciones serán creadas por el usuario y se tendran que añadir al código. Se podrán añadir más funciones creando la función correspondiente y añadiéndola al menú de macros. Revisar el apéndice \ref{ApendiceMacros} para más información.
+Para los macros o funciones especiales, se tendrá que activar el modo desde el menú ``Extra y ayuda'', ya que estas funciones serán creadas por el usuario y se tendran que añadir al código. Se podrán añadir más funciones creando la función correspondiente y añadiéndola al menú de macros. Revisar el apéndice \ref{ApendiceMacros} para más información.
 
 \section{Boot}
 

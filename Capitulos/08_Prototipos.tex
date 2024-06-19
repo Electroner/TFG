@@ -1,6 +1,6 @@
 \chapter{Prototipos}
 
-Durante el desarrollo del proyecto se han realizado varios prototipos para probar las diferentes funcionalidades del sistema. En este capítulo se describen los prototipos realizados y las pruebas realizadas. Se ha usado la placa de desarrollo ESP32S3-DevKitC-1 para realizar los prototipos en una protoboard junto con un \glsnocase{Multiplexor} DIP en vez de \gls{SMD} para facilitar la conexión de los cables. Durante el desarrollo de los prototipos se ha empleado solo un pequeño porcentaje de las teclas del producto final. Solo se han usado las teclas para controlar la pantalla y 3 teclas extra de funcionalidad, una letra, el shift y el espacio.
+Durante el desarrollo del proyecto se han realizado varios prototipos para probar las diferentes funcionalidades del sistema. En este capítulo se describen los prototipos realizados y las pruebas realizadas. Se ha usado la placa de desarrollo ESP32S3-DevKitC-1 para realizar los prototipos en una protoboard junto con un \glsnocase{Multiplexor} DIP en vez de \gls{SMD} para facilitar la conexión de los cables. Durante el desarrollo de los prototipos se ha empleado sólo un pequeño porcentaje de las teclas del producto final. Sólo se han usado las teclas para controlar la pantalla y 3 teclas extra de funcionalidad, una letra, el shift y el espacio.
 
 
 \section{Versiones}
@@ -15,21 +15,21 @@ Principalmente, este prototipo fue para probar las dimensiones de la \gls{PCB} y
 Esta versión fue una modificación del teclado Tesseract \cite{Tesseract} para cambiar la ergonomía, ya que era muy tosco y no era cómodo de usar. Se cambió la disposición del puerto \gls{USB}, ya que la primera versión usaba un \gls{USB} B y la nueva versión usa un \gls{USB} A.
 
 \subsection{V3: Modificaciones}
-Tras las ultimas dos versiones se decidió ampliar la funcionalidad creando el nuevo modelo ModernWood. Este incluiría una pantalla \gls{OLED} y un protocolo \gls{Bluetooth} para poder usar el teclado con dispositivos móviles. Se cambió el microcontrolador a un ESP32S3. Se cambió el material de la carcasa a madera y se añadió un difusor para los \gls{LED}s. Se añadió una batería de litio para poder usar el teclado sin cables y se cambió el conector \gls{USB} a un conector XS-12 para que fuera todavía más robusto.
+Tras las últimas dos versiones se decidió ampliar la funcionalidad creando el nuevo modelo ModernWood. Este incluiría una pantalla \gls{OLED} y un protocolo \gls{Bluetooth} para poder usar el teclado con dispositivos móviles. Se cambió el microcontrolador a un ESP32S3. Se cambió el material de la carcasa a madera y se añadió un difusor para los \gls{LED}s. Se añadió una batería de litio para poder usar el teclado sin cables y se cambió el conector \gls{USB} a un conector XS-12 para que fuera todavía más robusto.
 
 \section{Problemas y Errores} \label{Errores}
 En este apartado se describen los problemas y errores encontrados durante el desarrollo de los prototipos. Estos no han sido corregidos en las versiones de los prototipos, pero se han tenido en cuenta para el diseño del producto final.
 \subsection{Corriente inversa en el regulador de tensión} \label{CorrienteInversa}
-Es común que durante la operación normal del los componentes electrónicos, sobre todo los operados por personas, se produzcan errores en la conexión de los cables. Estos son errores que pueden ser fatales para los componentes electrónicos. Uno de estos errores es la conexión inversa de la alimentación. Para evitar que la corriente inversa dañe el regulador de tensión se ha añadido un diodo en la puerta del regulador de tensión.
+Es común que durante la operación normal de los componentes electrónicos, sobre todo los operados por personas, se produzcan errores en la conexión de los cables. Estos son errores que pueden ser fatales para los componentes electrónicos. Uno de estos errores es la conexión inversa de la alimentación. Para evitar que la corriente inversa dañe el regulador de tensión se ha añadido un diodo en la puerta del regulador de tensión.
 
-Para evitar este problema, se coloca un diodo en la entrada del regulador de tensión. La función principal del diodo es bloquear cualquier corriente inversa que intente fluir hacia la entrada del regulador. El diodo permite el paso de corriente en una única dirección (de la entrada del regulador a la salida), y bloquea el flujo en la dirección opuesta. De esta manera, se protege el regulador de tensión de posibles daños por corriente inversa.
+La función principal del diodo es bloquear cualquier corriente inversa que intente fluir hacia la entrada del regulador. El diodo permite el paso de corriente en una única dirección (de la entrada del regulador a la salida), y bloquea el flujo en la dirección opuesta. De esta manera, se protege el regulador de tensión de posibles daños por corriente inversa.
 
 Además de su función de protección, el diodo también ayuda a estabilizar el funcionamiento del regulador de tensión en condiciones transitorias, como durante el encendido o apagado del circuito. Al evitar que la corriente inversa llegue al regulador, se minimizan las perturbaciones en la salida, asegurando una regulación de tensión más estable y fiable.
 
 \subsection{Voltaje en la salida del regulador de tensión} \label{VoltajeRegulador}
-Este problema, aunque parecido al anterior, la razón es totalmente diferente. En este caso, el problema ocurre cuando queremos alimentar el teclado mediante el programador \gls{TTL}. Ya que durante la programación del microcontrolador, el programador \gls{TTL} alimenta el teclado con 5 V o 3.3 V. Sin embargo, el regulador de tensión del teclado está diseñado para funcionar con una tensión de entrada de 3.3 V. Y además la alimentación del chip sería directa.
+Este problema, aunque parecido al anterior, la razón es totalmente diferente. En este caso, el problema ocurre cuando queremos alimentar el teclado mediante el programador \gls{TTL}, ya que durante la programación del microcontrolador, el programador \gls{TTL} alimenta el teclado con 5 V o 3.3 V. Sin embargo, el regulador de tensión del teclado está diseñado para funcionar con una tensión de entrada de 3.3 V así, además, la alimentación del chip sería directa.
 
-Por lo que el voltaje lo tendríamos en la puerta de salida del regulador de tensión. Por lo que para evitar lo que se conoce como voltaje ``\gls{BackfeedCurrent}'' en los reguladores se ha añadido de nuevo un diodo en la puerta de salida del regulador de tensión. Que permita el paso de la corriente de la puerta de salida del regulador a la puerta de entrada del regulador. Saltando el regulador de tensión.
+Por lo que el voltaje lo tendríamos en la puerta de salida del regulador de tensión. Por lo que para evitar lo que se conoce como voltaje ``\gls{BackfeedCurrent}'' en los reguladores se ha añadido de nuevo un diodo en la puerta de salida del regulador de tensión que permita el paso de la corriente de la puerta de salida del regulador a la puerta de entrada del regulador saltando el regulador de tensión.
 
 Por esta razón, durante la programación de esta versión del teclado es necesario los conversores de nivel lógico para poder alimentar el teclado con 5 V y a su vez programarlo a 3.3 V y así evitar el problema del voltaje en la puerta de salida del regulador de tensión.
 
@@ -59,7 +59,7 @@ Para soldar los componentes \gls{SMD} se ha usado una pasta de soldadura de baja
 
 La pasta de soldadura se aplica junto con flux en las pistas de la \gls{PCB} y se coloca el componente encima. Se calienta la pasta con la pistola de calor hasta que se funda y se adhiera el componente a la \gls{PCB}. El propio estaño debe deslizarse hasta su posición en la pista y no debe ser empujado con la pistola de calor. Después de unos segundos de calentar, el chip debería haberse asentado en su posición. Se debe tener cuidado con la temperatura de la pistola de calor para no dañar los componentes.
 
-Se ha de tener en cuenta la fuerza de la pistola de calor, ya que sí se pone la fuerza de la misma muy alta podría llegar a calentar otros componentes adyacentes y desoldarlos o dañarlos. \cite{SoldaduraSMD}
+Se ha de tener en cuenta la fuerza de la pistola de calor, ya que si se pone la fuerza de la misma muy alta podría llegar a calentar otros componentes adyacentes y desoldarlos o dañarlos. \cite{SoldaduraSMD}
 
 \subsubsection{Atornillado de los estabilizadores}
 Una vez soldados los componentes de la \gls{PCB} se ha de colocar los estabilizadores en la \gls{PCB}. Para ello se ha de colocar los estabilizadores en los agujeros de la \gls{PCB} y atornillarlos con los tornillos correspondientes. Se ha de tener cuidado con la fuerza ejercida para no romper la \gls{PCB} ni los estabilizadores.
@@ -76,7 +76,7 @@ Primero se ha de colocar el difusor sobre los \glsnocase{LED}s y se ha de atorni
 Tanto en la placa base como en el conector XS-12 tenemos que soldar un cable de conexion Gx16-4 a la parte interna del conector y la parte hembra del conector a los pines correspondientes D+,D-,GND y VCC. Para ello se ha de soldar el cable a la parte interna del conector y a los pines de la placa base. Se ha de tener cuidado con la polaridad de los cables.
 
 \subsubsection{Conector XS-12}
-Con todos los pasos anteriores realizados tendriamos la \gls{PCB} lista para ser montada en la carcasa. Que de fabrica ya tiene las tuercas empotradas en sus agujeros correspondientes y el barnizado completo.
+Con todos los pasos anteriores realizados tendriamos la \gls{PCB} lista para ser montada en la carcasa que, de fabrica, ya tiene las tuercas empotradas en sus agujeros correspondientes y el barnizado completo.
 
 Una vez que tenemos la carcasa barnizada y con las tuercas empotradas deberemos colocar el conector XS-12 en su lugar correspondiente. Para ello se ha de colocar el conector en la carcasa y atornillarlo con los tornillos M1.7 x 5 mm de cabeza plana.
 
