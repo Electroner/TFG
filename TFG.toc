@@ -46,8 +46,8 @@
 \contentsline {subsection}{\numberline {3.3.1}Elección de las herramientas}{27}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4}Elección de Hardware}{29}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Layout}{29}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Componentes Electrónicos}{30}{subsection.3.4.2}%
-\contentsline {subsubsection}{Microcontrolador}{30}{section*.31}%
+\contentsline {subsection}{\numberline {3.4.2}Componentes Electrónicos}{31}{subsection.3.4.2}%
+\contentsline {subsubsection}{Microcontrolador}{31}{section*.31}%
 \contentsline {subsubsection}{Atmega32u4}{32}{section*.32}%
 \contentsline {subsubsection}{STM32F103C8T6}{32}{section*.33}%
 \contentsline {subsubsection}{Nrf52840}{33}{section*.34}%

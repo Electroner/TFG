@@ -9,33 +9,33 @@ Durante el desarrollo del proyecto se han realizado varias versiones de los prot
 \subsection{V1: Correcciones}
 La primera de todas las versiones no contemplaba protocolo \glsnocase{Bluetooth} y tampoco poseía la pantalla \gls{OLED}. Se realizó para probar el funcionamiento de los interruptores y la \gls{PCB}. Se usó un microcontrolador Atmega32U4 y un \glsnocase{Multiplexor} DIP para facilitar la soldadura.
 
-Principalmente, este prototipo fue para probar las dimensiones de la \gls{PCB} y la disposición de los interruptores. Además de la ergonomía del teclado. Esta primera versión se llama Tesseract \cite{Tesseract}.
+Principalmente, este prototipo fue para probar las dimensiones de la \gls{PCB} y la disposición de los interruptores, además de la ergonomía del teclado. Esta primera versión se llama Tesseract \cite{Tesseract}.
 
 \subsection{V2: Correcciones}
 Esta versión fue una modificación del teclado Tesseract \cite{Tesseract} para cambiar la ergonomía, ya que era muy tosco y no era cómodo de usar. Se cambió la disposición del puerto \gls{USB}, ya que la primera versión usaba un \gls{USB} B y la nueva versión usa un \gls{USB} A.
 
 \subsection{V3: Modificaciones}
-Tras las últimas dos versiones se decidió ampliar la funcionalidad creando el nuevo modelo ModernWood. Este incluiría una pantalla \gls{OLED} y un protocolo \gls{Bluetooth} para poder usar el teclado con dispositivos móviles. Se cambió el microcontrolador a un ESP32S3. Se cambió el material de la carcasa a madera y se añadió un difusor para los \gls{LED}s. Se añadió una batería de litio para poder usar el teclado sin cables y se cambió el conector \gls{USB} a un conector XS-12 para que fuera todavía más robusto.
+Tras las últimas dos versiones se decidió ampliar la funcionalidad creando el nuevo modelo ModernWood. Este incluiría una pantalla \gls{OLED} y un protocolo \gls{Bluetooth} para poder usar el teclado con dispositivos móviles, se cambió el microcontrolador a un ESP32S3, se cambió el material de la carcasa a madera y se añadió un difusor para los \gls{LED}s, se añadió una batería de litio para poder usar el teclado sin cables y se cambió el conector \gls{USB} a un conector XS-12 para que fuera todavía más robusto.
 
 \section{Problemas y Errores} \label{Errores}
 En este apartado se describen los problemas y errores encontrados durante el desarrollo de los prototipos. Estos no han sido corregidos en las versiones de los prototipos, pero se han tenido en cuenta para el diseño del producto final.
 \subsection{Corriente inversa en el regulador de tensión} \label{CorrienteInversa}
-Es común que durante la operación normal de los componentes electrónicos, sobre todo los operados por personas, se produzcan errores en la conexión de los cables. Estos son errores que pueden ser fatales para los componentes electrónicos. Uno de estos errores es la conexión inversa de la alimentación. Para evitar que la corriente inversa dañe el regulador de tensión se ha añadido un diodo en la puerta del regulador de tensión.
+Es común que durante la operación normal de los componentes electrónicos, sobre todo los operados por personas, se produzcan errores en la conexión de los cables, estos son errores que pueden ser fatales para los componentes electrónicos. Uno de estos errores es la conexión inversa de la alimentación. Para evitar que la corriente inversa dañe el regulador de tensión se ha añadido un diodo en la puerta del regulador de tensión.
 
-La función principal del diodo es bloquear cualquier corriente inversa que intente fluir hacia la entrada del regulador. El diodo permite el paso de corriente en una única dirección (de la entrada del regulador a la salida), y bloquea el flujo en la dirección opuesta. De esta manera, se protege el regulador de tensión de posibles daños por corriente inversa.
+La función principal del diodo es bloquear cualquier corriente inversa que intente fluir hacia la entrada del regulador. El diodo permite el paso de corriente en una única dirección (de la entrada del regulador a la salida), y bloquea el flujo en la dirección opuesta, de esta manera, se protege el regulador de tensión de posibles daños por corriente inversa.
 
-Además de su función de protección, el diodo también ayuda a estabilizar el funcionamiento del regulador de tensión en condiciones transitorias, como durante el encendido o apagado del circuito. Al evitar que la corriente inversa llegue al regulador, se minimizan las perturbaciones en la salida, asegurando una regulación de tensión más estable y fiable.
+Además de su función de protección, el diodo también ayuda a estabilizar el funcionamiento del regulador de tensión en condiciones transitorias, como durante el encendido o apagado del circuito. Al evitar que la corriente inversa llegue al regulador se minimizan las perturbaciones en la salida, asegurando una regulación de tensión más estable y fiable.
 
 \subsection{Voltaje en la salida del regulador de tensión} \label{VoltajeRegulador}
-Este problema, aunque parecido al anterior, la razón es totalmente diferente. En este caso, el problema ocurre cuando queremos alimentar el teclado mediante el programador \gls{TTL}, ya que durante la programación del microcontrolador, el programador \gls{TTL} alimenta el teclado con 5 V o 3.3 V. Sin embargo, el regulador de tensión del teclado está diseñado para funcionar con una tensión de entrada de 3.3 V así, además, la alimentación del chip sería directa.
+Este problema, aunque parecido al anterior, la razón es totalmente diferente, en este caso, el problema ocurre cuando queremos alimentar el teclado mediante el programador \gls{TTL}, ya que durante la programación del microcontrolador, el programador \gls{TTL} alimenta el teclado con 5 V o 3.3 V. Sin embargo, el regulador de tensión del teclado está diseñado para funcionar con una tensión de entrada de 3.3 V así, además la alimentación del chip sería directa.
 
-Por lo que el voltaje lo tendríamos en la puerta de salida del regulador de tensión. Por lo que para evitar lo que se conoce como voltaje ``\gls{BackfeedCurrent}'' en los reguladores se ha añadido de nuevo un diodo en la puerta de salida del regulador de tensión que permita el paso de la corriente de la puerta de salida del regulador a la puerta de entrada del regulador saltando el regulador de tensión.
+Por lo que el voltaje lo tendríamos en la puerta de salida del regulador de tensión. Así se evitaría lo que se conoce como voltaje ``\gls{BackfeedCurrent}'' en los reguladores se ha añadido de nuevo un diodo en la puerta de salida del regulador de tensión que permita el paso de la corriente de la puerta de salida a la puerta de entrada saltando el regulador de tensión.
 
 Por esta razón, durante la programación de esta versión del teclado es necesario los conversores de nivel lógico para poder alimentar el teclado con 5 V y a su vez programarlo a 3.3 V y así evitar el problema del voltaje en la puerta de salida del regulador de tensión.
 
 \newpage
 \section{Montaje} \label{MontajeTeclado}
-Esta sección describe el montaje del teclado en completo detalle. Se usará como explicación para el producto final y para saber el orden y la manera de proceder para el montaje del teclado. Ya que está diseñado para ser ensamblado en unos pasos concretos.
+Esta sección describe el montaje del teclado en completo detalle. Se usará como explicación para el producto final y para saber el orden y la manera de proceder para el montaje del teclado, ya que está diseñado para ser ensamblado en unos pasos concretos.
 
 \begin{tcolorbox}[colback=red!11!white, colframe=red!50!white, title=Errores]
     Ver apartado de errores en el apéndice \ref{ApendiceEnsamblajeErrores} donde se detallan los errores encontrados durante el montaje y los cambios realizados a las diferentes partes del proyecto para corregirlos.
@@ -62,10 +62,10 @@ La pasta de soldadura se aplica junto con flux en las pistas de la \gls{PCB} y s
 Se ha de tener en cuenta la fuerza de la pistola de calor, ya que si se pone la fuerza de la misma muy alta podría llegar a calentar otros componentes adyacentes y desoldarlos o dañarlos. \cite{SoldaduraSMD}
 
 \subsubsection{Atornillado de los estabilizadores}
-Una vez soldados los componentes de la \gls{PCB} se ha de colocar los estabilizadores en la \gls{PCB}. Para ello se ha de colocar los estabilizadores en los agujeros de la \gls{PCB} y atornillarlos con los tornillos correspondientes. Se ha de tener cuidado con la fuerza ejercida para no romper la \gls{PCB} ni los estabilizadores.
+Una vez soldados los componentes de la \gls{PCB} se ha de colocar los estabilizadores en la \gls{PCB}, para ello se ha de colocar los estabilizadores en los agujeros de la \gls{PCB} y atornillarlos con los tornillos correspondientes. Se ha de tener cuidado con la fuerza ejercida para no romper la \gls{PCB} ni los estabilizadores.
 
 \subsubsection{Programación del microcontrolador}
-El siguiente paso es programar el microcontrolador. Para ello se debe conectar el microcontrolador a un programador, en nuestro caso el FT232RL y cargar el \glsnocase{Firmware} en el microcontrolador. Se debe tener cuidado con la polaridad de los pines y con la conexión de los cables. Se debe conectar el programador al microcontrolador y al ordenador y cargar el \glsnocase{Firmware} en el microcontrolador. Se debe comprobar que el \glsnocase{Firmware} se ha cargado correctamente y que el microcontrolador funciona correctamente.
+El siguiente paso es programar el microcontrolador. Para ello se debe conectar el microcontrolador a un programador, en nuestro caso el FT232RL y cargar el \glsnocase{Firmware} en el microcontrolador. Se debe tener cuidado con la polaridad de los pines y con la conexión de los cables. Se debe conectar el programador al microcontrolador y al ordenador y cargar el \glsnocase{Firmware} en el microcontrolador. Se debe comprobar que el \glsnocase{Firmware} se ha cargado correctamente y que el microcontrolador funciona adecuadamente.
 
 Para realizar esta tarea se emplearán los pines designados en la \gls{PCB} para la programación del microcontrolador.
 
@@ -78,14 +78,14 @@ Tanto en la placa base como en el conector XS-12 tenemos que soldar un cable de 
 \subsubsection{Conector XS-12}
 Con todos los pasos anteriores realizados tendriamos la \gls{PCB} lista para ser montada en la carcasa que, de fabrica, ya tiene las tuercas empotradas en sus agujeros correspondientes y el barnizado completo.
 
-Una vez que tenemos la carcasa barnizada y con las tuercas empotradas deberemos colocar el conector XS-12 en su lugar correspondiente. Para ello se ha de colocar el conector en la carcasa y atornillarlo con los tornillos M1.7 x 5 mm de cabeza plana.
+Una vez que tenemos la carcasa barnizada y con las tuercas empotradas debemos colocar el conector XS-12 en su lugar correspondiente, para ello se ha de colocar el conector en la carcasa y atornillarlo con los tornillos M1.7 x 5 mm de cabeza plana.
 
 Después de atornillar el conector XS-12 y tener soldado los dos conectores Gx16 tendremos que conectarlos para dejarlos por debajo de la carcasa.
 
 \subsubsection{Tornillos} \label{Tornillos}
-Una vez colocado el difusor y el conector XS-12 se puede colocar la \gls{PCB} en la carcasa, para ello a lo largo de toda la carcasa se encuentran unos agujeros roscado en las tuercas empotradas M3 para atornillar la placa.
+Una vez colocado el difusor y el conector XS-12 se puede colocar la \gls{PCB} en la carcasa, para ello a lo largo de toda la carcasa se encuentran unos agujeros roscados en las tuercas empotradas M3 para atornillar la placa.
 
-En la carcasa se deben colocar los espaciadores de 3 mm en los agujeros con las  y atornillarlos con un destornillador. Se debe tener cuidado con la fuerza ejercida para no mover o arrancar las tuercas empotradas pegadas con epoxi.
+En la carcasa se deben colocar los espaciadores de 3 mm en los agujeros de las tuercas empotradas y atornillarlos con un destornillador. Se debe tener cuidado con la fuerza ejercida para no mover o arrancar las tuercas empotradas pegadas con epoxi.
 
 Una vez colocados se pondrá la \gls{PCB} sobre los espaciadores dejando la batería en la parte inferior. Se atornillará la \gls{PCB} a los espaciadores con los tornillos M3 de cabeza redondeada.
 

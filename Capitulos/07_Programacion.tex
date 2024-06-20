@@ -17,7 +17,7 @@ Para poder usar \gls{PlatformIO} vamos a necesitar instalar Visual Studio Code. 
 
 En \gls{PlatformIO} vamos a comenzar configurando el proyecto. Para que automáticamente se configure el proyecto con las librerías necesarias y el microcontrolador correcto. Para ello vamos a crear un nuevo proyecto en \gls{PlatformIO} y seleccionamos el microcontrolador ESP32.
 
-Después vamos a crear el archivo platformio.ini en la raíz del proyecto. En este archivo vamos a configurar el microcontrolador y las librerías necesarias para el proyecto. En este caso vamos a usar las librerías de Adafruit NeoPixel, NimBLE-Arduino y TFT\_eSPI. Estas librerías se pueden instalar desde el gestor de librerías de \gls{PlatformIO}. Para ello basta con añadir las librerías al archivo platformio.ini. En este caso se han añadido las librerías en el archivo platformio.ini como se muestra en el código \ref{code:ConfiguracionPlaftformIO}.
+Después vamos a crear el archivo platformio.ini en la raíz del proyecto. En este archivo vamos a configurar el microcontrolador y las librerías necesarias para el proyecto. En este caso vamos a usar las librerías de Adafruit NeoPixel, NimBLE-Arduino y TFT\_eSPI. Estas librerías se pueden instalar desde el gestor de librerías de \gls{PlatformIO}. Para ello, basta con añadir las librerías al archivo platformio.ini. En este caso se han añadido las librerías en el archivo platformio.ini como se muestra en el código \ref{code:ConfiguracionPlaftformIO}.
 
 \begin{itemize}
 \item Adafruit NeoPixel
@@ -26,7 +26,7 @@ Después vamos a crear el archivo platformio.ini en la raíz del proyecto. En es
 \end{itemize}
 \label{LibreriasPlatformIO}
 
-Hay algunas recomendaciones en el uso de \gls{PlatformIO}. Para la ESP32S3, en concreto para la placa de desarrollo ESP32-S3-DevKitC-1. Se recomienda usar un filtro de monitor serie para poder ver los mensajes que envía la placa sin información adicional y que no sea relevante. Para ello se puede usar el siguiente filtro:
+Hay algunas recomendaciones en el uso de \gls{PlatformIO}. Para la ESP32S3, en concreto para la placa de desarrollo ESP32-S3-DevKitC-1 se recomienda usar un filtro de monitor serie para poder ver los mensajes que envía la placa sin información adicional y que no sea relevante. Para ello se puede usar el siguiente filtro:
 
 \begin{lstlisting}[style=console, language=bash, caption={Filtro recomendado de \gls{PlatformIO}}, label={code:FiltroEspecial}]
 monitor_filters = esp32_exception_decoder
@@ -66,7 +66,7 @@ El archivo de configuración platformio.ini será el descrito en el código \ref
 
 \subsection{Compilación y entorno}
 
-Para compilar el proyecto se puede usar el comando \textit{pio run} en la terminal de \gls{PlatformIO}. Este comando compilará el proyecto y generará el archivo binario que se puede subir a la placa. Para subir el archivo binario a la placa se puede usar el comando \textit{pio run -t upload}. Este comando subirá el archivo binario a la placa y lo ejecutará. Para ver la salida de la placa se puede usar el comando \textit{pio device monitor}. Este comando abrirá una terminal serie donde se podrá ver la salida de la placa.
+Para compilar el proyecto se puede usar el comando \textit{pio run} en la terminal de \gls{PlatformIO}, este comando compilará el proyecto y generará el archivo binario que se puede subir a la placa. Para subir el archivo binario a la placa se puede usar el comando \textit{pio run -t upload}. Este comando subirá el archivo binario a la placa y lo ejecutará. Para ver la salida de la placa se puede usar el comando \textit{pio device monitor}, este comando abrirá una terminal serie donde se podrá ver la salida de la placa.
 
 También se pueden usar los botones que nos aparecen en Visual Studio Code para compilar, subir y ver la salida de la placa. Estos botones se encuentran en la parte inferior izquierda de la pantalla de Visual Studio Code. \gls{PlatformIO} por defecto detecta automáticamente el puerto serie donde está conectada la placa y la velocidad de comunicación. Si se quiere cambiar la velocidad de comunicación se puede hacer en el archivo platformio.ini en la sección de configuración del proyecto que se muestra en el código \ref{code:ConfiguracionPlaftformIO}.
 
@@ -75,7 +75,7 @@ También se pueden usar los botones que nos aparecen en Visual Studio Code para 
 
 Para la interfaz de usuario se ha usado la librería TFT\_eSPI. Esta librería es una librería de Adafruit que permite controlar pantallas \gls{TFT}. Esta librería es muy completa y permite controlar pantallas \gls{TFT} de varios tamaños y resoluciones. En este caso se ha usado una pantalla \gls{TFT} de 0.96 pulgadas y 80x160 píxeles.
 
-Con este software se ha creado una interfaz de usuario muy sencilla. La interfaz de usuario se compone de un menú principal con 6 opciones y dentro de cada submenú hay varias opciones. La interfaz de usuario se controla con los botones del teclado. Los botones elegidos han sido Fn, Escape, las flechas de dirección y la tecla Enter. Con estos botones se puede navegar por el menú y seleccionar las opciones deseadas. Se han creado unas imágenes para cada tipo de menú y su correspondiente categoría. Estas imágenes se han guardado en la memoria flash de la placa para poder ser leídas por la pantalla \gls{TFT}. Podemos ver el menú principal en la figura \ref{fig:MenuPrincipal}.
+Con este software se ha creado una interfaz de usuario muy sencilla. La interfaz de usuario se compone de un menú principal con 6 opciones y dentro de cada submenú hay varias opciones. La interfaz de usuario se controla con los botones del teclado. Los botones elegidos han sido Fn, Escape, las flechas de dirección y la tecla Enter. Con estos botones se puede navegar por el menú y seleccionar las alternativas deseadas. Se han creado unas imágenes para cada tipo de menú y su correspondiente categoría. Estas imágenes se han guardado en la memoria flash de la placa para poder ser leídas por la pantalla \gls{TFT}. Podemos ver el menú principal en la figura \ref{fig:MenuPrincipal}.
 
 \begin{figure}[H]
 \centering
@@ -86,7 +86,7 @@ Con este software se ha creado una interfaz de usuario muy sencilla. La interfaz
 
 \subsection{Menú}
 
-El menú principal se compone de 6 opciones. Cada opción tiene un icono que corresponde a la categoría de la opción. Además, como se puede ver en la figura \ref{fig:MenuPrincipal} cada menú va a tener asociado un número. Este número es el número de la opción en el menú. Este número se va a usar para seleccionar la opción deseada. Para seleccionar una opción se va a usar la tecla Enter. Para moverse por el menú se van a usar las flechas de dirección. Para salir de una opción se va a usar la tecla Escape. Para volver al menú principal se va a usar la tecla ESC. Si se quiere entrar y salir del modo de configuración se va a usar la tecla Fn.
+El menú principal se compone de 6 opciones. Cada opción tiene un icono que corresponde a una categoría. Además, como se puede ver en la figura \ref{fig:MenuPrincipal} cada menú va a tener asociado un número. Este número es el indicador de la opción en el menú. Este número se va a usar para seleccionar la opción deseada. Para seleccionar una opción se va a usar la tecla Enter. Para moverse por el menú se van a utilizar las flechas de dirección. Para salir de una opción se va a usar la tecla Escape. Para volver al menú principal se va a usar la tecla ESC. Si se quiere entrar y salir del modo de configuración se va a usar la tecla Fn.
 
 Los diferentes menús vienen señalados en la imagen por un número. Con este vamos a identificar al menú para poder explicar su funcionamiento. Los menús son los siguientes:
 \begin{itemize}
@@ -99,7 +99,7 @@ Los diferentes menús vienen señalados en la imagen por un número. Con este va
 \end{itemize}
 
 \subsubsection{Ajustes}
-Este menú se compone de varias opciones. En este menú se pueden ajustar los parámetros del funcionamiento del teclado. En este menú se pueden ajustar los parámetros de, activar y desactivar la pantalla, activar y desactivar el teclado, ajustar el tiempo de debounce del teclado y ajustar el idioma de la interfaz.
+Este menú se compone de varias opciones. En este menú se pueden ajustar los parámetros del funcionamiento del teclado. Aquí se pueden ajustar los parámetros de, activar y desactivar la pantalla, activar y desactivar el teclado, ajustar el tiempo de debounce del teclado y ajustar el idioma de la interfaz.
 
 \subsubsection{Brillo}
 Este menú se compone de los parámetros de brillo de la pantalla y de los \glsnocase{LED}s. En este submenú se pueden encontrar dos ajustes numéricos del 0 al 100. Estos ajustes son el brillo de la pantalla y el brillo de los \glsnocase{LED}s. También se pueden llegar a apagar los \glsnocase{LED}s y la pantalla mediante este submenú, ya que podemos poner el brillo a 0.
@@ -124,7 +124,7 @@ La barra de estado se compone de varios elementos. En la parte superior de la pa
     \item \textbf{A}. Icono de la conexión: Este icono indica el estado de la conexión. Este puede alternar entre el icono de \gls{Bluetooth} y el icono de \gls{USB}.
     \item \textbf{B}. Icono del modo de funcionamiento del teclado: Este icono indica el estado del teclado. Este puede alternar entre el icono de teclado activado y el icono de configuración.
     \item \textbf{C}. Porcentaje de batería restante: Este porcentaje indica el porcentaje de batería restante que se actualiza cada 1 minuto.
-    \item \textbf{D}. Icono de la batería: Este icono indica el estado de la batería. Este indica si la batería está cargando o si la batería está descargada. También indica la carga y posee colores para indicar el estado de la batería.
+    \item \textbf{D}. Icono de la batería: Este icono indica el estado de la batería. Este indica si la batería está cargando y también la carga que posee con un bloque en el interior de color.
 \end{itemize}
 
 \section{Funcionalidad}
@@ -141,20 +141,20 @@ El primer apartado es el ahorro de energía. En esta sección de código se comp
 Aquí comprobamos si desde el gestor de interrupciones de la batería ha actualizado el valor de la misma. Si el valor ha variado, se actualiza el valor de la batería en la pantalla y se actualiza el icono de la batería.
 
 \subsubsection{\gls{LED}s}
-En esta sección se comprueba si los \glsnocase{LED}s están activados en la configuración y si el modo de los \glsnocase{LED}s es el modo de \glsnocase{LED}s programados por el usuario. Si es así se ejecuta el modo de \glsnocase{LED}s programados por el usuario. Si no se ejecuta el modo de \glsnocase{LED}s por defecto.
+En esta sección se comprueba si los \glsnocase{LED}s están activados en la configuración y si el modo de los \glsnocase{LED}s es el modo de \glsnocase{LED}s programados por el usuario. Si es así, se ejecuta el modo de \glsnocase{LED}s programados por el usuario. Si no es así, se ejecuta el modo de \glsnocase{LED}s por defecto.
 
 \subsubsection{Actualización de conexión}
 En esta sección se comprueba si la conexión ha cambiado. Si ha cambiado, se actualiza el icono de la conexión y se actualiza el modo de conexión.
 
 \subsubsection{Pantalla}
-En esta sección se comprueba si la pantalla está activada. En el caso de estar activada, se comprueba que se ha cambiado el estado de la pantalla. En el caso afirmativo se actualiza la pantalla con la información necesaria, además, de mostrar siempre la pantalla con el brillo seleccionado.
+En esta sección se comprueba si la pantalla está activada. En el caso de estar activada, se comprueba que se ha cambiado el estado de la pantalla. En el caso afirmativo se actualiza la pantalla con la información necesaria, además de mostrar siempre la pantalla con el brillo seleccionado.
 
 \subsubsection{Teclado}
 Se comprueba primero que no estamos en el modo de teclas especiales o modo especial, ya que tendríamos que ejecutar la función especificada especial.
 Si no estamos en el modo especial se procede a funcionar en modo normal del teclado, mientras se comprueba que el flag de la interrupción de la tecla Fn no este activado. Si está activado, se cambia el modo de teclado a configuración y se activa el flag de configuración.
 En el modo configuración nos encontramos con lo mismo, se comprueba que el flag de la interrupción de la tecla Fn no este activado. Si está activado se cambia el modo de teclado a normal y se desactiva el flag de configuración.
 
-En el modo de configuración, cada vez que se pulsa una tecla se actualiza el valor de la tecla pulsada y se activa el flag de tecla pulsada, activando la función de actualizar la pantalla.
+En el modo de configuración cada vez que se pulsa una tecla se actualiza el valor de la tecla pulsada y se activa el flag de tecla pulsada, activando la función de actualizar la pantalla.
 
 Estos estados se pueden ver en la figura \ref{fig:EstadosKeyboard} junto con la figura del diagrama de flujo del bucle principal \ref{fig:MainLoop}.
 
@@ -186,7 +186,7 @@ Para los macros o funciones especiales, se tendrá que activar el modo desde el 
 
 \section{Boot}
 
-Para poder cargar el código al microcontrolador se ha usado el conversor \gls{TTL} que se indicó en la sección \ref{DiseñoActualizaciones} se ha usado un conversor de nivel lógico para poder programar el chip mientras este se alimenta con el \gls{USB} 5.0 V y no con la batería.
+Para poder cargar el código al microcontrolador se ha usado el conversor \gls{TTL} que se indicó en la sección \ref{DiseñoActualizaciones}. Se ha usado un conversor de nivel lógico para poder programar el chip mientras este se alimenta con el \gls{USB} 5.0 V y no con la batería.
 El código una vez cargado en el microcontrolador se ejecutará en cuanto el chip revisa el voltaje necesario para funcionar. En este caso el chip se enciende en cuanto se conecta el \gls{USB} y se enciende la pantalla mostrando el logotipo del proyecto. Acto seguido se encienden los leds y se muestra el menú principal en el caso de estar activa la pantalla.
 
 \begin{tcolorbox}[colback=red!11!white, colframe=red!50!white, title=Errores]

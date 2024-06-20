@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  19 JUN 2024 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  20 JUN 2024 21:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1182,150 +1182,150 @@ LaTeX Info: Redefining \% on input line 236.
 LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
  [29 <./imagenes/Capitulos/Cap03/ISO105Layout.png> <./imagenes/Capitulos/Cap03/ModernWoodLayout.png>]
-LaTeX Info: Redefining \. on input line 256.
-LaTeX Info: Redefining \% on input line 256.
-LaTeX Info: Redefining \. on input line 256.
-LaTeX Info: Redefining \% on input line 256.
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
  [30]
-LaTeX Info: Redefining \. on input line 258.
-LaTeX Info: Redefining \% on input line 258.
-LaTeX Info: Redefining \. on input line 258.
-LaTeX Info: Redefining \% on input line 258.
+LaTeX Info: Redefining \. on input line 260.
+LaTeX Info: Redefining \% on input line 260.
+LaTeX Info: Redefining \. on input line 260.
+LaTeX Info: Redefining \% on input line 260.
  [31]
-Underfull \hbox (badness 2401) in paragraph at lines 334--334
+Underfull \hbox (badness 2401) in paragraph at lines 336--336
 \OT1/cmr/m/n/10 - Mo-do [][][][]deep sleep[][][] pa-ra aho-rrar
  []
 
 
 Underfull \vbox (badness 4582) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 348.
-LaTeX Info: Redefining \% on input line 348.
-LaTeX Info: Redefining \. on input line 348.
-LaTeX Info: Redefining \% on input line 348.
+LaTeX Info: Redefining \. on input line 350.
+LaTeX Info: Redefining \% on input line 350.
+LaTeX Info: Redefining \. on input line 350.
+LaTeX Info: Redefining \% on input line 350.
  [32]
-Underfull \hbox (badness 2401) in paragraph at lines 366--366
+Underfull \hbox (badness 2401) in paragraph at lines 368--368
 \OT1/cmr/m/n/10 - Mo-do [][][][]deep sleep[][][] pa-ra aho-rrar
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 379.
-LaTeX Info: Redefining \% on input line 379.
-LaTeX Info: Redefining \. on input line 379.
-LaTeX Info: Redefining \% on input line 379.
+LaTeX Info: Redefining \. on input line 381.
+LaTeX Info: Redefining \% on input line 381.
+LaTeX Info: Redefining \. on input line 381.
+LaTeX Info: Redefining \% on input line 381.
  [33]
 <imagenes/Capitulos/Cap03/TP4056Schematic.png, id=1141, 593.21625pt x 256.70906pt>
 File: imagenes/Capitulos/Cap03/TP4056Schematic.png Graphic file (type png)
 <use imagenes/Capitulos/Cap03/TP4056Schematic.png>
-Package pdftex.def Info: imagenes/Capitulos/Cap03/TP4056Schematic.png  used on input line 387.
+Package pdftex.def Info: imagenes/Capitulos/Cap03/TP4056Schematic.png  used on input line 389.
 (pdftex.def)             Requested size: 360.0pt x 155.7932pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2980) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 394.
-LaTeX Info: Redefining \% on input line 394.
-LaTeX Info: Redefining \. on input line 394.
-LaTeX Info: Redefining \% on input line 394.
+LaTeX Info: Redefining \. on input line 396.
+LaTeX Info: Redefining \% on input line 396.
+LaTeX Info: Redefining \. on input line 396.
+LaTeX Info: Redefining \% on input line 396.
  [34 <./imagenes/Capitulos/Cap03/TP4056Schematic.png>]
-LaTeX Info: Redefining \. on input line 449.
-LaTeX Info: Redefining \% on input line 449.
-LaTeX Info: Redefining \. on input line 449.
-LaTeX Info: Redefining \% on input line 449.
+LaTeX Info: Redefining \. on input line 451.
+LaTeX Info: Redefining \% on input line 451.
+LaTeX Info: Redefining \. on input line 451.
+LaTeX Info: Redefining \% on input line 451.
  [35]
 <imagenes/Capitulos/Cap03/EjemploArrayTeclado.png, id=1172, 4930.42pt x 1441.385pt>
 File: imagenes/Capitulos/Cap03/EjemploArrayTeclado.png Graphic file (type png)
 <use imagenes/Capitulos/Cap03/EjemploArrayTeclado.png>
-Package pdftex.def Info: imagenes/Capitulos/Cap03/EjemploArrayTeclado.png  used on input line 458.
+Package pdftex.def Info: imagenes/Capitulos/Cap03/EjemploArrayTeclado.png  used on input line 460.
 (pdftex.def)             Requested size: 360.0pt x 105.24002pt.
-LaTeX Info: Redefining \. on input line 463.
-LaTeX Info: Redefining \% on input line 463.
-LaTeX Info: Redefining \. on input line 463.
-LaTeX Info: Redefining \% on input line 463.
+LaTeX Info: Redefining \. on input line 465.
+LaTeX Info: Redefining \% on input line 465.
+LaTeX Info: Redefining \. on input line 465.
+LaTeX Info: Redefining \% on input line 465.
  [36 <./imagenes/Capitulos/Cap03/EjemploArrayTeclado.png>]
 <imagenes/Capitulos/Cap03/XS12.png, id=1191, 642.4pt x 292.09125pt>
 File: imagenes/Capitulos/Cap03/XS12.png Graphic file (type png)
 <use imagenes/Capitulos/Cap03/XS12.png>
-Package pdftex.def Info: imagenes/Capitulos/Cap03/XS12.png  used on input line 471.
+Package pdftex.def Info: imagenes/Capitulos/Cap03/XS12.png  used on input line 473.
 (pdftex.def)             Requested size: 270.0pt x 122.76662pt.
 <imagenes/Capitulos/Cap03/GX16.png, id=1198, 681.54625pt x 292.09125pt>
 File: imagenes/Capitulos/Cap03/GX16.png Graphic file (type png)
 <use imagenes/Capitulos/Cap03/GX16.png>
-Package pdftex.def Info: imagenes/Capitulos/Cap03/GX16.png  used on input line 480.
+Package pdftex.def Info: imagenes/Capitulos/Cap03/GX16.png  used on input line 482.
 (pdftex.def)             Requested size: 288.0011pt x 123.4307pt.
 <imagenes/Capitulos/Cap03/USBA.png, id=1199, 481.8pt x 248.93pt>
 File: imagenes/Capitulos/Cap03/USBA.png Graphic file (type png)
 <use imagenes/Capitulos/Cap03/USBA.png>
-Package pdftex.def Info: imagenes/Capitulos/Cap03/USBA.png  used on input line 487.
+Package pdftex.def Info: imagenes/Capitulos/Cap03/USBA.png  used on input line 489.
 (pdftex.def)             Requested size: 360.0pt x 186.00572pt.
 
 Underfull \vbox (badness 1983) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 491.
-LaTeX Info: Redefining \% on input line 491.
-LaTeX Info: Redefining \. on input line 491.
-LaTeX Info: Redefining \% on input line 491.
+LaTeX Info: Redefining \. on input line 493.
+LaTeX Info: Redefining \% on input line 493.
+LaTeX Info: Redefining \. on input line 493.
+LaTeX Info: Redefining \% on input line 493.
  [37 <./imagenes/Capitulos/Cap03/XS12.png> <./imagenes/Capitulos/Cap03/GX16.png>]
 <imagenes/Capitulos/Cap03/WS2812B.png, id=1216, 953.5625pt x 690.58pt>
 File: imagenes/Capitulos/Cap03/WS2812B.png Graphic file (type png)
 <use imagenes/Capitulos/Cap03/WS2812B.png>
-Package pdftex.def Info: imagenes/Capitulos/Cap03/WS2812B.png  used on input line 498.
+Package pdftex.def Info: imagenes/Capitulos/Cap03/WS2812B.png  used on input line 500.
 (pdftex.def)             Requested size: 288.0011pt x 208.57707pt.
 
 Underfull \vbox (badness 1953) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 506.
-LaTeX Info: Redefining \% on input line 506.
-LaTeX Info: Redefining \. on input line 506.
-LaTeX Info: Redefining \% on input line 506.
+LaTeX Info: Redefining \. on input line 508.
+LaTeX Info: Redefining \% on input line 508.
+LaTeX Info: Redefining \. on input line 508.
+LaTeX Info: Redefining \% on input line 508.
  [38 <./imagenes/Capitulos/Cap03/USBA.png> <./imagenes/Capitulos/Cap03/WS2812B.png>]
-LaTeX Info: Redefining \. on input line 511.
-LaTeX Info: Redefining \% on input line 511.
-LaTeX Info: Redefining \. on input line 511.
-LaTeX Info: Redefining \% on input line 511.
+LaTeX Info: Redefining \. on input line 513.
+LaTeX Info: Redefining \% on input line 513.
+LaTeX Info: Redefining \. on input line 513.
+LaTeX Info: Redefining \% on input line 513.
  [39]
-LaTeX Info: Redefining \. on input line 536.
-LaTeX Info: Redefining \% on input line 536.
-LaTeX Info: Redefining \. on input line 536.
-LaTeX Info: Redefining \% on input line 536.
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
  [40]
-LaTeX Info: Redefining \. on input line 548.
-LaTeX Info: Redefining \% on input line 548.
-LaTeX Info: Redefining \. on input line 548.
-LaTeX Info: Redefining \% on input line 548.
+LaTeX Info: Redefining \. on input line 550.
+LaTeX Info: Redefining \% on input line 550.
+LaTeX Info: Redefining \. on input line 550.
+LaTeX Info: Redefining \% on input line 550.
  [41]
-LaTeX Info: Redefining \. on input line 564.
-LaTeX Info: Redefining \% on input line 564.
-LaTeX Info: Redefining \. on input line 564.
-LaTeX Info: Redefining \% on input line 564.
+LaTeX Info: Redefining \. on input line 566.
+LaTeX Info: Redefining \% on input line 566.
+LaTeX Info: Redefining \. on input line 566.
+LaTeX Info: Redefining \% on input line 566.
  [42]
-Overfull \hbox (3.53946pt too wide) in paragraph at lines 573--595
+Overfull \hbox (3.53946pt too wide) in paragraph at lines 575--597
 [][] 
  []
 
-LaTeX Info: Redefining \. on input line 599.
-LaTeX Info: Redefining \% on input line 599.
-LaTeX Info: Redefining \. on input line 599.
-LaTeX Info: Redefining \% on input line 599.
+LaTeX Info: Redefining \. on input line 601.
+LaTeX Info: Redefining \% on input line 601.
+LaTeX Info: Redefining \. on input line 601.
+LaTeX Info: Redefining \% on input line 601.
 [43]
-Overfull \hbox (27.03961pt too wide) in paragraph at lines 608--629
+Overfull \hbox (27.03961pt too wide) in paragraph at lines 610--631
 [][] 
  []
 
-LaTeX Info: Redefining \. on input line 633.
-LaTeX Info: Redefining \% on input line 633.
-LaTeX Info: Redefining \. on input line 633.
-LaTeX Info: Redefining \% on input line 633.
+LaTeX Info: Redefining \. on input line 635.
+LaTeX Info: Redefining \% on input line 635.
+LaTeX Info: Redefining \. on input line 635.
+LaTeX Info: Redefining \% on input line 635.
 [44]
-Overfull \hbox (5.10889pt too wide) in paragraph at lines 642--657
+Overfull \hbox (5.10889pt too wide) in paragraph at lines 644--659
 [][] 
  []
 
-LaTeX Info: Redefining \. on input line 661.
-LaTeX Info: Redefining \% on input line 661.
-LaTeX Info: Redefining \. on input line 661.
-LaTeX Info: Redefining \% on input line 661.
+LaTeX Info: Redefining \. on input line 663.
+LaTeX Info: Redefining \% on input line 663.
+LaTeX Info: Redefining \. on input line 663.
+LaTeX Info: Redefining \% on input line 663.
 [45]) (Capitulos/04_Circuitos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1487,7 +1487,7 @@ File: imagenes/Capitulos/Cap05/EaglePCBConectada.png Graphic file (type png)
 Package pdftex.def Info: imagenes/Capitulos/Cap05/EaglePCBConectada.png  used on input line 137.
 (pdftex.def)             Requested size: 360.0pt x 196.78595pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4673) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
@@ -1635,15 +1635,15 @@ LaTeX Info: Redefining \% on input line 122.
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
  [80]
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
  [81]
-LaTeX Info: Redefining \. on input line 159.
-LaTeX Info: Redefining \% on input line 159.
-LaTeX Info: Redefining \. on input line 159.
-LaTeX Info: Redefining \% on input line 159.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
  [82]
 <imagenes/Capitulos/Cap07/MainLoop.png, id=1870, 728.7225pt x 822.82407pt>
 File: imagenes/Capitulos/Cap07/MainLoop.png Graphic file (type png)
@@ -1976,7 +1976,7 @@ LaTeX Info: Redefining \% on input line 295.
 LaTeX Info: Redefining \. on input line 295.
 LaTeX Info: Redefining \% on input line 295.
  [114]
-<imagenes/Capitulos/Cap13/ModernWoodLinked.png, id=2465, 120.45pt x 44.41594pt>
+<imagenes/Capitulos/Cap13/ModernWoodLinked.png, id=2466, 120.45pt x 44.41594pt>
 File: imagenes/Capitulos/Cap13/ModernWoodLinked.png Graphic file (type png)
 <use imagenes/Capitulos/Cap13/ModernWoodLinked.png>
 Package pdftex.def Info: imagenes/Capitulos/Cap13/ModernWoodLinked.png  used on input line 313.
@@ -2336,17 +2336,17 @@ Package rerunfilecheck Info: File `TFG.out' has not changed.
 (rerunfilecheck)             Checksum: 652D3E15FF1A06D1A8DE55FB70ECE64A;12944.
  ) 
 Here is how much of TeX's memory you used:
- 33871 strings out of 474485
- 626816 string characters out of 5755465
+ 33870 strings out of 474485
+ 626801 string characters out of 5755465
  2528542 words of memory out of 5000000
- 54651 multiletter control sequences out of 15000+600000
+ 54650 multiletter control sequences out of 15000+600000
  567490 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,17n,102p,2383b,2182s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Clm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><B:/Programas/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feybr10.pfb><B:/Programas/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on TFG.pdf (155 pages, 7255073 bytes).
+Output written on TFG.pdf (155 pages, 7255108 bytes).
 PDF statistics:
- 3290 PDF objects out of 3580 (max. 8388607)
+ 3291 PDF objects out of 3580 (max. 8388607)
  938 named destinations out of 1000 (max. 500000)
  1063 words of extra memory for PDF output out of 10000 (max. 10000000)
 

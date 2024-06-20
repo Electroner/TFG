@@ -34,7 +34,7 @@ Todos los pasos han sido realizados siguiendo el tutorial descrito en la asignat
     Añada los atributos necesarios al componente, como el valor, la descripción, etc.
 \end{enumerate}
 
-De forma que quedara como podemos ver en la figura \ref{fig:ESP32S3HOLE}.
+De forma que quedará como podemos ver en la figura \ref{fig:ESP32S3HOLE}.
 
 \begin{figure}[H]
     \centering
@@ -45,7 +45,7 @@ De forma que quedara como podemos ver en la figura \ref{fig:ESP32S3HOLE}.
 \section{PCB}\label{ApendicePCB}
 
 \subsection{Dimensiones físicas}
-Dado que el proyecto se va a realizar en una placa de madera, y esta contenga todos los elementos, y que la placa de madera va a ser fresada con una fresadora CNC, se ha decidido dejar márgenes de 1 mm en cada lado de la placa. Además de añadir un margen extra a la \gls{PCB} para que pueda ser atornillada más fácilmente.
+Teniendo en cuenta que el proyecto se va a realizar en una placa de madera, y esta debe contener todos los elementos, y dicha placa va a ser fresada con una fresadora CNC, se ha decidido dejar márgenes de 1 mm en cada lado de la placa. Además vamos a añadir un margen extra a la \gls{PCB} para que pueda ser atornillada más fácilmente.
 
 En la figura \ref{fig:PlanoSeparacionMadera} podemos ver en rojo el borde de la \gls{PCB} y la línea más próxima, en negro, la madera. Se ha dejado medio milímetro de margen para las máquinas \gls{CNC} y de fabricación de \gls{PCB}. Los marcadores de los interruptores generados por el software de la sección \ref{CreacionPlanoDistribucion} se ha dejado en verde.
 
@@ -56,7 +56,7 @@ En la figura \ref{fig:PlanoSeparacionMadera} podemos ver en rojo el borde de la 
     \label{fig:PlanoSeparacionMadera}
 \end{figure}
 
-También la idea siempre ha sido ajustar las dimensiones de la carcasa y \gls{PCB} para que no se viera la \gls{PCB} una vez que el teclado tuviese las \glsnocase{Keycaps} puestas, esto ya que al no haber \glsnocase{Plate} si dejáramos mucho hueco, esta parte se vería peor estéticamente. Por eso, uno de los objetivos es intentar que la carcasa esté lo más cerca de las \glsnocase{Keycaps}.
+La idea siempre ha sido ajustar las dimensiones de la carcasa y \gls{PCB} para que no se pudiera ver la \gls{PCB} una vez que el teclado tuviese las \glsnocase{Keycaps} montadas. Esto gracias a que la \glsnocase{Plate} no dejaría mucho hueco para ver la \gls{PCB}, que se vería peor estéticamente. Por eso, uno de los objetivos es intentar que la carcasa esté lo más cerca de las \glsnocase{Keycaps}.
 \newpage
 
 \section{Programación}
@@ -66,10 +66,10 @@ Todo el código fuente del proyecto se encuentra disponible en el repositorio de
 
 \subsection{Estructuras}
 
-En esta sección se describen las estructuras de datos y funciones más relevantes utilizadas en el proyecto. Estas van desde la configuración de la \gls{EEPROM}, hasta la configuración de los distintos modos de funcionamiento del teclado. Las variables de estado o las clases principales que se han utilizado en el proyecto. Así como donde poder encontrar estas estructuras en el código fuente.
+En esta sección se describen las estructuras de datos y funciones más relevantes utilizadas en el proyecto. Estas van desde la configuración de la \gls{EEPROM}, hasta la configuración de los distintos modos de funcionamiento del teclado. Las variables de estado o las clases principales que se han utilizado en el proyecto, así como donde poder encontrar estas estructuras en el código fuente.
 \subsubsection{Variables de estado}
 
-Estas variables son las que se han utilizado para saber el estado del teclado. Estas variables se han ido creando a lo largo del proyecto y se han ido añadiendo a medida que se iban necesitando. Estas variables se encuentran en el archivo de ModernWood/ModernWood/include/ModernWood.h. Un ejemplo de estas variables se puede ver en el código \ref{code:VariablesEstado}.
+Estas variables son las que se han utilizado para saber el estado del teclado. Estas se han ido creando a lo largo del proyecto y se han ido añadiendo a medida que se iban necesitando. Estas variables se encuentran en el archivo de ModernWood/ModernWood/include/ModernWood.h. Un ejemplo de estas variables se puede ver en el código \ref{code:VariablesEstado}.
 
 \begin{lstlisting}[style=console, language=bash, caption={Variables de estado del teclado}, label={code:VariablesEstado}]
     // Variable to switch between keyboard and display mode
@@ -148,10 +148,10 @@ Como se ha comentado en la sección de configuración de la \gls{EEPROM} \ref{Ap
 
 \subsection{Funciones}\label{ApendiceFunciones}
 
-En esta sección se describen las funciones más relevantes utilizadas en el proyecto. Estas funciones se pueden encontrar en el archivo de ModernWood/ModernWood/include/ModernWood.h y su descripción en el archivo de ModernWood/ModernWood/src/ModernWood.cpp. Estas funciones van desde la configuración de la \gls{EEPROM}, hasta la configuración de los distintos modos de funcionamiento del teclado. Las variables de estado o las clases principales que se han utilizado en el proyecto. Así como donde poder encontrar estas estructuras en el código fuente.
+En esta sección se describen las funciones más relevantes utilizadas en el proyecto. Estas funciones se pueden encontrar en el archivo de ModernWood/ModernWood/include/ModernWood.h y su descripción en el archivo de ModernWood/ModernWood/src/ModernWood.cpp. Estas van desde la configuración de la \gls{EEPROM}, hasta la configuración de los distintos modos de funcionamiento del teclado. Las variables de estado o las clases principales que se han utilizado en el proyecto. Así como donde poder encontrar estas estructuras en el código fuente.
 
 \subsubsection{Modos de funcionamiento}
-Para el teclado tenemos 3 modos de funcionamiento. Estos modos son el modo teclado (Se compone de teclado por \gls{USB} y \gls{Bluetooth}), el modo pantalla/configuracion, donde se pueden cambiar las opciones del teclado y el modo especial (Se compone de la pantalla y el teclado). Este modo es el que ejecuta el código de las macros o funciones especiales. Para cambiar de modo se usa la tecla FN.
+Para el teclado tenemos 3 modos de funcionamiento. Estos son el modo teclado (Se compone de teclado por \gls{USB} y \gls{Bluetooth}), el modo pantalla/configuracion, donde se pueden cambiar las opciones del teclado y el modo especial (Se compone de la pantalla y el teclado). Este modo es el que ejecuta el código de las macros o funciones especiales. Para cambiar de modo se usa la tecla FN.
 
 \begin{lstlisting}[style=console, language=bash, caption={Funciones principales del teclado ModernWood}, label={code:ConfigStruct}]
     void WorkingInExternalFunctionMode(
@@ -299,14 +299,14 @@ Si se desea ver el resto de funciones menos relevantes, se puede acceder al repo
 
 \subsection{PID y VID}\label{ApendicePIDVID}
 
-El \gls{PID} y \gls{VID} son los identificadores de producto y de vendedor respectivamente. Estos identificadores son necesarios para que el sistema operativo pueda identificar el dispositivo conectado. En el caso de los teclados, estos identificadores son necesarios para que el sistema operativo pueda cargar el controlador adecuado y permitir la comunicación entre el teclado y el ordenador. Aunque estos identificadores son asignados por el fabricante, es posible modificarlos para adaptarlos a las necesidades específicas del proyecto. Dado que se quiere que el teclado sea reconocido como un teclado normal, pero con un fabricante y producto específico, se ha decidido inicial la comunicación con el ordenador mediante el \gls{USB} con los identificadores de producto y vendedor de un teclado estándar. Pero indicando que el fabricante se cambie a uno nuevo y el producto sea el ModernWood. Estos identificadores se pueden ver en el código \ref{code:PIDVID}.
+El \gls{PID} y \gls{VID} son los identificadores de producto y de vendedor respectivamente. Estos identificadores son necesarios para que el sistema operativo pueda identificar el dispositivo conectado. En el caso de los teclados, estos identificadores son necesarios para que el sistema operativo pueda cargar el controlador adecuado y permitir la comunicación entre el teclado y el ordenador. Aunque estos identificadores son asignados por el fabricante, es posible modificarlos para adaptarlos a las necesidades específicas del proyecto. Dado que se quiere que el teclado sea reconocido como un teclado normal, pero con un fabricante y producto específico, se ha decidido iniciar la comunicación con el ordenador mediante el \gls{USB} con los identificadores de producto y vendedor de un teclado estándar, pero indicando que el fabricante se cambie a uno nuevo y el producto sea el ModernWood. Estos identificadores se pueden ver en el código \ref{code:PIDVID}.
 
 \begin{lstlisting}[style=console, language=bash, caption={Números elegidos para el PID/VID}, label={code:PIDVID}]
     VID = 0x2001
     PID = 0x1111
 \end{lstlisting}
 
-Una vez realizado esto, a la hora de emparejar el teclado con el ordenador, este se reconocerá como un teclado normal pero con un nombre de producto ModernWood. De esta forma se podrá utilizar el teclado sin problemas en cualquier ordenador. Se puede ver el nombre después de la conexión en la figura \ref{fig:ModernWoodLinked}.
+Una vez realizado esto, a la hora de emparejar el teclado con el ordenador, éste se reconocerá como un teclado normal pero con un nombre de producto ModernWood. De esta forma se podrá utilizar el teclado sin problemas en cualquier ordenador. Se puede ver el nombre después de la conexión en la figura \ref{fig:ModernWoodLinked}.
 
 \begin{figure}[H]
     \centering
@@ -317,7 +317,7 @@ Una vez realizado esto, a la hora de emparejar el teclado con el ordenador, este
 
 \subsection{Leds}\label{ApendiceLeds}
 
-En cuanto a los leds se han añadido varios modos de funcionamiento. Estos modos se pueden cambiar en la opción del menú 2 en su opción correspondiente. Se pueden ampliar estos modos de funcionamiento añadiendo más funciones en la sección del main loop \ref{code:LedsModes}. Un ejemplo de una función de arcoíris se puede ver en el código \ref{code:LedsExampleCode}.
+En cuanto a los leds se han añadido varios modos de funcionamiento. Estos se pueden cambiar en la opción del menú 2 en su opción correspondiente. Se pueden ampliar estos modos de funcionamiento añadiendo más funciones en la sección del main loop \ref{code:LedsModes}. Un ejemplo de una función de arcoíris se puede ver en el código \ref{code:LedsExampleCode}.
 
 \begin{lstlisting}[style=console, language=bash, caption={Funciones de los modos de los Leds en el main.cpp}, label={code:LedsModes}]
     // Check if the leds are enabled
@@ -381,7 +381,7 @@ En cuanto a los leds se han añadido varios modos de funcionamiento. Estos modos
 \subsection{Macros}\label{ApendiceMacros}
 
 Una de las ideas principales para el teclado es que al tener una pantalla, un teclado y bluetooth, el usuario pudiese programar funciones extra para el teclado. Estas funciones pueden ir desde pulsaciones de teclas simples a videojuegos en la pantalla de microcontrolador. Para ello se diseñó un modo especial que se activa desde la opción de ayuda del menú.
-Este modo especial efectuaría la funciona asignada en la tecla que el usuario haya deseado. Para ello se ha creado una estructura de datos que guarda el puntero a la función de entrada y la fila y columna de la tecla que la activa. Esta estructura se puede ver en el código \ref{code:MacroStruct}. Y un ejemplo de asignación de la función vacía (base.h \ref{code:BaseFuncion}) en el código \ref{code:EjemploAsignacion}.
+Este modo especial efectuaría la función asignada en la tecla que el usuario haya deseado. Para ello se ha creado una estructura de datos que guarda el puntero a la función de entrada y la fila y columna de la tecla que la activa. Esta estructura se puede ver en el código \ref{code:MacroStruct}. Y un ejemplo de asignación de la función vacía (base.h \ref{code:BaseFuncion}) en el código \ref{code:EjemploAsignacion}.
 
 También se ha proporcionado una estructura de archivos para facilitar la creación de estas funciones. Estos archivos se pueden ver en el repositorio del proyecto \cite{ModernWoodGitHub}. Y los archivos son ModernWood/modules/src y ModernWood/modules/include.
 
@@ -434,7 +434,7 @@ También se ha proporcionado una estructura de archivos para facilitar la creaci
 
 \section{Pruebas}\label{ApendicePruebas}
 %Pruebas de programacion
-Durante el desarrollo del proyecto, se han realizado diversas pruebas para verificar el correcto funcionamiento de los distintos componentes y módulos utilizados. Estas pruebas han sido fundamentales para identificar y corregir errores, así como para garantizar la calidad y fiabilidad del sistema final. En esta sección, se incluyen los detalles de las pruebas realizadas, así como los resultados obtenidos y las conclusiones derivadas de los mismos.
+Durante el desarrollo del proyecto se han realizado diversas pruebas para verificar el correcto funcionamiento de los distintos componentes y módulos utilizados. Estas pruebas han sido fundamentales para identificar y corregir errores, así como para garantizar la calidad y fiabilidad del sistema final. En esta sección se incluyen los detalles de las pruebas realizadas, así como los resultados obtenidos y las conclusiones derivadas de los mismos.
 
 Durante todo el desarrollo se ha ido programando y probando el código en la placa de desarrollo ESP32S3. Se han realizado pruebas de los distintos componentes. El principal módulo que se ha estado probando ha sido el módulo de la pantalla \gls{OLED} y el Multiplexor. La pantalla ha sido lo que más tiempo ha estado en desarrollo, ya que había que hacer que funcionase con todos los estados del teclado. Así mismo, esta tenía que ir cambiando de estado según el estado del teclado. Por lo que cualquier error en las coordenadas o en la escritura de la pantalla se notaba fácilmente y se podía corregir.
 
@@ -442,7 +442,7 @@ Para poder realizar la tarea de actualizar la pantalla se han ido ideando una se
 
 Dado que el entorno que teníamos para las pruebas no constaba de un teclado normal se decidió crear unas funciones de \gls{DEBUG} que nos permitirían, mediante el serial de la placa de desarrollo, simular la pulsación de las teclas. De esta forma podríamos probar el funcionamiento de la pantalla sin necesidad de tener un teclado conectado así como el funcionamiento de la batería, el bluetooth, etc. y poder ir cambiando las variables de estado del teclado.
 
-Como podemos ver en el código \ref{code:CodigoDebug} esta es la solución que se ha optado y también se puede encontrar en el GitHub del proyecto \cite{ModernWoodGitHub}. 
+Como podemos ver en el código \ref{code:CodigoDebug} esta es la solución por la que se ha optado y también se puede encontrar en el GitHub del proyecto \cite{ModernWoodGitHub}. 
 
 \begin{lstlisting}[style=console, language=bash, caption={Código de debug para la placa de desarrollo}, label={code:CodigoDebug}]
     #ifdef DEBUG
@@ -542,12 +542,12 @@ Como podemos ver en el código \ref{code:CodigoDebug} esta es la solución que s
 
 \section{Ensamblaje}\label{ApendiceEnsamblaje}
 
-El ensamblado del teclado ha sido una tarea compleja que ha requerido la integración de múltiples componentes, que aunque se hayan tenido en cuenta posibles errores. Por desconocimiento o por falta de experiencia, se han cometido errores que han requerido la modificación de los componentes o la realización de ajustes en el diseño. En esta sección, se incluyen los detalles del ensamblaje del teclado, así como los errores cometidos y las soluciones adoptadas para corregirlos.
+El ensamblaje del teclado ha sido una tarea compleja debido a la integración de múltiples componentes. A pesar de tener en cuenta posibles errores, se cometieron algunos debido al desconocimiento o la falta de experiencia. Estos errores han requerido la modificación de componentes y ajustes en el diseño. En esta sección se detallan el proceso de ensamblaje del teclado, los errores cometidos y las soluciones adoptadas para corregirlos.
 
 \subsection{Errores}\label{ApendiceEnsamblajeErrores}
 
-El único error cometido en el ensamblaje ha sido el del montaje en la carcasa. Los tornillos hembra/macho, que iban a ser atornillado a la carcasa de madera, eran demasiado grandes y su rosca demasiado grande. Por esta razón se optó por pegar estos tornillos a la carcasa con epoxi en el agujero correspondiente al tornillo. Así se podría desmontar la placa de madera del teclado sin problemas. También estos mismos agujeros tuvieron que ser ampliados para poder meter la tuerca sin dificultad. Estos agujeros pasaron de 5 mm a 6 mm.
+El único error cometido en el ensamblaje ha sido el del montaje en la carcasa. Los tornillos hembra/macho, que iban a ser atornillado a la carcasa de madera, eran demasiado grandes. Por esta razón se optó por pegar estos tornillos a la carcasa con epoxi en el agujero correspondiente al tornillo. Así se podría desmontar la placa de madera del teclado sin problemas. Estos mismos agujeros tuvieron que ser ampliados para poder meter la tuerca sin dificultad. Estos agujeros pasaron de 5 mm a 6 mm.
 
 \subsection{Montaje Nuevo} \label{ApendiceEnsamblajeMontaje}
 
-El montaje del teclado está descrito en la sección \ref{MontajeTeclado} de este documento. En esta sección se puede ver el montaje detallado del teclado. Se ha descrito paso a paso como se ha montado el teclado. Ahora con los cambios realizados en la carcasa, el montaje cambia en uno de los puntos. En ese mismo punto, en la sucesión de tornillos, \ref{Tornillos}, se ha cambiado el procedimiento de montaje. En vez de atornillar los tornillos a la carcasa, se han de pegar con epoxi. Sin necesidad de atornillarlos. (Los errores de dimensiones se prevén corregidos para la versión final en sus planos).
+El montaje del teclado está descrito en la sección \ref{MontajeTeclado} de este documento. En esta sección se puede ver el montaje detallado del teclado. Describiéndose paso a paso como se ha montado el teclado. Ahora, con los cambios realizados en la carcasa, el montaje cambia en uno de los puntos. En ese mismo punto, en la sucesión de tornillos, \ref{Tornillos}, se ha cambiado el procedimiento de montaje, en vez de atornillar los tornillos a la carcasa, se han de pegar con epoxi sin necesidad de atornillarlos. (Los errores de dimensiones se prevén corregidos para la versión final en sus planos).
