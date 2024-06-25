@@ -6,11 +6,25 @@
 \newblock \url{https://www.flickr.com/photos/adafruit/51479696571}, Last
   accessed on 13-03-2024.
 
+\bibitem{ImpuestoRenta}
+{Agencia Tributaria}.
+\newblock Impuesto sobre la renta de las personas físicas, 2024.
+\newblock
+  \url{https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/irpf.html},
+  Last accessed on 20-06-2024.
+
 \bibitem{TFTLib}
 {Bodmer, Github}.
 \newblock Tft\_espi, 2024.
 \newblock \url{https://github.com/Bodmer/TFT_eSPI}, Last accessed on
   15-03-2024.
+
+\bibitem{IVA}
+{Bolsamania}.
+\newblock Tipos de iva, 2024.
+\newblock
+  \url{https://www.bolsamania.com/declaracion-impuestos-renta/tipos-de-iva/#:~:text=Afecta%20a%20electrodom%C3%A9sticos%2C%20ropa%2C%20calzado,de%20IVA%20es%20del%2021%25.},
+  Last accessed on 20-06-2024.
 
 \bibitem{4pcbCalculator}
 {Brad Suppanz, 4pcb}.
@@ -98,6 +112,13 @@
   \url{https://smallbusiness.chron.com/types-wireless-keyboards-computers-69487.html},
   Last accessed on 6-03-2024.
 
+\bibitem{Comercial3}
+{Coherent Market Insights}.
+\newblock Mechanical keyboard market analysis, 2024.
+\newblock
+  \url{https://www.coherentmarketinsights.com/market-insight/mechanical-keyboard-market-1888},
+  Last accessed on 20-06-2024.
+
 \bibitem{ESP32S3Datasheet}
 {Espressif Systems}.
 \newblock Esp32-s3 datasheet, 2023.
@@ -123,6 +144,12 @@
 \newblock \url{https://www.keyboard-layout-editor.com/}, Last accessed on
   13-03-2024.
 
+\bibitem{ComisionIndiegogo}
+{Indiegogo}.
+\newblock Pricing \& fees, 2024.
+\newblock \url{https://learn.indiegogo.com/pricing-and-fees/}, Last accessed on
+  20-06-2024.
+
 \bibitem{Keyboards-Mounting-Styles}
 {Keyboard University}.
 \newblock Keyboard mounting styles.
@@ -136,6 +163,12 @@
 \newblock
   \url{https://www.keyboard.university/100-courses/keyboard-sizes-layouts-gdeby},
   Last accessed on 6-03-2024.
+
+\bibitem{ComisionKickStarer}
+{KickStater}.
+\newblock Kickstarter e impuestos, 2024.
+\newblock \url{https://www.kickstarter.com/help/taxes?lang=es}, Last accessed
+  on 20-06-2024.
 
 \bibitem{KeycapsImageSource}
 {Mercury, Wikipedia}.
@@ -171,6 +204,12 @@
 \newblock
   \url{https://www.protoexpress.com/tools/pcb-conductor-spacing-and-voltage-calculator/},
   Last accessed on 10-04-2024.
+
+\bibitem{Comercial1}
+{Skyquestt}.
+\newblock Mechanical keyboard market insights, 2024.
+\newblock \url{https://www.skyquestt.com/report/mechanical-keyboard-market},
+  Last accessed on 20-06-2024.
 
 \bibitem{Snapeda}
 {SnapEDA}.
@@ -259,6 +298,13 @@
 \newblock
   \url{https://deskthority.net/wiki/File:Cherry_KFN3-8358_keyboard_case_top_interior.jpg},
   Last accessed on 13-03-2024.
+
+\bibitem{Comercial2}
+{Statista}.
+\newblock Keyboards - worldwide, 2024.
+\newblock
+  \url{https://www.statista.com/outlook/cmo/consumer-electronics/computing/keyboards/worldwide#revenue},
+  Last accessed on 20-06-2024.
 
 \bibitem{builder-swillkb}
 {Swill, Swillkb}.

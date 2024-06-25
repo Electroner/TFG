@@ -61,6 +61,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12.1}{\ignorespaces Imagen de la ESP32S3 modificada}}{107}{figure.12.1}%
-\contentsline {figure}{\numberline {12.2}{\ignorespaces Imagen del plano acotado del espacio entre las \glsdisp {Keycaps}{\MakeTextLowercase []{Keycaps}} y la madera.}}{108}{figure.12.2}%
-\contentsline {figure}{\numberline {12.3}{\ignorespaces Imagen del teclado ModernWood conectado a un ordenador en el apartado de dispositivos bluetooth.}}{115}{figure.12.3}%
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Ganancia global del mercado de teclados mecanicos \cite {Comercial1}.}}{110}{figure.12.1}%
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Volumen global del mercado de teclados mecanicos \cite {Comercial1}.}}{110}{figure.12.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Imagen de la ESP32S3 modificada}}{125}{figure.13.1}%
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Imagen del plano acotado del espacio entre las \glsdisp {Keycaps}{\MakeTextLowercase []{Keycaps}} y la madera.}}{126}{figure.13.2}%
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Imagen del teclado ModernWood conectado a un ordenador en el apartado de dispositivos bluetooth.}}{133}{figure.13.3}%
